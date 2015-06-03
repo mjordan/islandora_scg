@@ -5,3 +5,18 @@
  * Placeholder module file for Islandora Sample Content Generator.
  */
 
+/**
+ * Implements hook_theme().
+ */
+function islandora_scg_theme() {
+  return array(
+    'metadata_ds' => array(
+      'variables' => array(
+        'ds_location' => NULL,
+        'ds_checksum_type' => NULL,
+        'outcome' => NULL,
+      ),
+      'template' => 'metadata_ds',
+    ),
+  );
+}
