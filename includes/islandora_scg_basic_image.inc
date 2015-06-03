@@ -10,4 +10,8 @@
  */
 class IslandoraSampleBasicImageGenerator extends IslandoraSampleContentGenerator {
 
+  public function printMessage() {
+    print "Hi from basic image. You asked for " . $this->quantity . " objects.\n";
+  }
+
 }

@@ -16,7 +16,7 @@ function islandora_scg_theme() {
         'ds_checksum_type' => NULL,
         'outcome' => NULL,
       ),
-      'template' => 'metadata_ds',
+      'template' => 'theme/metadata_ds',
     ),
   );
 }
