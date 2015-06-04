@@ -12,9 +12,7 @@ function islandora_scg_theme() {
   return array(
     'metadata_ds' => array(
       'variables' => array(
-        'ds_location' => NULL,
-        'ds_checksum_type' => NULL,
-        'outcome' => NULL,
+        'title' => NULL,
       ),
       'template' => 'theme/metadata_ds',
     ),

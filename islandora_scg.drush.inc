@@ -49,16 +49,20 @@ function drush_islandora_scg_load() {
     'namespace' => drush_get_option('namespace', 'islandora'),
   );
 
-  // Map content models to classes. If you add new content generator
-  // classes, register them here.
+  // Map content models to classes. If you add new content
+  // models, register them here.
   $registry = array(
     'islandora:sp_basic_image' => 'IslandoraSampleBasicImageGenerator',
     'islandora:sp_large_image_cmodel' => 'IslandoraSampleLargeImageGenerator',
     'islandora:sp_pdf' => 'IslandoraSamplePdfGenerator',
   );
 
-  drush_print("Instantiating sample content generator...");
-  $mything = new $registry[$options['content_model']]($options);
-  $mything->printMessage();
-  $mything->printCommon();
+  drush_print("Starting to generate sample content...");
+  $generator = new $registry[$options['content_model']]($options);
+  $generator->createDataDir();
+  $generator->generateContent();
+
+  drush_print("Starting to load sample content...");
+  $generator->loadContent();
+  $generator->removeDataDir();
 }

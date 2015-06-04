@@ -9,7 +9,12 @@
  * A class that generates sample PDF content.
  */
 class IslandoraSamplePdfGenerator extends IslandoraSampleContentGenerator {
-  public function printMessage() {
-    print "Hi from PDF. You asked for " . $this->quantity . " objects.\n";
+  public function generateContent() {
+    //
   }
+
+  public function loadContent() {
+    //
+  }
+
 }
