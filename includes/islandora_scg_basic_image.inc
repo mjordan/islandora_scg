@@ -19,11 +19,8 @@ class IslandoraSampleBasicImageGenerator extends IslandoraSampleContentGenerator
       drush_print("Generating OBJ file for $i...");
       exec($cmd);
 
-      // Generate metadata datastream file.
-      $metadata_ds = theme('metadata_ds', array(
-          'title' => "Item " . $i,
-      ));
       $metadata_ds_file_path = $this->data_dir . DIRECTORY_SEPARATOR . $i . '.xml';
+      $metadata_ds = $this->generateMetadataDs();
       file_put_contents($metadata_ds_file_path, $metadata_ds);
     }
   }

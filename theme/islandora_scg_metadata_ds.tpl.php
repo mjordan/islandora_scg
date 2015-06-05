@@ -7,6 +7,10 @@
  * Available variables:
  *   $title
  *     The title of the sample object.
+ *   $dateIssued
+ *     The date issued of the sample object.
+ *   $abstract
+ *     The abstract of the sample object.
  */
 ?>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -19,8 +23,9 @@
         <placeTerm></placeTerm>
       </place>
       <publisher></publisher>
-      <dateIssued encoding="iso8601">1928-06-01</dateIssued>
+      <dateIssued encoding="iso8601"><?php print $dateIssued; ?></dateIssued>
     </originInfo>
+    <abstract><?php print $abstract; ?></abstract>
     <language>
       <languageTerm>eng</languageTerm>
     </language>
