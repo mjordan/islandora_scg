@@ -56,7 +56,7 @@ Totem Pole Alert Bay-B.C.	1954	A totem pole in Alert Bay, B.C.
 BC Packers' Store, Alert Bay, BC.	1939	The B.C. Packers' Store in Alert Bay, B.C. A totem pole is shown out front of the store.
 Baptist Church Cranbrook, B.C.	1906	A baptist church in Cranbrook, B.C.
 Westminster Ave. Chilliwack, B.C.	1933	Westminster Avenue in Chilliwack, B.C. Some automobiles and storefronts are shown.
-Logging in British Columbia, Felling a Giant Tree	English	Two men felling a large tree in British Columbia.
+Logging in British Columbia, Felling a Giant Tree	1911	English	Two men felling a large tree in British Columbia.
 Goodacre Lake, Victoria, B.C.	1909	Two women shown walking on a walkway beside Goodacre Lake in Victoria, B.C.
 Camping Near Victoria, B.C.	1908	Three people shown sitting on the shore overlooking the water near Victoria, B.C.
 Kitsilano Beach, Vancouver	1911	Numerous people shown on the beach and in the water at Kitsilano Beach, Vancouver, B.C. A boat is shown in the water.
@@ -183,7 +183,6 @@ Quathiaski Cove, B.C.	1944	Small boat dock at Quathiaski Cove, B.C. Several boat
 Mill Bay Tourist Resort	1958	Aerial view of the Mill Bay Tourist Resort on Vancouver Island, B.C.
 Miracle Beach, V.I. B.C.	1954	A deer in front of a dwelling at Miracle Beach, B.C.
 P.O. Ymir, B.C.	1914	Several people standing in front of the Ymir, B.C. post office.
-Silhouett
 Overlooking Burrard Inlet, Vancouver, B.C.	1910	View overlooking the harbour at Burrard Inlet in Vancouver, B.C. Several vessels are shown in the harbour.
 Vancouver, B.C.	1938	View of Vancouver, B.C.
 Empress Hotel & Post Office, Victoria, B.C.	1908	View of the Empress Hotel and post office in Victoria, B.C. The Inner Harbour is shown in the foreground.
