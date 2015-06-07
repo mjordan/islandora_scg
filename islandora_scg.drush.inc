@@ -19,8 +19,7 @@ function islandora_scg_drush_command() {
     ),
     'options' => array(
       'quantity' => array(
-        'description' => 'The number of objects to load. ' .
-        'Defaults to 5.',
+        'description' => 'The number of objects to load. Defaults to 5.',
       ),
       'content_model' => array(
         'description' => 'The content models to assign to the objects.',

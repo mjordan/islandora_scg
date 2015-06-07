@@ -38,8 +38,7 @@ abstract class IslandoraSampleContentGenerator {
 
   public function removeDataDir() {
     if (file_exists($this->data_dir)) {
-      // file_unmanaged_delete_recursive($this->data_dir);
+      file_unmanaged_delete_recursive($this->data_dir);
     }
   }
-
 }

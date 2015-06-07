@@ -27,15 +27,15 @@ function islandora_scg_preprocess_islandora_scg_metadata_ds(array &$variables) {
   $sample_metadata = &drupal_static(__FUNCTION__);
   if (!isset($sample_metadata)) {
     $path = drupal_get_path('module', 'islandora_scg') . DIRECTORY_SEPARATOR .
-      'includes' . DIRECTORY_SEPARATOR . 'sample_metadata.tsv.inc';
+      'includes' . DIRECTORY_SEPARATOR . 'sample_metadata.tsv';
     $sample_metadata = file($path);
   }
-   // Grab a random row.
+  // Grab a random row.
   $random_line_number = array_rand($sample_metadata);
   $metadata = explode("\t", $sample_metadata[$random_line_number]);
 
   $variables['title'] = htmlspecialchars($metadata[0]);
-  $variables['dateIssued'] = htmlspecialchars($metadata[1]);
+  $variables['date_issued'] = htmlspecialchars($metadata[1]);
   $place_names = explode(';', $metadata[2]);
   $variables['geographics'] = array();
   foreach ($place_names as &$place_name) {
@@ -52,4 +52,3 @@ function islandora_scg_preprocess_islandora_scg_metadata_ds(array &$variables) {
   }
   $variables['abstract'] = htmlspecialchars(trim($metadata[4]));
 }
-

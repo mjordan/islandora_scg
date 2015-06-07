@@ -2,12 +2,12 @@
 /**
  * @file
  * Template file for the Islandora Sample Content Generator metadata
- * MODS datastream. 
- * 
+ * MODS datastream.
+ *
  * Available variables:
  *   $title string
  *     The title of the sample object.
- *   $dateIssued string
+ *   $date_issued string
  *     The date issued of the sample object.
  *   $abstract string
  *     The abstract of the sample object.
@@ -19,6 +19,9 @@
 ?>
 <?xml version="1.0" encoding="UTF-8"?>
 <mods xmlns="http://www.loc.gov/mods/v3" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <recordInfo>
+      <recordOrigin>Islandora Sample Content Generator.</recordOrigin>
+    </recordInfo>
     <titleInfo>
       <title><?php print $title; ?></title>
     </titleInfo>
@@ -27,7 +30,7 @@
         <placeTerm></placeTerm>
       </place>
       <publisher></publisher>
-      <dateIssued encoding="iso8601"><?php print $dateIssued; ?></dateIssued>
+      <dateIssued encoding="iso8601"><?php print $date_issued; ?></dateIssued>
     </originInfo>
     <abstract><?php print $abstract; ?></abstract>
     <language>

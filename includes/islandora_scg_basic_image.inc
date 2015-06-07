@@ -10,8 +10,11 @@
  */
 class IslandoraSampleBasicImageGenerator extends IslandoraSampleContentGenerator {
   public function generateContent() {
-    for ($i = 1; $i <= $this->quantity - 1; $i++) {
+    for ($i = 1; $i <= $this->quantity; $i++) {
       $metadata_ds = $this->generateMetadataDs();
+      $metadata_ds_file_path = $this->data_dir . DIRECTORY_SEPARATOR . $i . '.xml';
+      file_put_contents($metadata_ds_file_path, $metadata_ds);
+
       // Get the title to add to the image. Clunky.
       $mods = simplexml_load_string($metadata_ds);
       $title = $mods->{titleInfo}->title;
@@ -21,14 +24,9 @@ class IslandoraSampleBasicImageGenerator extends IslandoraSampleContentGenerator
       $cmd = "convert -size 1000x1000 xc:blue" . " " . $this->data_dir .
         DIRECTORY_SEPARATOR . $i . ".jpg;  convert -size 1000x1000 xc:blue" .
         " -pointsize 100 -fill white -gravity center -annotate +0+0 " .
-        escapeshellarg($title) ." " . $this->data_dir . DIRECTORY_SEPARATOR . $i. ".jpg";
-      // drush_print($cmd);
+        escapeshellarg(wordwrap($title, 15)) ." " . $this->data_dir . DIRECTORY_SEPARATOR . $i . ".jpg";
       drush_print("Generating sample content for $title");
       exec($cmd);
-
-      $metadata_ds_file_path = $this->data_dir . DIRECTORY_SEPARATOR . $i . '.xml';
-      $metadata_ds = $this->generateMetadataDs();
-      file_put_contents($metadata_ds_file_path, $metadata_ds);
     }
   }
 
