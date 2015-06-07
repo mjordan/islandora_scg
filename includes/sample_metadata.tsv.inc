@@ -1,199 +1,200 @@
-Whytecliff, B.C.	1925	Some people on a dock in Whytecliff, B.C.
-Boating at Rainbow Lodge, Alta Lake, B.C.	1952	Two people shown on a dock at Alta Lake, B.C.
-Municipal Hall of Maple Ridge, Haney, B.C.	1963	Maple Ridge municipal hall in Haney, B.C.
-Cloverdale, B.C.	1954	A street in Cloverdale, B.C. A hotel, some storefronts and some automobiles are shown.
-Lougheed Highway, Haney, B.C.	1964	Lougheed Highway in Haney, B.C. Some automobiles and storefronts are shown.
-Court House and Government Agency, New Westminster, B.C.	1909	A court house and government agency in New Westminster, B.C.
-Post Office, New Westminster	1911	Post office building in New Westminster, B.C. Some pedestrians are shown.
-Exhibition Buildings - New Westminster B.C.	1907	Exhibition buildings at Queen's Park, New Westminster, B.C.
-R.A. and I. Exhibition Grounds, Queen's Park, New Westminster, B.C.	1905	Exhibition grounds at Queen's Park, New Westminster, B.C. A crowd of people is shown.
-Steel Bridge across Fraser River, New Westminster, B.C.	1905	A close up look at the steel bridge across the Fraser River at New Westminster, B.C.
-City Market, New Westminster, B.C.	1916	City market at the waterfront in New Westminster, B.C.
-Harrison Hot Springs Hotel, Harrison Lake, B.C.	1942	The Harrison Hot Springs Hotel at Harrison Lake, B.C. Some people are shown walking on the walkway outside the hotel.
-Snug Cove Landing, Bowen Island, B.C.	1953	A boat in Snug Cove, Bowen Island, B.C. Three people are shown watching the boat.
-Hotel Bungalows, Bowen Island	1941	Hotel bungalows and grounds on Bowen Island, B.C. Some people are shown sitting on benches outside of the bungalows.
-Mt Strahan Lodge, The Guest House, Bowen Island	1931	The guest house at Mt Strahan Lodge at Bowen Island, B.C.
-Horse Shoe Bay, Bowen Island	1916	Some boats in Horseshoe Bay, Bowen Island, B.C.
-Sailing and Swimming at Cultus Lake BC.	1949	Some people sailing and swimming at Cultus Lake, B.C.
-Swans Point Picnic Grounds at Hatzic Lake near Mission.	1958	Numerous people on the shore and pier at Hatzic Lake, B.C.
-Some Vancouver B.C. Schools	1912	Five different Vancouver, B.C. schools.
-Marine Drive, North Shore, Vancouver BC	1917	Marine Drive on the North Shore, Vancouver, B.C. An automobile is shown on the road.
-Potatoes Grow Big Here at Horseshoe Bay, B.C.	1944	A horse drawn wagon with giant potatoes on it. A man is shown on top of the giant potatoes.
-Lihumitson Canyon, Chilliwack B.C.	1926	Several people observing a waterfall at Lihumitson Canyon in Chilliwack, B.C.
-Ruskin Power Plant, near Mission City, B.C.	1952	The Ruskin Power Plant near Mission City, B.C. A bridge is shown leading to the power plant.
-Second Narrows Bridge, Vancouver, B.C.	1927	The Second Narrows Bridge in Vancouver, B.C. Mountains in the distance are shown.
-Creston, B.C. - Looking West	1952	An aerial view of Creston, B.C. looking west. Surrounding mountains are shown.
-Village of Creston, B.C.	1952	An aerial view of the village of Creston, B.C. Surrounding mountains are shown.
-General Hospital, Chilliwack, BC	1947	A general hospital in Chilliwack, B.C.
-Vedder River, Near Chilliwack, B.C.	1924	The Vedder River near Chilliwack, B.C.
-Floodwaters - Chiliwack, B.C.	1951	The Chilliwack Central School shown surrounded by floodwaters.
-Soldiers Memorial Chilliwack B.C.	1942	A soldiers memorial in Chilliwack, B.C.
-Glacier House Hotel, Glacier, B.C.	1915	Glacier House Hotel in Glacier, B.C. Some smoke is shown coming out of the building's chimney.
-Swiss Guide and party on the Great Glacier, B.C.	1947	A mountain guide and party on the Great Glacier in B.C.
-C.R.L. Co's Mill Capacity 200,000 Ft a Day, Golden, B.C.	1910	The C.R.L. Co. mill in Golden, B.C. The Selkirk mountains are shown in the background.
-Bird's eye, Golden B.C.	1911	A bird's eye view of Golden, B.C.
-Bridge At Cultus Lake, Chilliwack, B.C.	1950	A small bridge over part of Cultus Lake, B.C.
-Method of spraying Hops at Chilliwack, Hop gardens	1912	Several men spraying hops at a hop garden in Chilliwack, B.C.
-Baker Street Cranbrook, B.C.	1909	Baker Street in Cranbrook, B.C. Some storefronts and pedestrians are shown.
-Pack Bridge Elk River	1907	A pack bridge over the Elk River near Fernie, B.C.
-Lumbering, Vancouver, B.C.	1907	Four horses pulling a section of a log in Vancouver, B.C. Three men are shown on and around the log.
-B.C. Spruce Mills Ltd., Lumberton, B.C.	1928	Two horses pulling a large log in Lumberton, B.C. Two men are shown by the horses.
-Taking it Easy Near Vancouver, B.C.	1910	Four men and a dog on and around a tree that is being felled near Vancouver, B.C.
-British Columbia Firs	1906	A man standing among some large British Columbia Fir trees.
-A B.C. Walking Stick, Vancouver B.C.	1912	Two men cutting down a large tree in Vancouver, B.C.
-Lumbering Scenes in British Columbia: Ox Teams	1905	A team of oxen pulling logs in British Columbia. Several men are shown around the oxen.
-St-Eugene's Hospital - Cranbrook, B.C.	1953	St. Eugene Hospital in Cranbrook, B.C. An automobile is shown parked in front of the hospital.
-Garden at C.P.R. Station, Cranbrook, B.C.	1946	A man standing in the garden at the Candian Pacific Railway station in Cranbrook, B.C.
-CNPC Co. Office Fernie	1940	The Crows Nest Pass Coal Company's office in Fernie, B.C. An automobile is shown parked in front of the building.
-Fernie, B.C. after the great fire, Aug. 1st 1908	1909	Fernie, B.C. after the great fire. Some buidings and rubble are shown.
-Coke Ovens and Mount Fernie, Fernie, B.C.	1913	Coke ovens in Fernie, B.C. Some buildings and Mount Fernie are shown behind the coke ovens.
-Victoria Avenue, Fernie, B.C.	1904	Victoria Avenue in Fernie, B.C. after the great fire. A horse drawn wagon and some storefronts are shown.
-Toby Canyon Invermere BC	1929	A bridge crossing Toby Canyon in Invermere, B.C. An automobile is shown on the bridge.
-Alberni, V.I., B.C.	1947	Partial view of Alberni, B.C. Some utility poles and buildings are shown.
-B. S. & W. Pulp Mill Port Alberni, B.C.	1949	The B.S. & W. Pulp Mill in Port Alberni, B.C.
-Argyle Street Port Alberni, B.C.	1949	Argyle Street in Port Alberni, B.C. Some storefronts and electric lines are shown.
-Totem Pole Alert Bay-B.C.	1954	A totem pole in Alert Bay, B.C.
-BC Packers' Store, Alert Bay, BC.	1939	The B.C. Packers' Store in Alert Bay, B.C. A totem pole is shown out front of the store.
-Baptist Church Cranbrook, B.C.	1906	A baptist church in Cranbrook, B.C.
-Westminster Ave. Chilliwack, B.C.	1933	Westminster Avenue in Chilliwack, B.C. Some automobiles and storefronts are shown.
-Logging in British Columbia, Felling a Giant Tree	1911	English	Two men felling a large tree in British Columbia.
-Goodacre Lake, Victoria, B.C.	1909	Two women shown walking on a walkway beside Goodacre Lake in Victoria, B.C.
-Camping Near Victoria, B.C.	1908	Three people shown sitting on the shore overlooking the water near Victoria, B.C.
-Kitsilano Beach, Vancouver	1911	Numerous people shown on the beach and in the water at Kitsilano Beach, Vancouver, B.C. A boat is shown in the water.
-Hastings St., East, Vancouver	1909	Hastings Street east in Vancouver, B.C. Some pedestrians, storefronts and a street railroad are shown.
-No. 2. Tunnel, Field, B.C.	1910	Two tunnel entrances at Field, B.C.
-English Bay, Vancouver, B.C.	1908	Two women sitting on a bench looking out at English Bay, Vancouver, B.C.
-Granville St., South, Vancouver	1908	Granville Street south in Vancouver, B.C. Some storefronts, pedestrians and a street railroad are shown.
-Macking Port, Victoria, B.C.	1911	A ship at Macking Port in Victoria, B.C. Some people are shown on the wharf at the port.
-First Canyon Capilano, B.C.	1953	First Canyon at Capilano, B.C.
-Tipperary Tea Gardens at the Summit of Capilano Canyon Vancouver, B.C.	1920	The Tipperary Tea Gardens at the summit of Capilano Canyon, Vancouver, B.C.
-Princess Victoria Entering Harbour, Victoria, B.C.	1915	The Princess Victoria ship entering the Victoria, B.C. harbour.
-Beacon Hill Park, Victoria, B.C.	1907	A walkway and a strange shaped tree in Beacon Hill Park, B.C.
-Gold Stream, Nr Victoria, B.C.	1909	Two women standing beside the Goldstream River near Victoria, B.C. A man is shown sitting on a large rock by the stream.
-Snow mushrooms, Lardo, B.C.	1906	Two tree stumps covered with snow in Lardeau, B.C. A few small stumps covered with snow are shown in the background.
-John Hart Power Project and Town Site, Campbell River, B.C.	1958	An aerial view of the John Hart power project and town site in Campbell River, B.C. A forest is shown surrounding the cleared area.
-Wharf and Fishermen's Floats, Campbell River, B.C.	1953	An aerial view of the wharf and fishermen's floats at Campbell River, B.C.
-Forbes Landing Near Campbell River BC	1930	A bear climbing a tree at Forbes Landing near Campbell River, B.C.
-Bowie Arch, Stanley Park, Vancouver, B.C.	1920	Bowie Arch at Stanley Park in Vancouver, B.C. viewed from a distance. A walkway is shown leading up to the arch.
-Lumberman's Arch, Stanley Park, Vancouver, B.C.	1918	Numerous people walking down the walkway leading up to the Lumberman's Arch at Stanley Park, B.C. The North Shore Mountains are shown in the distance.
-Interior of Christ Church Cathedral Victoria, B.C.	1935	The interior of the Christ Church Cathedral in Victoria, B.C.
-Elementary School, Dawson Creek, B.C.	1956	An elementary school in Dawson Creek, B.C.
-Hasting-Str. Looking East, Vancouver, B.C.	1911	Hastings Street in Vancouver, B.C. looking east. Some storefronts, pedestrians and automobiles are shown.
-Semi-Permanent Buildings, University of British Columbia, Vancouver, B.C.	1934	Semi-permanent buildings at the University of British Columbia in Vancouver, B.C. A parking lot with numerous automobiles in it is shown in the foreground to the right of the image.
-Kelowna, B.C. Barnard Avenue; looking West from Palace Hotel	1906	Barnard Avenue in Kelowna, B.C. looking west from the Palace Hotel. Some storefronts are shown.
-Bankhead Ranch Kelowna 1908	1908	Eleven men at a hunting party at Bankhead Ranch in Kelowna, B.C. One of the men is shown holding a young girl.
-Kelowna Wins, Regatta Day at Kelowna, B.C.	1918	A scene from the Kelowna regatta. Numerous people are shown on boats.
-Keremeos B.C.	1952	A street in Keremeos, B.C. Some storefronts and automobiles are shown.
-Globe Hotel, Lytton, B.C.	1914	The Globe Hotel in Lytton, B.C. Several men are shown outside the hotel.
-Manson's Landing-bortey? Id. B.C.	1961	An aerial view of a wharf at Manson's Landing, B.C. A few sea planes are shown parked by the wharf.
-Maple Beach	1922	Several people shown at Maple Beach near Ladner, B.C.
-Merritt, B.C.	1914	A street in Merritt, B.C. Some storefronts and pedestrians are shown.
-Hotel, North Vancouver, B.C.	1909	A hotel in North Vancouver, B.C. Numerous people are shown on the lawn in front of the hotel. Banners are shown hanging on the front of the hotel.
-Landing, North Vancouver, B.C.	1909	A ferry that just landed in North Vancouver, B.C. Numerous people are shown walking away from the ferry.
-Agate Bay Fishing Camp Adams Lake, B.C.	1953	A driveway at the Agate Fishing Camp at Adams Lake, B.C. An automobile is shown parked beside the driveway.
-Main Street, Ashcroft, B.C.	1912	Main Street in Ashcroft, B.C. Some storefronts and a person standing on the street are shown.
-700 Miles Through B.C.	1911	A horse drawn wagon and three men at Ashcroft, B.C.
-Cottages at Rocky Mountain Lodge, Lake Windermere, B.C.	1952	Two of the cottages at the Rocky Mountain Lodge at Windermere Lake, B.C. An automobile is shown parked beside one of the cottages.
-Mc. Bride, B.C. July 1st. 1913	1914	Several horse drawn wagons in McBride, B.C. Mountains are shown in the background.
-Mcleary's Lake, Returning to Camp with the Goods	1918	Three people getting out of their boat at Mcleary Lake, B.C.
-Residence of C.W. Munro Esq. Camp River, Chilliwack B.C.	1910	The residence of C.W. Munro Esq. on the Camp River at Chilliwack, B.C. The residence is viewed from the opposite side of the river.
-Ranch Farm RR2. Hope River Chilliwack-BC	1933	Three men with a horse drawn plow in Chilliwack, B.C.
-Bill Bose Ox Team on way to Barkerville 1881	1929	A Bill Bose ox team in front of the Clinton Hotel on its way to Barkerville, B.C.
-Scenes of Cranbrook, B.C.	1909	The government building in Cranbrook, B.C.
-Creston & District	1943	A street in Creston, B.C. Some storefronts and automobiles are shown.
-Copper Street, Greenwood, B.C.	1909	Copper Street in Greenwood, B.C. Some storefronts are shown.
-Halcyon Hot Springs, B.C.	1908	The Halcyon Hot Springs Hotel at Halcyon Hot Springs, B.C.
-Packing on the Chehalis Trail	1917	A man and several pack horses on the Chehalis Trail.
-Seattle to Hazelton Overland Auto at End of Journey Hazelton Oct 5/11	1912	A crowd of people standing around an automobile at Hazelton, B.C.
-Rupert Taylor Motel, Hope, B.C.	1952	The Rupert Taylor Motel in Hope, B.C. Some automobiles are shown parked in front of the motel.
-Public School, Kamloops, B.C.	1944	A public school in Kamloops, B.C. Some students are shown outside of the school.
-Esquimalt Naval Station, Victoria, B.C.	1909	Several ships in the harbour at the Esquimalt Naval Station.
-Re-embarking for Esquimalt after the Ceremony 2-7-17	1917	Numerous sailors re-embarking for Esquimalt, B.C.
-Grandview Camp, Qualicum Beach, Vancouver Island, B.C.	1941	Five different images of Grandview Camp at Qualicum Beach, B.C.
-Tofino B.C.	1938	Several boats at the waterfront in Tofino, B.C.
-Siwash Rock Stanley Park, Vancouver	1907	Siwash Rock at Stanley Park, B.C.
-Cross Roads, Stanley Park, Vancouver B.C.	1909	The crossing point of two roads in Stanley Park, B.C.
-Craigdarroch	1910	Craigdarroch Castle in Victoria, B.C.
-H.M.S. Egeria in Dry Dock Esquimalt	1906	The H.M.S. Egeria in the dry dock at Esquimalt, B.C.
-Government House, Victoria, B.C.	1915	Government House in Victoria, B.C.
-Mushroom (Park) Victoria, B.C.	1915	A round, covered bench at Beacon Hill Park in Victoria, B.C.
-Lily Pond, Beacon Hill Park, Victoria, B.C.	1909	The lily pond at Beacon Hill Park in Victoria, B.C. A fountain is shown in the pond.
-Presbyterian Church, Cumberland, B.C.	1910	A Presbyterian church in Cumberland, B.C.
-Andy Miller, Creston B.C.	1910	Two people standing in a farm field in Creston, B.C. A small dwelling is shown in the background.
-Law Courts, Victoria, B.C.	1906	A court house in Victoria, B.C.
-Church of Our Lady of the Holy Rosary, Vancouver, B.C.	1912	The interior of the Church of Our Lady of the Rosary in Vancouver, B.C.
-Water Front, Vancouver, B.C.	1907	A waterfront area in Vancouver, B.C. Several vessels are shown along the waterfront.
-Suspension Bridge, 1st Canyon ..., North Vancouver, ...	1910	A small boy standing on the suspension bridge at First Canyon in North Vancouver, B.C.
-Waterfront and Shipping	1904	A waterfront shipping area in Vancouver, B.C. Numerous vessels are shown along the waterfront.
-Seymour Narrows, Vancouver, B.C.	1905	A walkway along the waterfront at the Seymour Narrows at Vancouver, B.C. A small boat is shown at the shore.
-Queen Victoria's Statue	1921	Statue of Queen Victoria in front of the Parliament Buildings in Victoria, B.C.
-Hatley Park Victoria, B.C.	1924	Castle at Hatley Park in Victoria, B.C.
-Bathing Beach, Gorge Park, Victoria, B.C.	1909	Bathing beach at Gorge Park in Victoria, B.C. Some people are shown on the beach, swimming and in boats on the water.
-Watching the Boats From Gorge Bridge Victoria B.C.	1911	A crowd of people watching the boats from the Gorge Bridge in Victoria, B.C.
-Jubilee Hospital, Victoria, B.C.	1907	Driveway leading up to Jubilee Hospital in Victoria, B.C.
-Olympic Mountains from Victoria B.C.	1906	Olympic Mountains viewed from Victoria, B.C.
-Group on the steps of Parliament Building with the L. Governor	1917	A large group of people on the steps of the British Columbia Parliament Buildings in Victoria, B.C. with the Lieutenant Governor in 1917.
-Laying the Cornerstone of Tranquille Sanatorium, Nov. 11th '08	1908	Crowd of people observing the laying of the cornerstone of Tranquille Sanatorium.
-A.H. Hoffer Station Master Kingsgate BC	1909	Photograph of A.H. Hoffer and a separate image of a cheque made out to A.H. Hoffer.
-Assembly Hall, Government Buildings, Victoria, B.C.	1909	Interior of the assembly hall in the British Columbia Parliament Buildings in Victoria, B.C.
-Buildings - Empress Hotel, Victoria	1919	Large group of people on the lawn in front of the British Columbia Parliament Buildings in Victoria, B.C. showing the Empress Hotel.
-Dominion Trust Building, Vancouver, B.C.	1911	Dominion Trust Building in Vancouver, B.C. Some pedestrians are shown on the street beside the building.
-Victory Square, Showing War Memorial, Vancouver, B.C.	1940	Victory Square in Vancouver, B.C. showing the War Memorial and Dominion Trust Building.
-Yacht Racing, Cadboro Bay, Victoria B.C.	1921	A yacht race taking place at Cadboro Bay, B.C.
-Forest Fire in the Selkirks	1914	Forest fire taking place in the Selkirk Mountains, B.C.
-Lake of the Hanging Glaciers B.C.	1946	Man sitting on a rock fishing at Lake of the Hanging Glacier, B.C. The reflection of the surrounding mountain is shown on the lake.
-Vaucroft, B.C.	1936	Row of five bungalows at Vaucroft, B.C. A wooden walkway is shown running along the front of the bungalows.
-Metropolitan Methodist Church Victoria B.C.	1910	Metropolitan Methodist Church in Victoria, B.C.
-Lewis Park, Courtenay, B.C.	1954	Two totem poles on either side of the driveway at Lewis Park in Courtenay, B.C. A woman is shown standing next to the fence beside one of the totem poles.
-Hotel-Forbes Landing-Campbell River, B.C.	1930	Hotel at Forbes Landing in Campbell River, B.C. An automobile is shown parked next to the hotel to the left of the image.
-Qualicum Beach, Vancouver Island, B.C.	1940	A street in Qualicum Beach, B.C. Some storefronts and automobiles are shown.
-Nanaimo B.C.	1931	Malaspina Hotel in Nanaimo, B.C. Numerous automobiles are shown parked on the street in front of the hotel. Some pedestrians are also shown.
-Millstone River Nanaimo; Millstone Falls	1906	One image of the Millstone River in Nanaimo, B.C. and a second image of Millstone Falls.
-Coal-Loading Wharves, Nanaimo, B.C.	1911	Shipping wharves in Nanaimo, B.C. A ship is shown leaving the wharves.
-War Memorial, Nanaimo, B.C.	1948	War memorial statue in Nanaimo, B.C.
-Malaspina Gallery, Near Nanaimo, B.C.	1956	Two people in a small boat at the Malaspina Gallery near Nanaimo, B.C.
-Mallispina Gallery, Nanaimo, B.C.	1906	Three men and a dog at the Malaspina Gallery near Nanaimo, B.C. A small boat is shown at the shore.
-H.B.C. Fort Nanaimo B.C.	1952	Old Hudson's Bay Company fort in Nanaimo, B.C.
-Front Street, Nanaimo, B.C.	1945	Front Street in Nanaimo, B.C. Some storefronts and automobiles are shown.
-Prince Charles Hotel, Penticton, B.C.	1956	Prince Charles Hotel in Penticton, B.C. Some automobiles are shown.
-Kelley's Kabins Penticton BC	1941	Kelley's Kabins in Penticton, B.C.
-Penticton, B.C.	1936	Aerial view of a waterfront area of Penticton, B.C.
-Johnston Street, Alberni, Vancouver Island, B.C.	1940	Johnston Street in Alberni, B.C. Some storefronts and automobiles are shown.
-Acid Tower, Powell River, B.C.	1925	An acid tower in Powell River, B.C.
-Trail B.C.	1917	Snow covered street in Trail, B.C. Some storefronts and an automobile are shown.
-River St. Wardner, B.C.	1911	River Street in Wardner, B.C. Several dwellings are shown.
-Getting on Fine in Victoria, B.C.	1906	Painting or drawing of two people sitting in front of a sunset.
-Who am I for	1906	Painting or drawing of a heron standing in the water next to an infant on the shore.
-Madam You Have Deceived Me	1906	Painting or drawing of a rooster, hen and three chicks.
-Try this on a summer's night	1909	Painting of a man and woman sitting on hammock in front of the moon.
-Have a Care	1907	Painting of some type of flower.
-Coming Your Way	1905	Painting of a man walking down railroad tracks.
-I'm looking O.K.	1907	Painting of a man.
-You Why Don't You Write?	1908	Painting of a First Nations man sitting down holding a bottle in his hand.
-When Shall We Three Meet Again?	1906	Painting of two horses with their heads over the side of a fence.
-Ucluelet, B.C.	1962	A street in Ucluelet, B.C. Some automobiles and two storefronts are shown.
-Vancouver's Newest and Most Progressive Departmental Store Pioneers-Established 1892	1911	Stark's Glasgow House department store in Vancouver, B.C.
-Surf Bathing, English Bay, Vancouver, B.C.	1928	Large number of people at the English Bay beach in Vancouver, B.C. People are shown on the shore and in the water.
-Main-Lobby - Hotel Dunsmuir, Vancouver, B.C.	1915	Main lobby at the Hotel Dunsmuir in Vancouver, B.C.
-Dining Room, Glencoe Lodge, Vancouver, B.C.	1910	Dining room at the Glencoe Lodge in Vancouver, B.C.
-Shawnigan Beach Hotel, Shawnigan Lake, B.C.	1962	Numerous people on the shore and in the water at the Shawnigan Beach Hotel at Shawnigan Lake, B.C.
-Cougars, Sooke, B.C.	1933	Two men each with a dead cougar on their back. Each man also has a dog on a leash with them.
-Sooke Harbour House, Whiffen Spit Beach, Sooke B.C.	1951	Sooke Harbour House at Whiffen Spit Beach in Sooke, B.C.
-Quathiaski Cove, B.C.	1944	Small boat dock at Quathiaski Cove, B.C. Several boats are shown near the dock.
-Mill Bay Tourist Resort	1958	Aerial view of the Mill Bay Tourist Resort on Vancouver Island, B.C.
-Miracle Beach, V.I. B.C.	1954	A deer in front of a dwelling at Miracle Beach, B.C.
-P.O. Ymir, B.C.	1914	Several people standing in front of the Ymir, B.C. post office.
-Overlooking Burrard Inlet, Vancouver, B.C.	1910	View overlooking the harbour at Burrard Inlet in Vancouver, B.C. Several vessels are shown in the harbour.
-Vancouver, B.C.	1938	View of Vancouver, B.C.
-Empress Hotel & Post Office, Victoria, B.C.	1908	View of the Empress Hotel and post office in Victoria, B.C. The Inner Harbour is shown in the foreground.
-Burrard Bridge, Vancouver BC	1932	View of the Burrard Bridge in Vancouver, B.C. Two small boats are shown in the foreground.
-Approaching the Rockies, Leanchoil Mountain	1905	View of the Rocky Mountains from Leanchoil Mountain, B.C. Some railroad tracks are shown in the foreground.
-Stanley Park and Gulf of Georgia From Grouse Mountain, Vancouver, B.C.	1937	View of Stanley Park and the Gulf of Georgia from Grouse Mountain, B.C. A skier is shown in the foreground to the left of the image.
-Rossland B C	1909	View looking down a street in Rossland, B.C.
-Croteau Camp, Forbidden Plateau, Near Courtenay, B.C.	1940	View looking out at the water from Croteau Camp at the Forbidden Plateau near Courtenay, B.C.
-Picturesque scenery along the Nanimo River, Nanimo, B.C.	1918	View looking down the Nanaimo River at Nanaimo, B.C. The reflections of the surrounding trees are shown on the water.
-Peachland, B.C. from the Lake	1914	View of Peachland, B.C. from the lake. A wharf is shown in the foreground.
-Kanaka Creek Port Haney, B.C.	1908	View looking down Kanaka Creek at Port Haney, B.C.
-Farm Scene, Vanderhoof, B.C.	1925	View of a farm field in Vanderhoof, B.C.
-Little Qualicum River, V.I., B.C.	1932	View looking down the Little Qualicum River on Vancouver Island, B.C.
-Tillicum Seaside Cottages Yellow Point V.I., B.C.	1950	View of the water from Tillicum Seaside Cottages at Yellow Point, B.C. A sailboat is shown at a small floating dock.
+Beach Drive, Oak Bay, Nr. Victoria, B.C.	1939	Oak Bay, BC	Roads; Automobiles; Coastlines	Two automobiles on Beach Drive in Oak Bay near Victoria, B.C. The ocean is shown to the right of the image.
+Qualicum Beach, Vancouver Island, B.C.	1940	Qualicum Beach, BC	Streets; Storefronts; Automobiles; Signs (Notices)	A street in Qualicum Beach, B.C. Some storefronts and automobiles are shown.
+Coal Harbor and City, Vancouver, B.C.	1911	Vancouver, BC; Coal Harbour, BC	Views; Cities & towns; Harbors; Mountains	View of Vancouver, B.C. and Coal Harbour.
+A.H. Hoffer Station Master Kingsgate BC	1909	Kingsgate, BC	Portraits; Men; Railroad employees; Checks	Photograph of A.H. Hoffer and a separate image of a cheque made out to A.H. Hoffer.
+Columbia Street from the Post Office, New Westminster, B.C.	1914	New Westminster, BC	Streets; Storefronts; Cyclists; Automobiles; Carriages & coaches; Street railroads	Columbia Street in New Westminster, B.C. viewed from the post office. A person is shown riding a bicycle across the street.
+Hotel Dallas, Victoria, B.C.	1912	Victoria, BC	Hotels; Signs (Notices); Reflections	Dallas Hotel in Victoria, B.C. The reflection of the hotel is shown on the water in the foreground.
+Bathing at English Bay, Vancouver, B.C.	1915	English Bay, BC	Beaches; People; Swimming; Clouds	Large number of people at English Bay beach in Vancouver, B.C. People are shown on the shore and in the water.
+Panoramic View, Ladner, B.C.	1912	Ladner, BC	Panoramic views; Cities & towns	Panoramic view of Ladner, B.C.
+Harrison Hot Springs Hotel, Harrison Lake, B.C.	1942	Harrison Lake, BC	Hotels; Trees; Walkways	The Harrison Hot Springs Hotel at Harrison Lake, B.C. Some people are shown walking on the walkway outside the hotel.
+Try this on a summer's night	1909	Victoria, BC	Couples; Romances; Hammocks (Furniture); Moon	Painting of a man and woman sitting on hammock in front of the moon.
+Carnegie Library - New Westminster, B.C.	1909	New Westminster, BC	Libraries	Carnegie Library in New Westminster, B.C.
+Looking N. across Burrard Inlet, Vancouver, B.C.	1924	Burrard Inlet, BC	Views; Cities & towns; Bays (Bodies of water)	View looking north across Burrard Inlet from Vancouver, B.C.
+Bill Bose Ox Team on way to Barkerville 1881	1929	Clinton, BC	Ox teams; Hotels; Signs (Notices); Carts & wagons	A Bill Bose ox team in front of the Clinton Hotel on its way to Barkerville, B.C.
+Normal School Victoria, B.C.	1935	Victoria, BC	Teachers colleges; Driveways	Normal school in Victoria, B.C.
+Little Qualicum Falls Near Qualicum Beach, B.C.	1945	Little Qualicum Falls, BC	Waterfalls	Little Qualicum Falls near Qualicum Beach, B.C.
+Floodwaters - Chiliwack, B.C.	1951	Chilliwack, BC	Floods; Schools	The Chilliwack Central School shown surrounded by floodwaters.
+English Bay, Vancouver, B.C.	1915	English Bay, BC	Beaches; People; Swimming; Boats	Large number of people at English Bay beach in Vancouver, B.C. People are shown on the shore and in the water.
+Church Holy Rosary, Vancouver B.C.	1911	Vancouver, BC	Churches	Holy Rosary Church in Vancouver, B.C.
+Ruskin Power Plant, near Mission City, B.C.	1952	Ruskin, BC	Dams; Hydroelectric power; Power plants; Bridges	The Ruskin Power Plant near Mission City, B.C. A bridge is shown leading to the power plant.
+Vancouver, B.C.	1905	Vancouver, BC	Views; Cities & towns; Bays (Bodies of water)	Two different views of Vancouver, B.C.
+St Michael's School, Alert Bay, B.C.	1938	Alert Bay, BC	Schools; Flagpoles	St. Michael's School in Alert Bay, B.C. A flagpole is shown in front of the school.
+Totem Poles, Courtenay, B.C.	1933	Courtenay, BC	Totem poles; Driveways; Parks	Two totem poles on either side of a driveway entering a park in Courtenay, B.C.
+Post Office, Cranbrook, B.C.	1946	Cranbrook, BC	Post offices	Post office in Cranbrook, B.C. Some people are shown standing in front of the building.
+Winter Travel in the North, Atlin, B.C.	1912	Atlin, BC	Dogsledding; Dog teams	A dog sled team in Atlin, B.C.
+Bowen Island Inn	1948	Bowen Island, BC	Taverns (Inns); Flowers	The Bowen Island Inn at Bowen Island, B.C.
+R.A. and I. Exhibition Grounds, Queen's Park, New Westminster, B.C.	1905	Queens Park, BC	Parks; Exhibition buildings; Crowds	Exhibition grounds at Queen's Park, New Westminster, B.C. A crowd of people is shown.
+Madam You Have Deceived Me	1906	Victoria, BC	Chickens; Roosters	Painting or drawing of a rooster, hen and three chicks.
+English Bay Vancouver	1908	English Bay, BC	People; Beaches; Swimming	Numerous people in the water at English Bay in Vancouver, B.C.
+Aerial View of Sidney, B.C.	1937	Sidney, BC	Aerial views; Cities & towns; Waterfronts; Industrial facilities	Aerial view of Sidney, B.C. Some smoke and/or steam is shown emanating from an industrial facility.
+Kitsilano Beach, Vancouver, B.C.	1931	Kitsilano Beach, BC	Beaches; People; Swimming	Large crowd of people at Kitsilano Beach in Vancouver, B.C. People are shown in and around the water.
+Gold Stream, Nr Victoria, B.C.	1909	Goldstream River, BC	People; Rivers	Two women standing beside the Goldstream River near Victoria, B.C. A man is shown sitting on a large rock by the stream.
+The Marine Building, Vancouver, B.C.	1932	Vancouver, BC	Skyscrapers; Pedestrians	Marine Building in Vancouver, B.C. Numerous pedestrians are shown in front of the building.
+Quilchana Avenue Merritt BC.	1909	Merritt, BC	Streets; Storefronts	Quilchana Avenue in Merritt, B.C. Some storefronts are shown.
+North Thompson River Chu Chua BC	1918	North Thompson River, BC	Waterfronts; Rivers; People; Boats	Several people at the North Thompson River waterfront at Chu Chua, B.C. Two people are shown on the water in a small boat.
+When Shall We Three Meet Again?	1906	Victoria, BC	Horses; Fences	Painting of two horses with their heads over the side of a fence.
+Millstone River Nanaimo; Millstone Falls	1906	Millstone River, BC	Rivers; Waterfalls	One image of the Millstone River in Nanaimo, B.C. and a second image of Millstone Falls.
+Empress Hotel & Post Office, Victoria, B.C.	1908	Victoria, BC	Views; Hotels; Post offices; Harbors	View of the Empress Hotel and post office in Victoria, B.C. The Inner Harbour is shown in the foreground.
+Dutch Lake Guest Ranch Clearwater, B.C.	1948	Clearwater, BC	Resorts; Cabins; Views; Lakes & ponds	Dutch Lake Guest Ranch in Clearwater, B.C.
+Baker Street Cranbrook, B.C.	1909	Cranbrook, BC	Streets; Storefronts; Utility poles; Signs (Notices)	Baker Street in Cranbrook, B.C. Some storefronts and pedestrians are shown.
+Kanaka Creek Port Haney, B.C.	1908	Kanaka Creek, BC	Views; Streams	View looking down Kanaka Creek at Port Haney, B.C.
+Malaspina Gallery, Near Nanaimo, B.C.	1956	Nanaimo, BC	Rock formations; Caves; People; Boats	Two people in a small boat at the Malaspina Gallery near Nanaimo, B.C.
+Looking West From Prospect Point, Vancouver, B.C.	1942	Prospect Point, BC	Views; Bays (Bodies of water); Sunrises & sunsets	View looking west from Prospect Point in Vancouver, B.C. during a sunset.
+St. Andrew's Church New Westminster, B.C.	1907	New Westminster, BC	Churches; Utility poles	St. Andrew's Church in New Westminster, B.C.
+Summerland Baptist Church	1951	Summerland, BC	Baptist churches	Summerland Baptist Church in Summerland, B.C.
+Qualicum Beach, V.I. B.C.	1955	Qualicum Beach, BC	Beaches; People; Swimming	Numerous people in the water at Qualicum Beach, B.C.
+Argyle Street Port Alberni, B.C.	1949	Alberni, Port, BC	Streets; Storefronts; Electric lines; Utility poles; Bodies of water	Argyle Street in Port Alberni, B.C. Some storefronts and electric lines are shown.
+Wellington Street, Chilliwack, B.C.	1949	Chilliwack, BC	Streets; Storefronts; Pedestrians; Automobiles; Mountains	Wellington Street in Chilliwack, B.C. Some storefronts, automobiles and pedestrians are shown.
+River St. Wardner, B.C.	1911	Wardner, BC	Streets; Dwellings	River Street in Wardner, B.C. Several dwellings are shown.
+Trading Post and Auto Court, Rocky Mountain Range, Spillimacheen, B.C.	1950	Spillimacheen, BC	Mountains; Trading posts; Motels	Trading post and auto court in Spillimacheen, B.C. Part of the Rocky Mountain Range is shown.
+Hotel Vancouver and Court House, Vancouver, B.C.	1924	Vancouver, BC	Hotels; Courthouses; Flagpoles	Hotel Vancouver and the court house in Vancouver, B.C. A flagpole is shown between the two buildings.
+Trinity Mountain, 9900 Ft., Fernie, B.C.	1935	Three Sisters, BC	Views; Mountains	View of Trinity Mountain (Three Sisters) from Fernie, B.C.
+B.C. Electric Power Coy.'s Plant on Burrard Inlet, Vancouver, B.C.	1909	Burrard Inlet, BC	Power plants; Bays (Bodies of water)	The British Columbia Electric Company's power plant at Burrard Inlet, Vancouver, B.C.
+Marine Drive, North Shore, Vancouver BC	1917	Vancouver, BC	Roads; Automobiles; Coastlines	Marine Drive on the North Shore, Vancouver, B.C. An automobile is shown on the road.
+Rainbow Lodge Alta Lake, B.C.	1925	Alta Lake, BC	Lodges; Signs (Notices); Bridges; Mountains	The entrance sign and bridge to Rainbow Lodge at Alta Lake, B.C.
+Vancouver Harbor, Vancouver, B.C.	1929	Vancouver, BC	Aerial views; Harbors; Cities & towns	Aerial view of the Vancouver, B.C. harbour.
+Yale Road E. Chilliwack, BC.	1946	Chilliwack, BC	Streets; Automobiles; Storefronts; Pedestrians	Yale Road east in Chilliwack, B.C. Some automobiles, pedestrians and storefronts are shown.
+Hotel, North Vancouver, B.C.	1909	North Vancouver, BC	Hotels; People; Celebrations; Banners	A hotel in North Vancouver, B.C. Numerous people are shown on the lawn in front of the hotel. Banners are shown hanging on the front of the hotel.
+Princess Victoria Entering Harbour, Victoria, B.C.	1915	Victoria, BC	Harbors; Ships	The Princess Victoria ship entering the Victoria, B.C. harbour.
+Yacht Racing, Cadboro Bay, Victoria B.C.	1921	Cadboro Bay, BC	Yacht racing; Bays (Bodies of water)	A yacht race taking place at Cadboro Bay, B.C.
+Langley Prairie B.C.	1944	Langley, BC	Streets; Storefronts; Automobiles; Pedestrians	A street in Langley, B.C. Some storefronts, automobiles and pedestrians are shown.
+Steel Bridge across Fraser River, New Westminster, B.C.	1905	New Westminster, BC	Bridges; Rivers	A close up look at the steel bridge across the Fraser River at New Westminster, B.C.
+Second Narrows Bridge, Vancouver, B.C.	1927	Vancouver, BC	Bridges; Bodies of water; Mountains	The Second Narrows Bridge in Vancouver, B.C. Mountains in the distance are shown.
+Who am I for	1906	Victoria, BC	Herons; Infants	Painting or drawing of a heron standing in the water next to an infant on the shore.
+Hallelujah Point, Vancouver, B.C.	1909	Vancouver, BC	Benches; Walkways; Trees; Capes (Coasts)	Hallelujah Point in Vancouver, B.C. A bench overlooking the water is shown.
+Memorial Address Vancouver BC May 20th 1910	1911	Vancouver, BC	Crowds; Public speaking; Grandstands	Large crowd of people at the May 20th, 1910 Memorial Address in Vancouver, B.C.
+Empress Hotel Victoria	1907	Victoria, BC	Views; Hotels; Harbors; Tugboats	Empress Hotel in Victoria, B.C. viewed from the Inner Harbour. A tug boat is shown in the foreground.
+Kelowna Wins, Regatta Day at Kelowna, B.C.	1918	Kelowna, BC	Regattas; Lakes & ponds; Boats; People	A scene from the Kelowna regatta. Numerous people are shown on boats.
+Swiss Guide and party on the Great Glacier, B.C.	1947	Great Glacier, BC	Glaciers; People	A mountain guide and party on the Great Glacier in B.C.
+Rainbow Lodge Alta Lake	1938	Alta Lake, BC	Lodges; Mountains; Bridges	Rainbow Lodge at Alta Lake, B.C.
+Government House, Victoria, B.C.	1915	Victoria, BC	Official residences	Government House in Victoria, B.C.
+A Glimpse of Howe Sound near Vancouver, B.C.	1912	Howe Sound, BC	Views; Bays (Bodies of water); Boats; Mountains	Slight view of Howe Sound near Vancouver, B.C. Three small boats are shown in the foreground.
+A Corner of the Fruit Fair, Nelson, B.C.	1913	Nelson, BC	Agricultural exhibits; Merchandise displays	Various displays at the Fruit Fair in Nelson, B.C.
+Granville Street, Vancouver, B.C.	1906	Vancouver, BC	Streets; Storefronts; Pedestrians	Granville Street in Vancouver, B.C. Some storefronts and pedestrians are shown.
+Potatoes Grow Big Here at Horseshoe Bay, B.C.	1944	Horseshoe Bay, BC	Carts & wagons; Potatoes	A horse drawn wagon with giant potatoes on it. A man is shown on top of the giant potatoes.
+Forbes Landing Near Campbell River BC	1930	Campbell River, BC	Bears; Trees	A bear climbing a tree at Forbes Landing near Campbell River, B.C.
+The Morgan Hotel, Qualicum Beach, B.C.	1951	Qualicum Beach, BC	Hotels; Bungalows	Morgan Hotel in Qualicum Beach, B.C. Two bungalows are shown in the foreground.
+Glacier House Hotel, Glacier, B.C.	1915	Glacier, BC	Hotels; Trees; Chimneys	Glacier House Hotel in Glacier, B.C. Some smoke is shown coming out of the building's chimney.
+Hastings St., Vancouver	1908	Vancouver, BC	Streets; Pedestrians; Storefronts	Hastings Street in Vancouver, B.C. Some storefronts and pedestrians are shown.
+Vedder River, Near Chilliwack, B.C.	1924	Vedder River, BC	Rivers; Trees	The Vedder River near Chilliwack, B.C.
+First St. Looking East, Revelstoke, B.C.	1907	Revelstoke, BC	Streets; Storefronts; Pedestrians; Mountains	First Street in Revelstoke, B.C. looking east. Some storefronts and pedestrians are shown.
+Alta Lake Before Sunrise	1936	Alta Lake, BC	Lakes & ponds; Sunrises & sunsets	Alta Lake before sunrise.
+Port Alice B.C. Woodroom/Stores Building 1946	1946	Port Alice, BC	Lumber; Lumber industry; Lumberyards	The wood room and stores building in Port Alice, B.C. Several piles of lumber are shown.
+Presbyterian Church, Cumberland, B.C.	1910	Cumberland, BC	Presbyterian churches	A Presbyterian church in Cumberland, B.C.
+The Rockies Between Wardner and Cranbrook, B.C.	1911	Rocky Mountains, BC	Views; Mountains; Rivers; Carriages & coaches	View of the Rocky Mountains between Wardner and Cranbrook, B.C. A horse and buggy is shown beside a river in the foreground.
+Chilliwack, B.C. - Yale Road E.	1949	Chilliwack, BC	Streets; Automobiles; Motion picture theaters; Storefronts	Yale Road east in Chilliwack, B.C. Some automobiles and the Paramount Theatre are shown.
+Hotel Regent, 140 Hastings St. East, Vancouver, B.C.	1923	Vancouver, BC	Hotels; Signs (Notices); Automobiles	Hotel Regent in Vancouver, B.C. An automobile and some people are shown in front of the hotel.
+English Church & Courthouse, Rossland, B.C.	1910	Rossland, BC	Churches; Courthouses; Snow	The court house and English Church in Rossland, B.C. Snow is shown on the ground.
+Hastings Street, Vancouver, B.C.	1909	Vancouver, BC	Streets; Storefronts; Pedestrians; Utility poles	Hastings Street in Vancouver, B.C. Some storefronts and pedestrians are shown.
+Coming Your Way	1905	Victoria, BC	Men; Railroad tracks; Walking	Painting of a man walking down railroad tracks.
+Court House and Government Agency, New Westminster, B.C.	1909	New Westminster, BC	Courthouses; Administrative agencies	A court house and government agency in New Westminster, B.C.
+White Rock, B.C., Washington Ave.	1952	White Rock, BC	Streets; Automobiles; Storefronts; Signs (Notices); Utility poles	Washington Avenue in White Rock, B.C. Some storefronts and automobiles are shown.
+A view of the harbor, Vancouver, B.C.	1931	Vancouver, BC	Views; Harbors; Piers & wharves; Ships; Automobiles	Two large ships at the waterfront in Vancouver, B.C. A separate image of an Oldsmobile Business Coupe is shown in the bottom right corner of the image.
+Floodwaters - Chiliwack, B.C.	1951	Chilliwack, BC	Floods; Streets; Utility poles; Dwellings	Williams Road north in Chilliwack, B.C. shown covered by floodwaters. A woman is shown standing in the water.
+Victoria Avenue, Fernie, B.C.	1904	Fernie, BC	Streets; Storefronts; Carts & wagons; Fires	Victoria Avenue in Fernie, B.C. after the great fire. A horse drawn wagon and some storefronts are shown.
+A Patch for Your Cushion	1907	Victoria, BC	Trousers	Painting of a pair of pants with a patch on rear of the pants.
+Beacon Hill Park	1921	Victoria, BC	Parks; Lakes & ponds; Birds; Bridges	Several birds on a pond at Beacon Hill Park in Victoria, B.C. A bridge is shown crossing the pond in the background.
+Granville Bridge Vancouver B.C.	1916	Vancouver, BC	Bridges; Mountains	The Granville Bridge in Vancouver, B.C. The North Shore Mountains are shown in the distance.
+H.M.S. Egeria in Dry Dock Esquimalt	1906	Esquimalt, BC	Naval yards & naval stations; Ships	The H.M.S. Egeria in the dry dock at Esquimalt, B.C.
+Sam M. Scott Boys' Clothes Specialist Vancouver and Victoria	1914	Vancouver, BC; Victoria, BC	Girls; Sheep; Snowmen; Clothing stores	Notice of all-wool clothing sold from Sam M. Scott Boys' Clothes Specialist in Vancouver and Victoria, B.C. A girl, lamb and snowman are shown.
+City Hall, Chilliwack, B.C.	1947	Chilliwack, BC	City & town halls; Streets; Automobiles	Chilliwack city hall viewed from a small distance. Several automobiles are shown on the street in front of the building.
+Capilano Bridge, Near Vancouver, B.C.	1912	Vancouver, BC	People; Capilano Suspension Bridge (Vancouver, B.C.); Trees	Three people shown standing at one end of the Capilano Suspension Bridge.
+Getting on Fine in Victoria, B.C.	1906	Victoria, BC	People; Sunrises & sunsets	Painting or drawing of two people sitting in front of a sunset.
+Grouse Mountain Chalet North Vancouver, B.C.	1930	Grouse Mountain, BC	Chalets; Trees	The Grouse Mountain Chalet. A man is shown looking at the chalet.
+Soldiers Memorial Chilliwack B.C.	1942	Chilliwack, BC	Monuments & memorials	A soldiers memorial in Chilliwack, B.C.
+Hatley Park Victoria, B.C.	1924	Victoria, BC	Castles & palaces	Castle at Hatley Park in Victoria, B.C.
+Hotel-Forbes Landing-Campbell River, B.C.	1930	Campbell River, BC	Hotels; Porches; Automobiles	Hotel at Forbes Landing in Campbell River, B.C. An automobile is shown parked next to the hotel to the left of the image.
+Kelowna, B.C. Barnard Avenue; looking West from Palace Hotel	1906	Kelowna, BC	Streets; Storefronts	Barnard Avenue in Kelowna, B.C. looking west from the Palace Hotel. Some storefronts are shown.
+Royal Savary Hotel, Indian Point, Savary Island, B.C.	1933	Savary Island, BC	Hotels; Beaches; Waterfronts	Royal Savary Hotel viewed from the water at Indian Point on Savary Island, B.C.
+Kelowna, B.C., The Orchard City From Dilworth Mountain	1911	Kelowna, BC	Aerial views; Cities & towns; Croplands; Lakes & ponds	An aerial view of Kelowna, B.C. from Dilworth Mountain. Numerous farm fields are shown.
+Courtenay, B.C.	1952	Courtenay, BC	Streets; Storefronts; Signs (Notices)	A street in Courtenay, B.C. Some storefronts are shown.
+Main-Lobby - Hotel Dunsmuir, Vancouver, B.C.	1915	Vancouver, BC	Interiors; Lobbies; Chairs; Hotels	Main lobby at the Hotel Dunsmuir in Vancouver, B.C.
+Nanaimo B.C.	1936	Nanaimo, BC	Boats; Piers & wharves	Numerous boats in the water at Nanaimo, B.C. A small floating dock is shown to the right of the image.
+Autos in Beacon Hill Park, Victoria, B.C.	1907	Victoria, BC	Automobiles; Motorcycles; People; Parks	Two automobiles and a motorcycle at Beacon Hill Park in Victoria, B.C.
+Cloverdale, B.C.	1954	Cloverdale, BC	Streets; Automobiles; Storefronts; Taverns (Inns)	A street in Cloverdale, B.C. A hotel, some storefronts and some automobiles are shown.
+Winter Logging Scene East Kootenay, near Cranbrook, B.C. Crow's Nest Pass	1915	East Kootenay, Regional District of, BC	Logs; Lumber industry; Horses; Carts & wagons	Two horses pulling a large load of logs in East Kootenay, B.C. Another two horses pulling a load of logs are shown in the background.
+700 Miles Through B.C.	1911	Ashcroft, BC	Carts & wagons; Horses; Men	A horse drawn wagon and three men at Ashcroft, B.C.
+Snow mushrooms, Lardo, B.C.	1906	Lardeau, BC	Snow; Tree stumps	Two tree stumps covered with snow in Lardeau, B.C. A few small stumps covered with snow are shown in the background.
+The Empress Hotel Victoria, British Columbia	1935	Victoria, BC	Hotels; Streets; Pedestrians; Automobiles	Empress Hotel in Victoria, B.C. Some automobiles and pedestrians are shown on the streets around the hotel.
+Coke Ovens and Town of Fernie, B.C.	1906	Fernie, BC	Mining; Coal; Mountains; Cities & towns	Coke ovens in Fernie, B.C. Some buildings and mountains are shown behind the coke ovens.
+Overlooking Coal-Harbor, Vancouver B.C.	1912	Coal Harbour, BC	Views; Harbors; Waterfronts	View overlooking Coal Harbour in Vancouver, B.C.
+Surf Bathing, English Bay, Vancouver, B.C.	1928	English Bay, BC	Beaches; People; Swimming; Clouds	Large number of people at the English Bay beach in Vancouver, B.C. People are shown on the shore and in the water.
+Hotel Europe Absolutely Fireproof Vancouver, B.C.	1910	Vancouver, BC	Hotels	Hotel Europe in Vancouver, B.C.
+View from Interlaken looking north, Long Lake	1908	Long Lake, BC	Views; Lakes & ponds; Trees	View looking out onto Long Lake from Interlaken.
+Main St. Smithers, B.C.	1929	Smithers, BC	Streets; Storefronts; Mountains	Main Street in Smithers, B.C.
+The Munro Hotel, Creston, B.C.	1909	Creston, BC	Hotels; Signs (Notices)	The Munro Hotel in Creston, B.C.
+Nelson Café	1908	Nelson, BC	Interiors; Cafes; Tables; Chairs	The interior of the Nelson Café in Nelson, B.C. Several tables and chairs are shown to the left of the image.
+The Beach, English Bay, Vancouver, B.C.	1914	English Bay, BC	Beaches; People; Swimming; Piers & wharves; Bays (Bodies of water)	Numerous people at English Bay beach in Vancouver, B.C. People are shown on the shore and in the water.
+Hotel Fernie, Fernie, B.C.	1919	Fernie, BC	Hotels; People; Flagpoles; Streets	Numerous people standing out front of the Fernie Hotel in Fernie, B.C. A flag is shown on the roof of the hotel.
+Mcleary's Lake, Returning to Camp with the Goods	1918	McLeary Lake, BC	Lakes & ponds; People; Boats	Three people getting out of their boat at Mcleary Lake, B.C.
+Group on the steps of Parliament Building with the L. Governor	1917	Victoria, BC	Capitols; People; Military parades & ceremonies; Government officials	A large group of people on the steps of the British Columbia Parliament Buildings in Victoria, B.C. with the Lieutenant Governor in 1917.
+Hasting Str. Looking West From Carrall Str., Vancouver, B.C.	1911	Vancouver, BC	Streets; Storefronts; Pedestrians	View looking down on Hastings Street in Vancouver, B.C. Some storefronts and pedestrians are shown.
+Barkerville BC	1938	Barkerville, BC	Streets; Storefronts; Automobiles; Signs (Notices)	A street in Barkerville, B.C. Some storefronts and automobiles are shown.
+P.O. Ymir, B.C.	1914	Ymir, BC	People; Post offices	Several people standing in front of the Ymir, B.C. post office.
+Tillicum Seaside Cottages Yellow Point V.I., B.C.	1950	Yellow Point, BC	Views; Bodies of water; Boats	Several small boats on the water viewed from Tillicum Seaside Cottages at Yellow Point, B.C.
+Lily Pond, Beacon Hill Park, Victoria, B.C.	1909	Victoria, BC	Parks; Lakes & ponds; Fountains; Benches	The lily pond at Beacon Hill Park in Victoria, B.C. A fountain is shown in the pond.
+Tipperary Tea Gardens at the Summit of Capilano Canyon Vancouver, B.C.	1924	Vancouver, BC	Tearooms; Trees	The Tipperary Tea Gardens at the summit of Capilano Canyon, Vancouver, B.C.
+Keremeos B.C.	1952	Keremeos, BC	Streets; Storefronts; Automobiles; Signs (Notices)	A street in Keremeos, B.C. Some storefronts and automobiles are shown.
+Overlooking Burrard Inlet, Vancouver, B.C.	1913	Burrard Inlet, BC	Views; Bays (Bodies of water); Waterfronts; Signs (Notices)	View looking out towards Burrard Inlet from Vancouver, B.C.
+English Bay, Vancouver, B.C.	1927	English Bay, BC	Beaches; People; Swimming	Large number of people at the English Bay beach in Vancouver, B.C. People are shown on the shore and in the water.
+City Market, New Westminster, B.C.	1916	New Westminster, BC	Markets; Waterfronts	City market at the waterfront in New Westminster, B.C.
+Cottages at Rocky Mountain Lodge, Lake Windermere, B.C.	1952	Windermere Lake, BC	Cabins; Automobiles; Lodges	Two of the cottages at the Rocky Mountain Lodge at Windermere Lake, B.C. An automobile is shown parked beside one of the cottages.
+A Glimpse of the Narrows and Siwash Rock, Vancouver, B.C.	1909	Siwash Rock, BC	Views; Bodies of water; Rock formations; Trees	Slight view of the Narrows and Siwash Rock from behind a few trees in Vancouver, B.C.
+Hasting-Str. Looking East, Vancouver, B.C.	1911	Vancouver, BC	Streets; Storefronts; Pedestrians; Automobiles	Hastings Street in Vancouver, B.C. looking east. Some storefronts, pedestrians and automobiles are shown.
+Manson's Landing-bortey? Id. B.C.	1961	Mansons Landing, BC	Aerial views; Piers & wharves; Bodies of water; Seaplanes	An aerial view of a wharf at Manson's Landing, B.C. A few sea planes are shown parked by the wharf.
+Campbell River, B.C.	1919	Campbell River, BC	Dirt roads; Forests	A dirt road in a forested area in Campbell River, B.C.
+Chilliwack, B.C. - Yale Road E.	1959	Chilliwack, BC	Streets; Intersections; Storefronts; Automobiles; Traffic signs & signals; Signs (Notices)	An intersection at Yale Road east in Chilliwack, B.C. Some storefronts, automobiles and a traffic light are shown.
+The Waterfront, New Westminster	1945	New Westminster, BC	Waterfronts; Fraser River (B.C.)	The waterfront in New Westminster, B.C.
+Birch Tree Channel, Upper Columbia River, Near Golden, B.C.	1906	Columbia River, BC	Rivers; Reflections; Mountains; Trees	View up the Birch Tree Channel, Upper Columbia River near Golden, B.C. The reflections of surrounding trees are shown on the channel.
+The First Narrows, Vancouver, B.C.	1919	First Narrows, BC	Bays (Bodies of water); Beaches; Boats	The First Narrows at Vancouver, B.C. viewed from a beach. A small boat and an ocean liner are shown.
+Municipal Hall of Maple Ridge, Haney, B.C.	1963	Haney, BC	City & town halls	Maple Ridge municipal hall in Haney, B.C.
+Bird's eye, Golden B.C.	1911	Golden, BC	Bird's-eye views; Cities & towns; Rivers	A bird's eye view of Golden, B.C.
+Nelson Hotel, Union Bay, B.C.	1910	Union Bay, BC	Hotels; Automobiles	Nelson Hotel in Union Bay, B.C. An automobile is shown in front of the hotel.
+John Hart Power Project and Town Site, Campbell River, B.C.	1958	Campbell River, BC	Aerial views; Power industry; Clearing of land	An aerial view of the John Hart power project and town site in Campbell River, B.C. A forest is shown surrounding the cleared area.
+Victory Square, Showing War Memorial, Vancouver, B.C.	1940	Vancouver, BC	Plazas; Monuments & memorials; Commercial facilities	Victory Square in Vancouver, B.C. showing the War Memorial and Dominion Trust Building.
+Provincial Government Buildings Victoria, British Columbia	1907	Victoria, BC	Views; Capitols; Harbors	Painting or drawing of a view of the British Columbia Parliament Buildings in Victoria, B.C. The Inner Harbour is shown in the foreground.
+Lumbering, Vancouver, B.C.	1907	Vancouver, BC	Lumber industry; Men; Carts & wagons; Horses	Four horses pulling a section of a log in Vancouver, B.C. Three men are shown on and around the log.
+English Bay, Vancouver, B.C.	1908	English Bay, BC	Women; Benches; Trees; Bays (Bodies of water)	Two women sitting on a bench looking out at English Bay, Vancouver, B.C.
+Roadway to Second Beach, Vancouver, B.C.	1907	Vancouver, BC	Roads; Forests; Snow	The road leading to Second Beach in Vancouver, B.C. covered with a small amount of snow.
+Fort St Looking West, Victoria, B.C.	1937	Victoria, BC	Streets; Storefronts; Automobiles; Pedestrians; Signs (Notices)	Fort Street in Victoria, B.C. looking west. Some storefronts, pedestrians and automobiles are shown.
+Columbia Ave Rossland B.C.	1909	Rossland, BC	Streets; Storefronts; Mountains; Snow	Columbia Avenue in Rossland, B.C. Snow is shown on the ground.
+C.R.L. Co's Mill Capacity 200,000 Ft a Day, Golden, B.C.	1910	Golden, BC	Sawmills; Mountains	The C.R.L. Co. mill in Golden, B.C. The Selkirk mountains are shown in the background.
+The New Can. Pac. Ry. Co. Hotel Empress, Victoria, B.C. One of the Finest Hotels on the Pacific Coast, Opening About January 10th, 1908	1909	Victoria, BC	Hotels; Railroad companies; Harbors	Empress Hotel in Victoria, B.C. The Inner Harbour is shown in the foreground.
+The Lighthouse, Point Atkinson, Vancouver, B.C.	1919	Atkinson, Point, BC	Lighthouses; Capes (Coasts)	The lighthouse at Point Atkinson in Vancouver, B.C.
+Creston, B.C.	1948	Creston, BC	Rivers; Floods; Mountains	A flooded river in Creston, B.C. Mountains are shown in the background.
+The Memorial Address by Judge McInnis Vancouver B.C.	1910	Vancouver, BC	Crowds; Public speaking; Signs (Notices)	Large crowd of people listening to the Memorial Address by Judge McInnis in Vancouver, B.C.
+View from the Pier, White Rock, B.C.	1949	White Rock, BC	Piers & wharves; Views; Cities & towns	View of White Rock, B.C. from the pier. Some people are shown on the pier.
+Chilliwack B.C. Storm	1935	Chilliwack, BC	Storefronts; Snow; Blizzards; Signs (Notices)	Some storefronts in Chilliwack, B.C. shown behind some piles of snow. A person is shown in front of the storefronts throwing salt on the walkway.
+Main Street, Ashcroft, B.C.	1912	Ashcroft, BC	Streets; Storefronts; People	Main Street in Ashcroft, B.C. Some storefronts and a person standing on the street are shown.
+Market Day at New Westminster, B.C.	1925	New Westminster, BC	Markets; Buildings; Crowds	A market in New Westminster, B.C.
+Gold Stream, Nr Victoria, B.C.	1907	Goldstream River, BC	People; Rivers	Three people beside the Goldstream River near Victoria, B.C.
+Father Pat Memorial Rossland BC	1919	Rossland, BC	Monuments & memorials; Fountains	Father Pat memorial fountain in Rossland, B.C.
+Wishing Well, Cadboro Bay, Vancouver Island, B.C.	1942	Cadboro Bay, BC	Wishing wells; Gardens; Bridges	A wishing well with flowers surrounding it at Cadboro Bay, B.C. A small bridge is shown crossing it.
+Kelowna, B.C. Barnard Ave.	1905	Kelowna, BC	Streets; Storefronts	Barnard Avenue in Kelowna, B.C. Some storefronts are shown.
+Bankhead Ranch Kelowna 1908	1908	Kelowna, BC	Men; Children; Firearms; Parties	Eleven men at a hunting party at Bankhead Ranch in Kelowna, B.C. One of the men is shown holding a young girl.
+Sailing and Swimming at Cultus Lake BC.	1949	Cultus Lake, BC	Swimming; Sailing; Lakes & ponds; Sailboats	Some people sailing and swimming at Cultus Lake, B.C.
+Penticton, B.C.	1936	Penticton, BC	Aerial views; Waterfronts; Piers & wharves; Lakes & ponds	Aerial view of a waterfront area of Penticton, B.C.
+Commercial Street, Nanaimo, B.C.	1946	Nanaimo, BC	Streets; Storefronts; Automobiles; Signs (Notices)	Commercial Street in Nanaimo, B.C. Some storefronts and automobiles are shown.
+Village of Creston, B.C.	1952	Creston, BC	Aerial views; Mountains; Cities & towns	An aerial view of the village of Creston, B.C. Surrounding mountains are shown.
+Baker Street Cranbrook, B.C.	1907	Cranbrook, BC	Streets; Storefronts; Utility poles	Baker Street in Cranbrook, B.C. Some storefronts are shown.
+Mount Arrowsmith and Port Alberni Highway, Vancouver Island, B.C.	1954	Arrowsmith, Mount, BC	Views; Mountains; Roads; Automobiles	View of Mount Arrowsmith on Vancouver Island, B.C. The Port Alberni Highway is shown in the foreground with two automobiles driving on it.
+On Front St. Quesnel BC	1924	Quesnel, BC	Streets; Storefronts; Men; Automobiles	Front Street in Quesnel, B.C. Four men are shown in front of a storefront.
+Old Stone Church, Cowichan Bay, B.C.	1947	Cowichan Bay, BC	Churches	Old Stone Church in Cowichan Bay, B.C.
+Evening Scene, Gorge, Victoria, B.C.	1909	Gorge, The, BC	Views; Waterways; Bridges; Night	View looking down the Gorge waterway in Victoria, B.C. during the evening. The Gorge Bridge is shown in the distance.
+Creston, B.C. - Looking West	1952	Creston, BC	Aerial views; Mountains; Cities & towns	An aerial view of Creston, B.C. looking west. Surrounding mountains are shown.
+At the Glacier House, B.C.	1913	Glacier, BC	Views; Mountains; Glaciers; Buildings; Tents; Fountains	View from Glacier House at Glacier, B.C. Two small buildings, a tent and  a fountain are shown.
+Westminster Ave. looking South, Vancouver, B.C.	1909	Vancouver, BC	Streets; Storefronts; Pedestrians	Westminster Avenue in Vancouver, B.C. looking south. Some storefronts and pedestrians are shown.
+Metropolitan Methodist Church Victoria B.C.	1910	Victoria, BC	Methodist churches	Metropolitan Methodist Church in Victoria, B.C.
+Bathing Beach, English Bay, Vancouver, B.C.	1927	English Bay, BC	Beaches; People; Swimming; Piers & wharves	Large number of people at the bathing beach at English Bay in Vancouver, B.C. People are shown in the water and on the shore.
+Nanaimo B.C.	1930	Nanaimo, BC	Hotels; Streets; Automobiles; Pedestrians; Signs (Notices)	Malaspina Hotel in Nanaimo, B.C. Numerous automobiles are shown parked on the street in front of the hotel. Some pedestrians are also shown.
+Camping Near Victoria, B.C.	1908	Victoria, BC	People; Bodies of water; Beaches	Three people shown sitting on the shore overlooking the water near Victoria, B.C.
+St. John's Presbyterian Church, Vancouver, B.C.	1911	Vancouver, BC	Presbyterian churches; People	St. John's Presbyterian Church in Vancouver, B.C. Numerous people are shown outside of the church.
+Picturesque scenery along the Nanimo River, Nanimo, B.C.	1918	Nanaimo River, BC	Views; Rivers; Reflections	View looking down the Nanaimo River at Nanaimo, B.C. The reflections of the surrounding trees are shown on the water.
+Merritt, B.C.	1914	Merritt, BC	Streets; Storefronts; Pedestrians; Utility poles	A street in Merritt, B.C. Some storefronts and pedestrians are shown.
+Aerial View Showing Brockton Point & City, Vancouver, B.C.	1946	Brockton Point, BC; Vancouver, BC	Aerial views; Cities & towns; Bays (Bodies of water); Mountains	Aerial view of Vancouver, B.C. showing Brockton Point. The North Shore Mountains are also shown.
+The Parade - Race Meet, 1941	1946	Williams Lake, BC	Parades & processions; Streets; Horseback riding; Racing	A parade and race meet in Williams Lake, B.C. Numerous people are shown on horseback in the parade.
+Parliament Bldgs., Victoria, B.C.	1921	Victoria, BC	Capitols; Trees	British Columbia Parliament Buildings in Victoria, B.C. viewed from behind some trees.
+Wellington Ave., Chilliwack BC.	1947	Chilliwack, BC	Streets; Automobiles; Storefronts; Pedestrians	Wellington Avenue in Chilliwack, B.C. Some automobiles, storefronts and pedestrians are shown.
+Bridge At Cultus Lake, Chilliwack, B.C.	1950	Cultus Lake, BC	Lakes & ponds; Bridges	A small bridge over part of Cultus Lake, B.C.
+A Gala Day at English Bay Vancouver B.C.	1908	English Bay, BC	Bays (Bodies of water); Beaches; People; Boats; Events	Two different images of a Gala Day taking place at English Bay in Vancouver, B.C.
+Waterfront and Shipping Vancouver, B.C.	1907	Vancouver, BC	Waterfronts; Vessels; Shipping	A waterfront and shipping scene in Vancouver, B.C. Several vessels are shown along the waterfront.

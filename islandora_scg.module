@@ -23,19 +23,33 @@ function islandora_scg_theme() {
  * Implements hook_preprocess_theme().
  */
 function islandora_scg_preprocess_islandora_scg_metadata_ds(array &$variables) {
-  // Read the sample metadata file and grab a random row.
+  // Read the sample metadata file.
   $sample_metadata = &drupal_static(__FUNCTION__);
   if (!isset($sample_metadata)) {
     $path = drupal_get_path('module', 'islandora_scg') . DIRECTORY_SEPARATOR .
       'includes' . DIRECTORY_SEPARATOR . 'sample_metadata.tsv.inc';
     $sample_metadata = file($path);
   }
-
+   // Grab a random row.
   $random_line_number = array_rand($sample_metadata);
   $metadata = explode("\t", $sample_metadata[$random_line_number]);
 
   $variables['title'] = htmlspecialchars($metadata[0]);
   $variables['dateIssued'] = htmlspecialchars($metadata[1]);
-  $variables['abstract'] = htmlspecialchars(trim($metadata[2]));
+  $place_names = explode(';', $metadata[2]);
+  $variables['geographics'] = array();
+  foreach ($place_names as &$place_name) {
+    $place_name = trim($place_name);
+    $place_name = htmlspecialchars($place_name);
+    $variables['geographics'][] = $place_name;
+  }
+  $topics = explode(';', $metadata[3]);
+  $variables['topics'] = array();
+  foreach ($topics as &$topic) {
+    $topic = trim($topic);
+    $topic = htmlspecialchars($topic);
+    $variables['topics'][] = $topic;
+  }
+  $variables['abstract'] = htmlspecialchars(trim($metadata[4]));
 }
 

@@ -12,6 +12,7 @@ class IslandoraSampleBasicImageGenerator extends IslandoraSampleContentGenerator
   public function generateContent() {
     for ($i = 1; $i <= $this->quantity - 1; $i++) {
       $metadata_ds = $this->generateMetadataDs();
+      dd($metadata_ds);
       // Get the title to add to the image. Clunky.
       $mods = simplexml_load_string($metadata_ds);
       $title = $mods->{titleInfo}->title;
@@ -20,9 +21,10 @@ class IslandoraSampleBasicImageGenerator extends IslandoraSampleContentGenerator
       // Generate the OBJ datastream file.
       $cmd = "convert -size 1000x1000 xc:blue" . " " . $this->data_dir .
         DIRECTORY_SEPARATOR . $i . ".jpg;  convert -size 1000x1000 xc:blue" .
-        " -pointsize 100 -fill white -gravity center -annotate +0+0 '" .
-        addslashes($title) ."' " . $this->data_dir . DIRECTORY_SEPARATOR . $i. ".jpg";
-      drush_print("Generating OBJ file for " . addslashes($title));
+        " -pointsize 100 -fill white -gravity center -annotate +0+0 " .
+        escapeshellarg($title) ." " . $this->data_dir . DIRECTORY_SEPARATOR . $i. ".jpg";
+      // drush_print($cmd);
+      drush_print("Generating OBJ file for $title");
       exec($cmd);
 
       $metadata_ds_file_path = $this->data_dir . DIRECTORY_SEPARATOR . $i . '.xml';

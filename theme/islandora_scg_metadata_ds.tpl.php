@@ -5,12 +5,16 @@
  * MODS datastream. 
  * 
  * Available variables:
- *   $title
+ *   $title string
  *     The title of the sample object.
- *   $dateIssued
+ *   $dateIssued string
  *     The date issued of the sample object.
- *   $abstract
+ *   $abstract string
  *     The abstract of the sample object.
+ *   $topics array
+ *     The 'topic' subjects terms of the sample object.
+ *   $geographics array
+ *     The 'geographic' subjects terms of the sample object.
  */
 ?>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -30,8 +34,16 @@
       <languageTerm>eng</languageTerm>
     </language>
     <subject>
-      <topic></topic>
-      <topic></topic>
+    <?php if (count($topics)): ?>
+      <?php foreach($topics as $topic): ?>
+      <topic><?php print $topic; ?></topic>
+      <?php endforeach; ?>
+      <?php endif; ?>
+      <?php if (count($geographics)): ?>
+      <?php foreach($geographics as $geographic): ?>
+      <geographic><?php print $geographic; ?></geographic>
+      <?php endforeach; ?>
+    <?php endif; ?>
     </subject>
     <identifier></identifier>
 </mods>
