@@ -14,8 +14,8 @@ function islandora_scg_drush_command() {
     'aliases' => array('iscgl'),
     'description' => 'Generate and load sample Islandora content',
     'examples' => array(
-      'drush iscgl --user=admin --quantity=20 --content_model=islandora:sp_basic_image --parent=myrepo:mycollection --namespace=myrepo',
-      'drush iscgl --user=admin --content_model=islandora:sp_basic_image --parent=myrepo:mycollection',
+      'drush iscgl --user=admin --quantity=20 --content_model=islandora:sp_basic_image --parent=islandora:sp_basic_image_collection --namespace=foo',
+      'drush iscgl --user=admin --content_model=islandora:sp_basic_image --parent=islandora:sp_basic_image_collection',
     ),
     'options' => array(
       'quantity' => array(
