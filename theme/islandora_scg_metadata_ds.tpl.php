@@ -1,8 +1,7 @@
 <?php
 /**
  * @file
- * Template file for the Islandora Sample Content Generator metadata
- * MODS datastream.
+ * Template file for the MODS datastream.
  *
  * Available variables:
  *   $title string

@@ -9,6 +9,10 @@
  * A class that generates sample Basic Image content.
  */
 class IslandoraSampleBasicImageGenerator extends IslandoraSampleContentGenerator {
+
+  /**
+   * Generates sample content.
+   */
   public function generateContent() {
     for ($i = 1; $i <= $this->quantity; $i++) {
       $metadata_ds = $this->generateMetadataDs();
@@ -21,15 +25,19 @@ class IslandoraSampleBasicImageGenerator extends IslandoraSampleContentGenerator
       $title = htmlspecialchars_decode($title);
 
       // Generate the OBJ datastream file.
-      $cmd = "convert -size 1000x1000 xc:blue" . " " . $this->data_dir .
-        DIRECTORY_SEPARATOR . $i . ".jpg;  convert -size 1000x1000 xc:blue" .
-        " -pointsize 100 -fill white -gravity center -annotate +0+0 " .
-        escapeshellarg(wordwrap($title, 15)) ." " . $this->data_dir . DIRECTORY_SEPARATOR . $i . ".jpg";
+      $cmd = "convert -size 1000x1000 xc:blue ";
+      $cmd .= $this->data_dir .  DIRECTORY_SEPARATOR . $i . '.jpg; ';
+      $cmd .= "convert -size 1000x1000 xc:blue" . " -pointsize 100 -fill white ";
+      $cmd .= "-gravity center -annotate +0+0 " .  escapeshellarg(wordwrap($title, 15));
+      $cmd .=  " " . $this->data_dir . DIRECTORY_SEPARATOR . $i . ".jpg";
       drush_print("Generating sample content for $title");
       exec($cmd);
     }
   }
 
+  /**
+   * Loads sample content.
+   */
   public function loadContent() {
     $batch_cmd = 'drush -u 1 --uri=http://localhost islandora_batch_scan_preprocess';
     $batch_cmd .= ' --namespace=' . $this->namespace;
@@ -39,4 +47,5 @@ class IslandoraSampleBasicImageGenerator extends IslandoraSampleContentGenerator
     $ingest_cmd = 'drush -u 1 --uri=http://localhost islandora_batch_ingest';
     exec($ingest_cmd);
   }
+
 }

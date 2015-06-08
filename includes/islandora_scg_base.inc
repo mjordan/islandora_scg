@@ -22,7 +22,8 @@ abstract class IslandoraSampleContentGenerator {
 
     // Path to the directory where the sample content is written.
     $this->data_dir = drupal_realpath('public://') . DIRECTORY_SEPARATOR . 'islandora_scg';
-    // Serialized XML content that will be used for the MODS, DC,etc. datastream.
+    // Serialized XML content that will be used for the MODS, DC,
+    // etc. datastream.
     $this->metadata_ds = '';
   }
 
@@ -41,4 +42,5 @@ abstract class IslandoraSampleContentGenerator {
       file_unmanaged_delete_recursive($this->data_dir);
     }
   }
+
 }

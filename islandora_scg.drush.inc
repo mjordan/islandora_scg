@@ -40,6 +40,9 @@ function islandora_scg_drush_command() {
   return $items;
 }
 
+/**
+ * Generates and loads sample content.
+ */
 function drush_islandora_scg_load() {
   $options = array(
     'quantity' => drush_get_option('quantity', 5),
