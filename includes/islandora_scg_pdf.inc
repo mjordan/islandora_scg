@@ -9,6 +9,9 @@
  * A class that generates sample PDF content.
  */
 class IslandoraSamplePdfGenerator extends IslandoraSampleContentGenerator {
+  /**
+   * Generates the the sample PDF content.
+   */
   public function generateContent() {
    for ($i = 1; $i <= $this->quantity; $i++) {
       $metadata_ds = $this->generateMetadataDs();
@@ -59,6 +62,9 @@ class IslandoraSamplePdfGenerator extends IslandoraSampleContentGenerator {
     }
   }
 
+  /**
+   * Runs the Islandora Batch drush commands to ingest the sample content.
+   */
   public function loadContent() {
     $batch_cmd = 'drush -u 1 --uri=http://localhost islandora_batch_scan_preprocess';
     $batch_cmd .= ' --namespace=' . $this->namespace;

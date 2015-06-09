@@ -13,6 +13,9 @@ abstract class IslandoraSampleContentGenerator {
   abstract protected function generateContent();
   abstract protected function loadContent();
 
+  /**
+   * Constructor for the IslandoraSampleContentGenerator abstract class.
+   */
   public function __construct($options) {
     // Options from the drush script.
     $this->quantity = $options['quantity'];
@@ -27,16 +30,25 @@ abstract class IslandoraSampleContentGenerator {
     $this->metadata_ds = '';
   }
 
+  /**
+   * Calls the theming function for the metadata XML.
+   */
   public function generateMetadataDs() {
     return theme('islandora_scg_metadata_ds', array());
   }
 
+  /**
+   * Creates the output directory.
+   */
   public function createDataDir() {
     if (!file_exists($this->data_dir)) {
       drupal_mkdir($this->data_dir);
     }
   }
 
+  /**
+   * Deletes the output directory.
+   */
   public function removeDataDir() {
     if (file_exists($this->data_dir)) {
       file_unmanaged_delete_recursive($this->data_dir);

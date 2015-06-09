@@ -11,7 +11,7 @@
 class IslandoraSampleBasicImageGenerator extends IslandoraSampleContentGenerator {
 
   /**
-   * Generates sample content.
+   * Generates sample basic image content.
    */
   public function generateContent() {
     for ($i = 1; $i <= $this->quantity; $i++) {
@@ -36,7 +36,7 @@ class IslandoraSampleBasicImageGenerator extends IslandoraSampleContentGenerator
   }
 
   /**
-   * Loads sample content.
+   * Runs the Islandora Batch drush commands to ingest the sample content.
    */
   public function loadContent() {
     $batch_cmd = 'drush -u 1 --uri=http://localhost islandora_batch_scan_preprocess';
