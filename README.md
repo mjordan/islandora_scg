@@ -2,13 +2,17 @@
 
 ## Introduction
 
-This module uses ImageMagick's convert command to generate sample images containing brief text (and accompanying MODS datastreams), which are then ingested using Islandora Batch's drush interface. It can generate objects of the following content models:
+This module uses ImageMagick's convert command to generate sample images containing brief text, which are then ingested aling with accompanying MODS datastreams using Islandora Batch's drush interface. It can generate objects of the following content models:
 
 * Basic image
 * Large image
 * PDF
 * Book (in development)
 * Newspaper (in development)
+
+The images are very simple, just a colored background with the title of the object in white text, as illustrated by this thumbnail datastream:
+
+![Islandora Sample Content Generator thumbnail](https://dl.dropboxusercontent.com/u/1015702/linked_to/islandora_scg_sample_tn.jpg)
 
 ## Requiredments
 
@@ -35,7 +39,7 @@ Optional parameters include `--quantity` (how many sample objects to create; def
 
 ## Sample metadata
 
-The metadata used for the sample objects is taken, at random, from `includes/sample_metadata.tsv`. This metadata is derived from a collection of early-20th century postcards depicting various parts of British Columbia. Each tab-delimited record contains a title, a date of publication, one or more place names, one or more subject keywords, and a description.
+The metadata used for the sample objects is taken, at random, from `includes/sample_metadata.tsv` ([view it here](https://github.com/mjordan/islandora_scg/blob/7.x/includes/sample_metadata.tsv). This metadata is derived from a collection of early-20th century postcards depicting various landscapes and landmarks in British Columbia. Each tab-delimited record contains a title, a date of publication, one or more place names, one or more subject keywords, and a description.
 
 If you want to use other metadata for your sample objects, you can replace this file with our own, as long as you follow the povided file's structure: five tab-separated columns: title, date, place name(s), subject keyword(s), and description. Repeated place names and subject keywords are separated by semicolons.
 
