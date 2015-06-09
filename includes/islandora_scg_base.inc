@@ -38,12 +38,12 @@ abstract class IslandoraSampleContentGenerator {
   }
 
   /**
-   * Creates the output directory.
+   * Blasts, then creates the output directory.
    */
   public function createDataDir() {
-    if (!file_exists($this->data_dir)) {
-      drupal_mkdir($this->data_dir);
-    }
+    // We remove the data directory here in case of aborted ingest.
+    $this->removeDataDir();
+    drupal_mkdir($this->data_dir);
   }
 
   /**
