@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This module uses ImageMagick's convert command to generate sample images containing brief text, which are then ingested aling with accompanying MODS datastreams using Islandora Batch's drush interface. It can generate objects of the following content models:
+This module uses ImageMagick's convert command to generate sample images containing brief text, which are then ingested along with accompanying MODS datastreams using Islandora Batch's drush interface. It can generate objects of the following content models:
 
 * Basic image
 * Large image
