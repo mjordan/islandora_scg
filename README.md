@@ -12,7 +12,11 @@ This module uses ImageMagick's convert command to generate sample images contain
 
 The images are very simple, just a colored background with the title of the object in white text, as illustrated by this thumbnail datastream:
 
-![Islandora Sample Content Generator thumbnail](https://dl.dropboxusercontent.com/u/1015702/linked_to/islandora_scg_sample_tn.jpg)
+![Islandora Sample Content Generator thumbnail for images](https://dl.dropboxusercontent.com/u/1015702/linked_to/islandora_scg/islandora_scg_sample_tn.jpg)
+
+Paged content (including PDFs) have a white background with black text:
+
+![Islandora Sample Content Generator thumbnail for paged content](https://dl.dropboxusercontent.com/u/1015702/linked_to/islandora_scg/islandora_scg_sample_tn_paged.jpg)
 
 ## Requiredments
 
