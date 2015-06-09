@@ -30,12 +30,14 @@ function islandora_scg_preprocess_islandora_scg_metadata_ds(array &$variables) {
       'includes' . DIRECTORY_SEPARATOR . 'sample_metadata.tsv';
     $sample_metadata = file($path);
   }
-  // Grab a random row.
+  // Grab a random row from the sample metadata file.
   $random_line_number = array_rand($sample_metadata);
   $metadata = explode("\t", $sample_metadata[$random_line_number]);
 
+  // Populate the singleton and repeatable variables.
   $variables['title'] = htmlspecialchars($metadata[0]);
   $variables['date_issued'] = htmlspecialchars($metadata[1]);
+
   $place_names = explode(';', $metadata[2]);
   $variables['geographics'] = array();
   foreach ($place_names as &$place_name) {
@@ -43,6 +45,7 @@ function islandora_scg_preprocess_islandora_scg_metadata_ds(array &$variables) {
     $place_name = htmlspecialchars($place_name);
     $variables['geographics'][] = $place_name;
   }
+
   $topics = explode(';', $metadata[3]);
   $variables['topics'] = array();
   foreach ($topics as &$topic) {
@@ -50,5 +53,6 @@ function islandora_scg_preprocess_islandora_scg_metadata_ds(array &$variables) {
     $topic = htmlspecialchars($topic);
     $variables['topics'][] = $topic;
   }
+
   $variables['abstract'] = htmlspecialchars(trim($metadata[4]));
 }

@@ -1,19 +1,41 @@
 # Islandora Sample Content Generator
 
-## Design notes
+## Introduction
 
-https://github.com/mjordan/islandora_groovy demonstrates a method for using ImageMagick's convert command to generate images with text and then loading those images using Islandora Batch's drush interface. Given these abilities, we can in theory generate and load sample content conforming to the following content models:
+This module uses ImageMagick's convert command to generate images containing brief text, which are then ingested using Islandora Batch's drush interface. It can generate objects of the following content models:
 
 * Basic image
 * Large image
 * PDF
-* Paged content
-* Book
-* Newspaper
+* Book (in development)
+* Newspaper (in development)
 
-Some design considerations for the Islandora Sample Content Generator:
+## Requiredments
 
-* The module should provide a Drush and UI interface for creating content and loading it into and Islandora instance.
-* The module should provide configuration options for the text to be inserted into images, and should also provide a sample image that can be used as the 'template' for sample content.
-* The module should provide a template MODS file that is themeable so that it can be overridden if desired.
-* The module should provide a way of adding additional content models and batch loaders, perhaps via a plugin system (e.g. implemented as one content model per class file).
+* [Islandora Batch](https://github.com/Islandora/islandora_batch)
+
+ImageMagick must be installed on the server. It is by default installed on most, if not all, Islandora servers.
+
+## Usage
+
+The Islandora Sample Content Generator only has a drush interface. To use it, issue the following command:
+
+```drush iscgl --user=admin --content_model=foo:contentModel --parent=bar:collection```
+
+Some sample commands are:
+
+* `sudo drush iscgl --user=admin --quantity=20 --content_model=islandora:sp_basic_image --parent=islandora:sp_basic_image_collection --namespace=foo`
+* `sudo drush iscgl --user=admin  --content_model=islandora:sp_pdf --parent=islandora:sp_pdf_collection --pages=10 --namespace=testing`
+
+Since this drush command creates a directory in your Drupal site's public files folder, you will need to run it as sudo, or make your files directory writable by the user running the command. The directory is deleted after the content is loaded.
+
+Optional parameters include `--quantity` (how many sample objects to create; defaults to 5), `--namespace` (the namespace to use for the sample objects; defaults to 'islandora'), and `--pages` (how many pages to add to newspapers, books, and PDFs; defaults to 4).
+
+## Metadata
+
+The metadata used for the sample objects is taken, at random, from `includes/sample_metadata.tsv`. This metadata is derived from a collection of early-20th century postcards depicting various parts of British Columbia. Each tab-delimited record contains a title, a date of publication, one or more place names, one or more subject keywords, and a description.
+
+If you want to use other metadata for your sample objects, you can replace this file with our own, as long as you follow the povided file's structure: five tab-separated columns (title, date, place name(s), subject keyword(s), and description. Repeated place names and subject keywords are separated by semicolons.
+
+If you want to go further than just replacing the sample metadata file, you can use Drupal's normal theming layer to completely override the way that the MODS datastream is populated. Just override the islandora_scg_preprocess_islandora_scg_metadata_ds() function and islandora_scg_metadata_ds.tpl.php template file.
+
