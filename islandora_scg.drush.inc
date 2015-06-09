@@ -34,6 +34,10 @@ function islandora_scg_drush_command() {
         'description' => 'Namespace of objects to create. ' .
         'Defaults to "islandora".',
       ),
+      'pages' => array(
+        'description' => 'For paged content (including PDFs), the number of ' .
+        'pages in each sample object. Defaults to 4.',
+      ),
     ),
     'bootstrap' => DRUSH_BOOTSTRAP_DRUPAL_LOGIN,
   );
@@ -49,6 +53,7 @@ function drush_islandora_scg_load() {
     'content_model' => drush_get_option('content_model'),
     'parent' => drush_get_option('parent'),
     'namespace' => drush_get_option('namespace', 'islandora'),
+    'pages' => drush_get_option('pages', 4),
   );
 
   // Map content models to classes. If you add new content

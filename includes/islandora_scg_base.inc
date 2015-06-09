@@ -22,6 +22,7 @@ abstract class IslandoraSampleContentGenerator {
     $this->parent = $options['parent'];
     $this->content_model = $options['content_model'];
     $this->namespace = $options['namespace'];
+    $this->pages = $options['pages'];
 
     // Path to the directory where the sample content is written.
     $this->data_dir = drupal_realpath('public://') . DIRECTORY_SEPARATOR . 'islandora_scg';
