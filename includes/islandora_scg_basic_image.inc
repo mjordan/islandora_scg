@@ -21,7 +21,7 @@ class IslandoraSampleBasicImageGenerator extends IslandoraSampleContentGenerator
 
       // Get the title to add to the image. Clunky.
       $mods = simplexml_load_string($metadata_ds);
-      $title = $mods->{titleInfo}->title;
+      $title = $mods->titleInfo[0]->title;
       $title = htmlspecialchars_decode($title);
 
       // Generate the OBJ datastream file.
