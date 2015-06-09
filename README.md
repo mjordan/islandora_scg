@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This module uses ImageMagick's convert command to generate sample images containing brief text, which are then ingested using Islandora Batch's drush interface. It can generate objects of the following content models:
+This module uses ImageMagick's convert command to generate sample images containing brief text (and accompanying MODS datastreams), which are then ingested using Islandora Batch's drush interface. It can generate objects of the following content models:
 
 * Basic image
 * Large image
@@ -13,6 +13,8 @@ This module uses ImageMagick's convert command to generate sample images contain
 ## Requiredments
 
 * [Islandora Batch](https://github.com/Islandora/islandora_batch)
+* To ingest books, you will need [Islandora Book Batch](https://github.com/Islandora/islandora_book_batch)
+* To ingest newspapers issues, you will need [Islandora Newspaper Batch](https://github.com/mjordan/islandora_newspaper_batch)
 
 ImageMagick must be installed on the server. It is by default installed on most, if not all, Islandora servers.
 
@@ -20,7 +22,7 @@ ImageMagick must be installed on the server. It is by default installed on most,
 
 The Islandora Sample Content Generator only has a drush interface. To use it, issue the following command:
 
-```drush iscgl --user=admin --content_model=foo:contentModel --parent=bar:collection```
+`drush iscgl --user=admin --content_model=foo:contentModel --parent=bar:collection`
 
 Some sample commands are:
 
@@ -37,7 +39,7 @@ The metadata used for the sample objects is taken, at random, from `includes/sam
 
 If you want to use other metadata for your sample objects, you can replace this file with our own, as long as you follow the povided file's structure: five tab-separated columns (title, date, place name(s), subject keyword(s), and description. Repeated place names and subject keywords are separated by semicolons.
 
-If you want to go further than just replacing the sample metadata file, you can use Drupal's normal theming layer to completely override the way that the MODS datastream is populated. Just override the islandora_scg_preprocess_islandora_scg_metadata_ds() function and islandora_scg_metadata_ds.tpl.php template file.
+In addition, you can use Drupal's theming layer to completely override the way that the MODS datastream is populated. Just override the islandora_scg_preprocess_islandora_scg_metadata_ds() function and islandora_scg_metadata_ds.tpl.php template file.
 
 ## Maintainers/Sponsors
 
@@ -51,6 +53,5 @@ Pull requests are welcome, as are use cases and suggestions.
 
 ## License
 
-[GPLv3](http://www.gnu.org/licenses/gpl-3.0.txt)
-
-
+* [GPLv3](http://www.gnu.org/licenses/gpl-3.0.txt)
+* The sample metadata in includes/sample_metadata.tsv is distriubuted under the [Creative Commons attribution, non-commercial license](http://creativecommons.org/licenses/by-nc/3.0/legalcode).
