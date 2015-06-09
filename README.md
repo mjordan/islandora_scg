@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This module uses ImageMagick's convert command to generate sample images containing brief text, which are then ingested along with accompanying MODS datastream using Islandora Batch's drush interface. It can generate objects of the following content models:
+This module uses ImageMagick's convert command to generate sample images containing brief text, which are then ingested along with an accompanying MODS datastream using Islandora Batch's drush interface. It can generate objects of the following content models:
 
 * Basic image
 * Large image
@@ -10,11 +10,11 @@ This module uses ImageMagick's convert command to generate sample images contain
 * Book (in development)
 * Newspaper (in development)
 
-The images are very simple, just a colored background with the title of the object in white text, as illustrated by this thumbnail datastream:
+The images are very simple, just a colored background with the title of the object in white text as illustrated by this thumbnail datastream:
 
 ![Islandora Sample Content Generator thumbnail for images](https://dl.dropboxusercontent.com/u/1015702/linked_to/islandora_scg/islandora_scg_sample_tn.jpg)
 
-Paged content (including PDFs) have a white background with black text:
+Paged content (including PDFs) has a white background with black text:
 
 ![Islandora Sample Content Generator thumbnail for paged content](https://dl.dropboxusercontent.com/u/1015702/linked_to/islandora_scg/islandora_scg_sample_tn_paged.jpg)
 
@@ -30,12 +30,12 @@ ImageMagick must be installed on the server. It is by default installed on most,
 
 The Islandora Sample Content Generator only has a drush interface. To use it, issue the following command:
 
-`drush iscgl --user=admin --content_model=foo:contentModel --parent=bar:collection`
+`drush iscgl --user=someuser --content_model=foo:contentModel --parent=bar:collection`
 
 Some sample commands are:
 
-* `sudo drush iscgl --user=admin --quantity=20 --content_model=islandora:sp_basic_image --parent=islandora:sp_basic_image_collection --namespace=foo`
-* `sudo drush iscgl --user=admin  --content_model=islandora:sp_pdf --parent=islandora:sp_pdf_collection --pages=10 --namespace=testing`
+* `sudo drush iscgl --user=admin --quantity=20 --content_model=islandora:sp_basic_image --parent=islandora:sp_basic_image_collection --namespace=testing`
+* `sudo drush iscgl --user=admin  --content_model=islandora:sp_pdf --parent=islandora:sp_pdf_collection --pages=10`
 
 There is no need to run Islandora Batch's drush commands separately - the Content Generator does that for you. Since the Content Generator's drush command creates a directory in your Drupal site's public files folder, you will need to run it as sudo, or make your files directory writable by the user running the command. The directory is deleted after the content is loaded.
 
@@ -43,7 +43,7 @@ Optional parameters include `--quantity` (how many sample objects to create; def
 
 ## Sample metadata
 
-The metadata used for the sample objects is taken, at random, from `includes/sample_metadata.tsv` ([view it here](https://github.com/mjordan/islandora_scg/blob/7.x/includes/sample_metadata.tsv)). This metadata is derived from a collection of early-20th century postcards depicting various landscapes and landmarks in British Columbia. Each tab-delimited record contains a title, a date of publication, one or more place names, one or more subject keywords, and a description.
+The metadata used for the sample objects is taken, at random, from `includes/sample_metadata.tsv` ([view it here](https://github.com/mjordan/islandora_scg/blob/7.x/includes/sample_metadata.tsv)). This metadata is derived from [a collection of early-20th century postcards](http://content.lib.sfu.ca/cdm/landingpage/collection/bcp)* depicting various landscapes and landmarks in British Columbia. Each tab-delimited record contains a title, a date of publication, one or more place names, one or more subject keywords, and a description.
 
 If you want to use other metadata for your sample objects, you can replace this file with our own, as long as you follow the povided file's structure: five tab-separated columns: title, date, place name(s), subject keyword(s), and description. Repeated place names and subject keywords are separated by semicolons.
 
@@ -63,3 +63,5 @@ Pull requests are welcome, as are use cases and suggestions.
 
 * [GPLv3](http://www.gnu.org/licenses/gpl-3.0.txt)
 * The sample metadata in includes/sample_metadata.tsv is distriubuted under the [Creative Commons attribution, non-commercial license](http://creativecommons.org/licenses/by-nc/3.0/legalcode).
+
+*The collection is currently hosted in CONTENTdm. It will be hosted in Islandora soon.
