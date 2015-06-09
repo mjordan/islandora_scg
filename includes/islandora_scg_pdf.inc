@@ -22,12 +22,40 @@ class IslandoraSamplePdfGenerator extends IslandoraSampleContentGenerator {
 
       // Generate the OBJ datastream file.
       $cmd = "convert -size 612x792 xc:white ";
-      $cmd .= $this->data_dir .  DIRECTORY_SEPARATOR . $i . '.pdf; ';
-      $cmd .= "convert -size 612x792 xc:white " . " -pointsize 70 -fill black ";
+      $cmd .= $this->data_dir . DIRECTORY_SEPARATOR . $i . '-0.pdf; ';
+      $cmd .= "convert -size 612x792 xc:white " . " -pointsize 50 -fill black ";
       $cmd .= "-gravity center -annotate +0+0 " .  escapeshellarg(wordwrap($title, 15));
-      $cmd .=  " " . $this->data_dir . DIRECTORY_SEPARATOR . $i . '.pdf';
+      $cmd .=  " " . $this->data_dir . DIRECTORY_SEPARATOR . $i . '-0.pdf';
       drush_print("Generating sample content for $title");
       exec($cmd);
+
+      // Generate two pages to add to the first one.
+      for ($p = 1; $p <= 2; $p++) {
+        $page_num = $p + 1;
+        $text = $title . "\n\nPage " . $page_num;
+        $page_cmd = "convert -size 612x792 xc:white ";
+        $page_cmd .= $this->data_dir .  DIRECTORY_SEPARATOR . $i . '-' . $p . '.pdf; ';
+        $page_cmd .= "convert -size 612x792 xc:white " . " -pointsize 40 -fill black ";
+        $page_cmd .= "-gravity center -annotate +0+0 " .  escapeshellarg(wordwrap($text, 15));
+        $page_cmd .=  " " . $this->data_dir . DIRECTORY_SEPARATOR . $i . '-' . $p . '.pdf';
+        exec($page_cmd);
+      }
+
+      // Join the files into a single 3-page PDF.
+      $join_cmd = "convert -density 72x72 " . $this->data_dir . DIRECTORY_SEPARATOR . $i . '-0.pdf';
+      for ($p = 1; $p <= 2; $p++) {
+        $join_cmd .= " " . $this->data_dir . DIRECTORY_SEPARATOR . $i . '-' . $p . '.pdf';
+      }
+      $join_cmd .= " " . $this->data_dir . DIRECTORY_SEPARATOR . $i . '.pdf';
+      exec($join_cmd);
+
+      // Remove the page files, including page 0, so they won't get loaded.
+      for ($p = 0; $p <= 2; $p++) {
+        $file_to_delete = $this->data_dir . DIRECTORY_SEPARATOR . $i . '-' . $p . '.pdf';
+        if (file_exists($file_to_delete)) {
+          drupal_unlink($file_to_delete);
+        }
+      }
     }
   }
 
