@@ -47,7 +47,7 @@ The metadata used for the sample objects is taken, at random, from `includes/sam
 
 If you want to use other metadata for your sample objects, you can replace this file with our own, as long as you follow the povided file's structure: five tab-separated columns: title, date, place name(s), subject keyword(s), and description. Repeated place names and subject keywords are separated by semicolons.
 
-If you want additional control of the metadata for your sample objects, you can use Drupal's theming layer to completely override the way that the MODS datastream is populated. Just override the islandora_scg_preprocess_islandora_scg_metadata_ds() function and islandora_scg_metadata_ds.tpl.php template file.
+If you want additional control of the metadata for your sample objects, you can use Drupal's theming layer to completely override the way that the MODS datastream is populated. Just override the islandora_scg_preprocess_islandora_scg_metadata_ds() function and the islandora_scg_metadata_ds.tpl.php template file.
 
 ## Maintainers/Sponsors
 
