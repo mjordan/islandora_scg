@@ -11,7 +11,6 @@
 class IslandoraSampleBookGenerator extends IslandoraSampleContentGenerator {
   public function generateContent() {
     for ($i = 1; $i <= $this->quantity; $i++) {
-      // @todo: Create subdir in $this->data_dir for this book.
       $book_dir = $this->data_dir . DIRECTORY_SEPARATOR . $i;
       drupal_mkdir($book_dir);
       $this->generateBook($book_dir);
@@ -51,7 +50,7 @@ class IslandoraSampleBookGenerator extends IslandoraSampleContentGenerator {
     drush_print("Generating sample content for $title");
     // Generate the designated number of pages.
     for ($p = 1; $p <= $this->pages; $p++) {
-      $page_dir = $book_dir . DIRECTORY_SEPARATOR . '1';
+      $page_dir = $book_dir . DIRECTORY_SEPARATOR . $p;
       drupal_mkdir($page_dir);
 
       $text = $title . "\n\nPage $p / " . $this->pages;
@@ -68,10 +67,8 @@ class IslandoraSampleBookGenerator extends IslandoraSampleContentGenerator {
    * Runs the Islandora Book Batch drush commands to ingest the sample content.
    */
   public function loadContent() {
-    return;
     $batch_cmd = 'drush -u 1 --uri=http://localhost islandora_book_batch_preprocess';
-    $batch_cmd .= ' --namespace=' . $this->namespace;
-    $batch_cmd .= ' --content_models=islandora:sp_pdf --parent=' . $this->parent;
+    $batch_cmd .= ' --namespace=' . $this->namespace . ' --parent=' . $this->parent;
     $batch_cmd .= ' --parent_relationship_pred=isMemberOfCollection --type=directory --target=' . $this->data_dir;
     exec($batch_cmd);
     $ingest_cmd = 'drush -u 1 --uri=http://localhost islandora_batch_ingest';
