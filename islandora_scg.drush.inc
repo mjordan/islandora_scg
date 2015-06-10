@@ -38,6 +38,11 @@ function islandora_scg_drush_command() {
         'description' => 'For paged content (including PDFs), the number of ' .
         'pages in each sample object. Defaults to 4.',
       ),
+      'bgcolor' => array(
+        'description' => 'For basic and large image content, the background color.' .
+        'Defaults to blue. Available colors are the "color name" ' .
+        'at http://www.imagemagick.org/script/color.php.',
+      ),
     ),
     'bootstrap' => DRUSH_BOOTSTRAP_DRUPAL_LOGIN,
   );
@@ -54,7 +59,16 @@ function drush_islandora_scg_load() {
     'parent' => drush_get_option('parent'),
     'namespace' => drush_get_option('namespace', 'islandora'),
     'pages' => drush_get_option('pages', 4),
+    'bgcolor' => drush_get_option('bgcolor', 'blue'),
   );
+  if ($options['bgcolor'] != 'blue') {
+     module_load_include('inc', 'islandora_scg', 'includes/image_magic_colors');
+     $image_magick_color_names = islandora_scg_get_color_names();
+     if (!in_array($options['bgcolor'], $image_magick_color_names)) {
+       drush_set_error('Bad color name', 'Sorry, the value for --bgcolor is not a valid ImageMagick color name. Using default value of "blue".');
+       $options['bgcolor'] = 'blue';
+     }
+  }
 
   // Map content models to classes. If you add new content
   // models, register them here.

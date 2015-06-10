@@ -27,7 +27,7 @@ class IslandoraSampleLargeImageGenerator extends IslandoraSampleContentGenerator
       // Generate the OBJ datastream file.
       $cmd = "convert -density 300x300 -size 3000x3000 xc:blue ";
       $cmd .= $this->data_dir .  DIRECTORY_SEPARATOR . $i . '.tif; ';
-      $cmd .= "convert -size 3000x3000 xc:blue" . " -pointsize 300 -fill white ";
+      $cmd .= "convert -size 3000x3000 xc:" . $this->bgcolor . " -pointsize 300 -fill white ";
       $cmd .= "-gravity center -annotate +0+0 " .  escapeshellarg(wordwrap($title, 15));
       $cmd .=  " " . $this->data_dir . DIRECTORY_SEPARATOR . $i . ".tif";
       drush_print("Generating sample content for $title");

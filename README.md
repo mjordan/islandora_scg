@@ -39,7 +39,7 @@ Some sample commands are:
 
 There is no need to run Islandora Batch's drush commands separately - the Content Generator does that for you. Since the Content Generator's drush command creates a directory in your Drupal site's public files folder, you will need to run it as sudo, or make your files directory writable by the user running the command. The directory is deleted after the content is loaded.
 
-Optional parameters include `--quantity` (how many sample objects to create; defaults to 5), `--namespace` (the namespace to use for the sample objects; defaults to 'islandora'), and `--pages` (how many pages to add to newspapers, books, and PDFs; defaults to 4).
+Optional parameters include `--quantity` (how many sample objects to create; defaults to 5), `--namespace` (the namespace to use for the sample objects; defaults to 'islandora'), `--pages` (how many pages to add to newspapers, books, and PDFs; defaults to 4), and `-bgcolor` (name of the background color for basic and large image content, from the ImageMagick's "[list of color names](http://www.imagemagick.org/script/color.php)").
 
 ## Sample metadata
 
