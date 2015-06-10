@@ -10,3 +10,4 @@ files[] = includes/islandora_scg_base.inc
 files[] = includes/islandora_scg_basic_image.inc
 files[] = includes/islandora_scg_large_image.inc
 files[] = includes/islandora_scg_pdf.inc
+files[] = includes/islandora_scg_book.inc

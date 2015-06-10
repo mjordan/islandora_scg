@@ -10,6 +10,12 @@
  */
 class IslandoraSampleBookGenerator extends IslandoraSampleContentGenerator {
   public function generateContent() {
+    for ($i = 1; $i <= $this->quantity; $i++) {
+      // @todo: Create subdir in $this->data_dir for this book.
+      $book_dir = $this->data_dir . DIRECTORY_SEPARATOR . $i;
+      drupal_mkdir($book_dir);
+      $this->generateBook($book_dir);
+    }
     // input folder
     //   book 1
     //     MODS.xml
@@ -25,9 +31,51 @@ class IslandoraSampleBookGenerator extends IslandoraSampleContentGenerator {
     //       OBJ.tif
   }
 
-  public function loadContent() {
-    //
+  /**
+   * Generates a single book.
+   *
+   * @param string $book_dir
+   *  The directory where the book content is written.
+   */
+  public function generateBook($book_dir) {
+    $metadata_ds = $this->generateMetadataDs('text');
+    $metadata_ds_file_path = $book_dir . DIRECTORY_SEPARATOR . 'MODS.xml';
+    file_put_contents($metadata_ds_file_path, $metadata_ds);
+
+    // Get the title to add to the image. Clunky.
+    $mods = simplexml_load_string($metadata_ds);
+    $title = $mods->titleInfo[0]->title;
+    $title = htmlspecialchars_decode($title);
+
+    // Generate the page-level OBJ datastream files (one per directory).
+    drush_print("Generating sample content for $title");
+    // Generate the designated number of pages.
+    for ($p = 1; $p <= $this->pages; $p++) {
+      $page_dir = $book_dir . DIRECTORY_SEPARATOR . '1';
+      drupal_mkdir($page_dir);
+
+      $text = $title . "\n\nPage $p / " . $this->pages;
+      $page_cmd = "convert -density 300x300 -size 2550x3300 xc:white ";
+      $page_cmd .= $page_dir . DIRECTORY_SEPARATOR  . 'OBJ.tif; ';
+      $page_cmd .= "convert -size 2550x3300 xc:white " . " -pointsize 300 -fill black ";
+      $page_cmd .= "-gravity center -annotate +0+0 " .  escapeshellarg(wordwrap($text, 15));
+      $page_cmd .=  " " . $page_dir . DIRECTORY_SEPARATOR . 'OBJ.tif';
+      exec($page_cmd);
+    }
   }
 
+  /**
+   * Runs the Islandora Book Batch drush commands to ingest the sample content.
+   */
+  public function loadContent() {
+    return;
+    $batch_cmd = 'drush -u 1 --uri=http://localhost islandora_book_batch_preprocess';
+    $batch_cmd .= ' --namespace=' . $this->namespace;
+    $batch_cmd .= ' --content_models=islandora:sp_pdf --parent=' . $this->parent;
+    $batch_cmd .= ' --parent_relationship_pred=isMemberOfCollection --type=directory --target=' . $this->data_dir;
+    exec($batch_cmd);
+    $ingest_cmd = 'drush -u 1 --uri=http://localhost islandora_batch_ingest';
+    exec($ingest_cmd);
+  }
 
 }

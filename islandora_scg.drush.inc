@@ -76,6 +76,7 @@ function drush_islandora_scg_load() {
     'islandora:sp_basic_image' => 'IslandoraSampleBasicImageGenerator',
     'islandora:sp_large_image_cmodel' => 'IslandoraSampleLargeImageGenerator',
     'islandora:sp_pdf' => 'IslandoraSamplePdfGenerator',
+    'islandora:bookCModel' => 'IslandoraSampleBookGenerator',
   );
 
   drush_print("Starting to generate sample content...");
