@@ -7,7 +7,7 @@ This module uses ImageMagick's `convert` command to generate sample images conta
 * Basic image
 * Large image
 * PDF
-* Book (in development)
+* Book
 * Newspaper (in development)
 
 The images are very simple, just a colored background with the title of the object in white text as illustrated by this thumbnail datastream:
