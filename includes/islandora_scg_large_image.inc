@@ -15,7 +15,7 @@ class IslandoraSampleLargeImageGenerator extends IslandoraSampleContentGenerator
    */
   public function generateContent() {
     for ($i = 1; $i <= $this->quantity; $i++) {
-      $metadata_ds = $this->generateMetadataDs();
+      $metadata_ds = $this->generateMetadataDs('image');
       $metadata_ds_file_path = $this->data_dir . DIRECTORY_SEPARATOR . $i . '.xml';
       file_put_contents($metadata_ds_file_path, $metadata_ds);
 

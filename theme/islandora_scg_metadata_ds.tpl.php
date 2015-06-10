@@ -14,6 +14,8 @@
  *     The 'topic' subjects terms of the sample object.
  *   $geographics array
  *     The 'geographic' subjects terms of the sample object.
+ *   $genre string
+ *     The genre (type) of the sample object.
  */
 ?>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -35,6 +37,7 @@
     <language>
       <languageTerm>eng</languageTerm>
     </language>
+    <genre><?php print $genre; ?></genre>
     <subject>
     <?php if (count($topics)): ?>
       <?php foreach($topics as $topic): ?>

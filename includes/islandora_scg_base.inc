@@ -34,9 +34,12 @@ abstract class IslandoraSampleContentGenerator {
 
   /**
    * Calls the theming function for the metadata XML.
+   *
+   * @param string $genre
+   *  The value to use in the MODS <genre> element.
    */
-  public function generateMetadataDs() {
-    return theme('islandora_scg_metadata_ds', array());
+  public function generateMetadataDs($genre = '') {
+    return theme('islandora_scg_metadata_ds', array('genre' => $genre));
   }
 
   /**
