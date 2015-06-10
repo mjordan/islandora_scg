@@ -39,7 +39,7 @@ Some sample commands are:
 
 There is no need to run Islandora Batch's drush commands separately - the Content Generator does that for you. Since the Content Generator's drush command creates a directory in your Drupal site's public files folder, you will need to run it as sudo, or make your files directory writable by the user running the command. The directory is deleted after the content is loaded.
 
-Optional parameters include `--quantity` (how many sample objects to create; defaults to 5), `--namespace` (the namespace to use for the sample objects; defaults to 'islandora'), `--pages` (how many pages to add to newspapers, books, and PDFs; defaults to 4), and `-bgcolor` (name of the background color for basic and large image content, from the ImageMagick's "[list of color names](http://www.imagemagick.org/script/color.php)").
+Optional parameters include `--quantity` (how many sample objects to create; defaults to 5), `--namespace` (the namespace to use for the sample objects; defaults to 'islandora'), `--pages` (how many pages to add to newspapers, books, and PDFs; defaults to 4), and `-bgcolor` (name of the background color for basic and large image content, from ImageMagick's "[list of color names](http://www.imagemagick.org/script/color.php)").
 
 ## Sample metadata
 
@@ -49,9 +49,7 @@ If you want to use other metadata for your sample objects, you can replace this 
 
 If you want additional control of the metadata for your sample objects, you can use Drupal's theming layer to completely override the way that the MODS datastream is populated. Just override the islandora_scg_preprocess_islandora_scg_metadata_ds() function and the islandora_scg_metadata_ds.tpl.php template file.
 
-## Maintainers/Sponsors
-
-Current maintainers:
+## Maintainer
 
 * [Mark Jordan](https://github.com/mjordan)
 
@@ -64,4 +62,4 @@ Pull requests are welcome, as are use cases and suggestions.
 * [GPLv3](http://www.gnu.org/licenses/gpl-3.0.txt)
 * The sample metadata in includes/sample_metadata.tsv is distriubuted under the [Creative Commons attribution, non-commercial license](http://creativecommons.org/licenses/by-nc/3.0/legalcode).
 
-*The collection is currently hosted in CONTENTdm. It will be hosted in Islandora soon.
+*The collection is [currently hosted in CONTENTdm](http://content.lib.sfu.ca/cdm/landingpage/collection/bcp). It will be hosted in Islandora soon.
