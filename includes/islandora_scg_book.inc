@@ -15,19 +15,6 @@ class IslandoraSampleBookGenerator extends IslandoraSampleContentGenerator {
       drupal_mkdir($book_dir);
       $this->generateBook($book_dir);
     }
-    // input folder
-    //   book 1
-    //     MODS.xml
-    //     1
-    //       OBJ.tif
-    //     2
-    //       OBJ.tif
-    //   book 2
-    //     MODS.xml
-    //     1
-    //       OBJ.tif
-    //     2
-    //       OBJ.tif
   }
 
   /**
@@ -53,12 +40,17 @@ class IslandoraSampleBookGenerator extends IslandoraSampleContentGenerator {
       $page_dir = $book_dir . DIRECTORY_SEPARATOR . $p;
       drupal_mkdir($page_dir);
 
-      $text = $title . "\n\nPage $p / " . $this->pages;
+      if ($p == 1) {
+        $text = $title;
+      }
+      else {
+        $text = $title . "\n\nPage $p / " . $this->pages;
+      }
       $page_cmd = "convert -density 300x300 -size 2550x3300 xc:white ";
-      $page_cmd .= $page_dir . DIRECTORY_SEPARATOR  . 'OBJ.tif; ';
+      $page_cmd .= $page_dir . DIRECTORY_SEPARATOR  . 'OBJ.tiff; ';
       $page_cmd .= "convert -size 2550x3300 xc:white " . " -pointsize 300 -fill black ";
       $page_cmd .= "-gravity center -annotate +0+0 " .  escapeshellarg(wordwrap($text, 15));
-      $page_cmd .=  " " . $page_dir . DIRECTORY_SEPARATOR . 'OBJ.tif';
+      $page_cmd .=  " -flatten +matte -density 300x300 " . $page_dir . DIRECTORY_SEPARATOR . 'OBJ.tiff';
       exec($page_cmd);
     }
   }
