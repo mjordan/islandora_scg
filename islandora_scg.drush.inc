@@ -61,26 +61,58 @@ function drush_islandora_scg_load() {
     'pages' => drush_get_option('pages', 4),
     'bgcolor' => drush_get_option('bgcolor', 'blue'),
   );
+
+  // Map content models to classes, batch loader modules, etc.
+  // If you add new content models, register them here.
+  $registry = array(
+    'islandora:sp_basic_image' => array(
+       'class' => 'IslandoraSampleBasicImageGenerator',
+       'cmodel_module' => 'islandora_basic_image',
+       'batch_loader_module' => 'islandora_batch',
+    ),
+    'islandora:sp_large_image_cmodel' => array(
+      'class' => 'IslandoraSampleLargeImageGenerator',
+      'cmodel_module' => 'islandora_large_image',
+      'batch_loader_module' => 'islandora_batch',
+    ),
+    'islandora:sp_pdf' => array(
+      'class' => 'IslandoraSamplePdfGenerator',
+      'cmodel_module' => 'islandora_pdf',
+      'batch_loader_module' => 'islandora_batch',
+    ),
+    'islandora:bookCModel' => array(
+      'class' => 'IslandoraSampleBookGenerator',
+      'cmodel_module' => 'islandora_book',
+      'batch_loader_module' => 'islandora_book_batch',
+    ),
+  );
+
+  // Perform some validation on the options.
+  $cmodel = $options['content_model'];
+  if (!module_exists($registry[$cmodel]['batch_loader_module'])) {
+    drush_set_error('Loader not available', dt('Sorry, the batch loader module !loader is not enabled.',
+      array('!loader' => $registry[$cmodel]['batch_loader_module'])));
+    exit;
+  }
+  if (!module_exists($registry[$cmodel]['cmodel_module'])) {
+    drush_set_error('Content model module not available', dt('Sorry, the module that defines the content model !cmodel is not enabled.',
+      array('!cmodel' => $registry[$cmodel]['cmodel_module'])));
+    exit;
+  }
   if ($options['bgcolor'] != 'blue') {
      module_load_include('inc', 'islandora_scg', 'includes/image_magic_colors');
      $image_magick_color_names = islandora_scg_get_color_names();
      if (!in_array($options['bgcolor'], $image_magick_color_names)) {
-       drush_set_error('Bad color name', 'Sorry, the value for --bgcolor is not a valid ImageMagick color name. Using default value of "blue".');
+       drush_set_error('Bad color name',
+         dt('Sorry, the value for --bgcolor (!color) is not a valid ImageMagick color name. Using default value of "blue".',
+           array('!color' => $options['bgcolor']))
+       );
        $options['bgcolor'] = 'blue';
      }
   }
 
-  // Map content models to classes. If you add new content
-  // models, register them here.
-  $registry = array(
-    'islandora:sp_basic_image' => 'IslandoraSampleBasicImageGenerator',
-    'islandora:sp_large_image_cmodel' => 'IslandoraSampleLargeImageGenerator',
-    'islandora:sp_pdf' => 'IslandoraSamplePdfGenerator',
-    'islandora:bookCModel' => 'IslandoraSampleBookGenerator',
-  );
-
   drush_print("Starting to generate sample content...");
-  $generator = new $registry[$options['content_model']]($options);
+  $generator = new $registry[$cmodel]['class']($options);
   $generator->createDataDir();
   $generator->generateContent();
 
