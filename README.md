@@ -35,17 +35,22 @@ The Islandora Sample Content Generator only has a drush interface. To use it, is
 Some sample commands are:
 
 * `sudo drush iscgl --user=admin --quantity=20 --content_model=islandora:sp_basic_image --parent=islandora:sp_basic_image_collection --namespace=testing`
-* `sudo drush iscgl --user=admin  --content_model=islandora:sp_pdf --parent=islandora:sp_pdf_collection --pages=10`
+* `sudo drush iscgl --user=admin  --content_model=islandora:sp_pdf --parent=islandora:sp_pdf_collection --pages=10`--metadata_file=/tmp/metadata.tsv
 
 There is no need to run Islandora Batch's drush commands separately - the Content Generator does that for you. Since the Content Generator's drush command creates a directory in your Drupal site's public files folder, you will need to run it as sudo, or make your files directory writable by the user running the command. The directory is deleted after the content is loaded.
 
-Optional parameters include `--quantity` (how many sample objects to create; defaults to 5), `--namespace` (the namespace to use for the sample objects; defaults to 'islandora'), `--pages` (how many pages to add to newspapers, books, and PDFs; defaults to 4), and `-bgcolor` (name of the background color for basic and large image content, from ImageMagick's "[list of color names](http://www.imagemagick.org/script/color.php)").
+Optional parameters include:
+* `--quantity` (how many sample objects to create; defaults to 5)
+* `--namespace` (the namespace to use for the sample objects; defaults to 'islandora')
+* `--pages` (how many pages to add to newspapers, books, and PDFs; defaults to 4)
+* `--bgcolor` (name of the background color for basic and large image content, from ImageMagick's "[list of color names](http://www.imagemagick.org/script/color.php)")
+* --metadata_file (the absolute path to the TSV file containing metadata, described below; defaults to `includes/sample_metadata.tsv`).
 
 ## Sample metadata
 
 The metadata used for the sample objects is taken, at random, from `includes/sample_metadata.tsv` ([view it here](https://github.com/mjordan/islandora_scg/blob/7.x/includes/sample_metadata.tsv)). This metadata is derived from [a collection of early-20th century postcards](http://content.lib.sfu.ca/cdm/landingpage/collection/bcp)* depicting various landscapes and landmarks in British Columbia. Each tab-delimited record contains a title, a date of publication, one or more place names, one or more subject keywords, and a description.
 
-If you want to use other metadata for your sample objects, you can replace this file with our own, as long as you follow the povided file's structure: five tab-separated columns: title, date, place name(s), subject keyword(s), and description. Repeated place names and subject keywords are separated by semicolons.
+If you want to use other metadata for your sample objects, you can replace this file with our own, as long as you follow the povided file's structure: five tab-separated columns: title, date, place name(s), subject keyword(s), and description. Repeated place names and subject keywords are separated by semicolons. You can pass in the absolute path to your metadata file using the `--metadata_file` parameter.
 
 If you want additional control of the metadata for your sample objects, you can use Drupal's theming layer to completely override the way that the MODS datastream is populated. Just override the islandora_scg_preprocess_islandora_scg_metadata_ds() function and the islandora_scg_metadata_ds.tpl.php template file.
 

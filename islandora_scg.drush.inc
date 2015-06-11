@@ -43,6 +43,11 @@ function islandora_scg_drush_command() {
         'Defaults to blue. Available colors are the "color name" ' .
         'at http://www.imagemagick.org/script/color.php.',
       ),
+      'metadata_file' => array(
+        'description' => 'Name of the tab-separated metadata file, ' .
+        "which must be in the module's includes directory. " .
+        "Defaults to sample_metadata.tsv.",
+      ),
     ),
     'bootstrap' => DRUSH_BOOTSTRAP_DRUPAL_LOGIN,
   );
@@ -53,6 +58,8 @@ function islandora_scg_drush_command() {
  * Generates and loads sample content.
  */
 function drush_islandora_scg_load() {
+  $path_to_metadata_file = drupal_get_path('module', 'islandora_scg') .
+    DIRECTORY_SEPARATOR . 'includes' . DIRECTORY_SEPARATOR . 'sample_metadata.tsv';
   $options = array(
     'quantity' => drush_get_option('quantity', 5),
     'content_model' => drush_get_option('content_model'),
@@ -60,6 +67,7 @@ function drush_islandora_scg_load() {
     'namespace' => drush_get_option('namespace', 'islandora'),
     'pages' => drush_get_option('pages', 4),
     'bgcolor' => drush_get_option('bgcolor', 'blue'),
+    'metadata_file' => drush_get_option('metadata_file', $path_to_metadata_file),
   );
 
   // Map content models to classes, batch loader modules, etc.
