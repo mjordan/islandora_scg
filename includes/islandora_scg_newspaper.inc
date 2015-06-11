@@ -42,7 +42,9 @@ class IslandoraSampleNewspaperGenerator extends IslandoraSampleContentGenerator 
     $batch_cmd .= ' --parent_relationship_pred=isMemberOfCollection --type=directory --target=' . $this->data_dir;
     exec($batch_cmd);
     $ingest_cmd = 'drush -u 1 --uri=http://localhost islandora_batch_ingest';
-    exec($ingest_cmd);
+    drush_shell_exec($ingest_cmd);
+    $result = drush_shell_exec_output();
+    print_r($result);
   }
 
 }
