@@ -20,13 +20,14 @@ class IslandoraSampleNewspaperGenerator extends IslandoraSampleContentGenerator 
       // Get the title to add to the image.
       $mods = simplexml_load_string($metadata_ds);
       $title = $mods->titleInfo[0]->title;
-      $text = htmlspecialchars_decode($title) . "\n\n(newspaper)";
+      $text = htmlspecialchars_decode($title);
 
       // Generate the OBJ datastream file. Newapapers don't need this according to
-      // their content model but we add it so keep Islandora Batch happy.
-      $cmd = "convert -size 1000x1000 xc:" . $this->bgcolor ." ";
+      // their content model but we add it so keep Islandora Batch happy. Plus this
+      // image is used to create the thumbnail.
+      $cmd = "convert -size 1000x1000 xc:white ";
       $cmd .= $this->data_dir .  DIRECTORY_SEPARATOR . $i . '.jpg; ';
-      $cmd .= "convert -size 1000x1000 xc:" . $this->bgcolor . " -pointsize 100 -fill white ";
+      $cmd .= "convert -size 1000x1000 xc:white -pointsize 100 -fill black ";
       $cmd .= "-gravity center -annotate +0+0 " .  escapeshellarg(wordwrap($text, 15));
       $cmd .=  " " . $this->data_dir . DIRECTORY_SEPARATOR . $i . ".jpg";
       drush_print("Generating sample content for $title");
