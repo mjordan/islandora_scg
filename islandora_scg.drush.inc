@@ -85,6 +85,16 @@ function drush_islandora_scg_load() {
       'cmodel_module' => 'islandora_book',
       'batch_loader_module' => 'islandora_book_batch',
     ),
+    'islandora:newspaperCModel' => array(
+      'class' => 'IslandoraSampleNewspaperGenerator',
+      'cmodel_module' => 'islandora_newspaper',
+      'batch_loader_module' => 'islandora_batch',
+    ),
+    'islandora:newspaperPageCModel' => array(
+      'class' => 'IslandoraSampleNewspaperIssueGenerator',
+      'cmodel_module' => 'islandora_newspaper',
+      'batch_loader_module' => 'islandora_newspaper_batch',
+    ),
   );
 
   // Perform some validation on the options.
