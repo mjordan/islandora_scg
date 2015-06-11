@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This module uses ImageMagick's `convert` command to generate sample images containing brief text, which are then ingested along with an accompanying MODS datastream using Islandora Batch's drush interface. It can generate objects of the following content models:
+This module uses ImageMagick's `convert` command to generate sample images containing brief text, which are then ingested along with an accompanying MODS datastream using Islandora Batch's drush interface. It can generate objects with the following content models:
 
 * Basic image
 * Large image
@@ -18,11 +18,13 @@ Paged content (including PDFs) has a white background with black text:
 
 ![Islandora Sample Content Generator thumbnail for paged content](https://dl.dropboxusercontent.com/u/1015702/linked_to/islandora_scg/islandora_scg_sample_tn_paged.jpg)
 
-## Requiredments
+## Requirements
 
 * [Islandora Batch](https://github.com/Islandora/islandora_batch)
 * To ingest books, you will need [Islandora Book Batch](https://github.com/Islandora/islandora_book_batch)
 * To ingest newspaper issues, you will need [Islandora Newspaper Batch](https://github.com/mjordan/islandora_newspaper_batch)
+
+If you don't have Book Batch or Newspaper Batch installed and try to generate sample book or newspaper content, drush will tell you that you need to enable the relevant module and exit.
 
 ImageMagick must be installed on the server, which is the case on most, if not all, Islandora servers.
 
