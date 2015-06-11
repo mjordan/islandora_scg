@@ -43,7 +43,7 @@ Optional parameters include:
 * `--quantity` (how many sample objects to create; defaults to 5)
 * `--namespace` (the namespace to use for the sample objects; defaults to 'islandora')
 * `--pages` (how many pages to add to PDFs, books, and newspaper issues; defaults to 4)
-* `--bgcolor` (name of the background color for basic and large image content, from ImageMagick's "[list of color names](http://www.imagemagick.org/script/color.php)")
+* `--bgcolor` (name of the background color for basic and large image content, from ImageMagick's "[list of color names](http://www.imagemagick.org/script/color.php)"; defaults to "blue")
 * `--metadata_file` (the absolute path to the TSV file containing metadata, described below; defaults to `includes/sample_metadata.tsv`).
 * `--quantity_newspaper_issues` (number of issues to add to each newspaper; defaults to 0)
 
@@ -59,11 +59,11 @@ Be careful with the last option, since high values in the `--quantity` and `--qu
 
 ## Sample metadata
 
-The metadata used for the sample objects is taken, at random, from `includes/sample_metadata.tsv` ([view it here](https://github.com/mjordan/islandora_scg/blob/7.x/includes/sample_metadata.tsv)). This metadata is derived from [a collection of early-20th century postcards](http://content.lib.sfu.ca/cdm/landingpage/collection/bcp)* depicting various landscapes and landmarks in British Columbia. Each tab-delimited record contains a title, a date of publication, one or more place names, one or more subject keywords, and a description.
+The metadata used for the sample objects is taken, at random, from `includes/sample_metadata.tsv` ([view it here](https://github.com/mjordan/islandora_scg/blob/7.x/includes/sample_metadata.tsv)). This metadata is derived from [a collection of early-20th century postcards](http://content.lib.sfu.ca/cdm/landingpage/collection/bcp)* depicting various landscapes and landmarks in British Columbia. Each tab-delimited record contains a title, a date of publication, one or more place names, one or more subject keywords, and a description. All columns are required but can be empty.
 
 If you want to use other metadata for your sample objects, you can replace this file with our own, as long as you follow the povided file's structure: five tab-separated columns: title, date, place name(s), subject keyword(s), and description. Repeated place names and subject keywords are separated by semicolons. You can pass in the absolute path to your metadata file using the `--metadata_file` parameter. If you are using your own metadata file, lines from it will be picked at random, just like with the default metadata file.
 
-If you want additional control of the metadata for your sample objects, you can use Drupal's theming layer to completely override the way that the MODS datastream is populated. Just override the islandora_scg_preprocess_islandora_scg_metadata_ds() function and the islandora_scg_metadata_ds.tpl.php template file.
+You can gain additional control of the metadata for your sample objects by using Drupal's theming layer to completely override the way that the MODS datastream is populated. To do so, override the islandora_scg_preprocess_islandora_scg_metadata_ds() function and the islandora_scg_metadata_ds.tpl.php template file.
 
 ## Maintainer
 
