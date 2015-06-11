@@ -25,6 +25,7 @@ abstract class IslandoraSampleContentGenerator {
     $this->pages = $options['pages'];
     $this->bgcolor = $options['bgcolor'];
     $this->metadata_file = $options['metadata_file'];
+    $this->quantity_newspaper_issues = $options['quantity_newspaper_issues'];
 
     // Path to the directory where the sample content is written.
     $this->data_dir = drupal_realpath('public://') . DIRECTORY_SEPARATOR . 'islandora_scg';

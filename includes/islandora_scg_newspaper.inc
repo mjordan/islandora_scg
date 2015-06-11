@@ -43,8 +43,27 @@ class IslandoraSampleNewspaperGenerator extends IslandoraSampleContentGenerator 
     exec($batch_cmd);
     $ingest_cmd = 'drush -u 1 --uri=http://localhost islandora_batch_ingest';
     drush_shell_exec($ingest_cmd);
-    $result = drush_shell_exec_output();
-    print_r($result);
+    $newspaper_load_result = drush_shell_exec_output();
+
+    $newspaper_pids = array();
+    foreach ($newspaper_load_result as $ingested_status) {
+      if (preg_match('/^Ingested\s/', $ingested_status)) {
+        $ingested_status = preg_replace('/^Ingested\s/', '', $ingested_status);
+        $ingested_status = preg_replace('/\..*$/', '', $ingested_status);
+        $newspaper_pids[] = trim($ingested_status);
+      }
+    }
+
+    // Load issues into each newspaper that was ingested.
+    if ($this->quantity_newspaper_issues) {
+      foreach ($newspaper_pids as $newspaper_pid) {
+        drush_print("Loading issues into $newspaper_pid");
+        exec("drush iscgl --user=admin --quantity=$this->quantity_newspaper_issues --content_model=islandora:newspaperPageCModel --parent=$newspaper_pid --namespace=$this->namespace");
+      }
+    }
+    else {
+      drush_print("Loading newspapers with no issues.");
+    }
   }
 
 }

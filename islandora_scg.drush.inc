@@ -48,6 +48,10 @@ function islandora_scg_drush_command() {
         "which must be in the module's includes directory. " .
         "Defaults to sample_metadata.tsv.",
       ),
+      'quantity_newspaper_issues' => array(
+        'description' => 'Number of newspaper issues to load into each newspaper ' .
+        "Defaults to 0.",
+      ),
     ),
     'bootstrap' => DRUSH_BOOTSTRAP_DRUPAL_LOGIN,
   );
@@ -68,6 +72,7 @@ function drush_islandora_scg_load() {
     'pages' => drush_get_option('pages', 4),
     'bgcolor' => drush_get_option('bgcolor', 'blue'),
     'metadata_file' => drush_get_option('metadata_file', $path_to_metadata_file),
+    'quantity_newspaper_issues' => drush_get_option('quantity_newspaper_issues', 0),
   );
 
   // Map content models to classes, batch loader modules, etc.

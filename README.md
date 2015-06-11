@@ -45,6 +45,17 @@ Optional parameters include:
 * `--pages` (how many pages to add to newspapers, books, and PDFs; defaults to 4)
 * `--bgcolor` (name of the background color for basic and large image content, from ImageMagick's "[list of color names](http://www.imagemagick.org/script/color.php)")
 * `--metadata_file` (the absolute path to the TSV file containing metadata, described below; defaults to `includes/sample_metadata.tsv`).
+* `--quantity_newspaper_issues` (number of issues to add to each newspaper; defaults to 0)
+
+## Generating and ingesting newspapers
+
+Islandora Sample Content Generator provides several options for creating newspaper content.
+
+* You can generate and load newspapers (e.g., `drush iscgl --user=admin --quantity=2 --content_model=islandora:newspaperCModel --parent=islandora:newspaper_collection --namespace=islandora` will generate and load 2 newspapers in the collection with PID "islandora:newspapers")
+* You can generate and load newspaper issues into existing newspapers (e.g., `drush iscgl --user=admin --quantity=2 --content_model=islandora:newspaperPageCModel --parent=testing:62 --namespace=testing` will generate and load two issues into the existing newspaper with PID "existing:62")
+* You can generate and load newspapers and populate them with issues at the same time (e.g., `drush iscgl --user=admin --quantity=2 --content_model=islandora:newspaperCModel --parent=islandora:newspaper_collection --namespace=islandora --quantity_newspaper_issues=4` will generate and load 2 newspapers into the collection with PID "islandora_newspaper_collection" and also generate and load 4 issues into each)
+
+Be careful with the last option, since the combination of`--quantity` and `--quantity_newspaper_issues` values can quickly add up to a lot of batch generating and loadin.
 
 ## Sample metadata
 
