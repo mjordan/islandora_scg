@@ -6,9 +6,9 @@ This module uses ImageMagick's `convert` command to generate sample images conta
 
 * Basic image
 * Large image
-* PDF
-* Book
-* Newspaper (in development)
+* PDF (single or multipage)
+* Book (including pages)
+* Newspaper and newspaper page
 
 The images are very simple, just a colored background with the title of the object in white text as illustrated by this thumbnail datastream:
 
@@ -51,11 +51,11 @@ Optional parameters include:
 
 Islandora Sample Content Generator provides several options for creating newspaper content.
 
-* You can generate and load newspapers (e.g., `drush iscgl --user=admin --quantity=2 --content_model=islandora:newspaperCModel --parent=islandora:newspaper_collection --namespace=islandora` will generate and load 2 newspapers in the collection with PID "islandora:newspapers")
-* You can generate and load newspaper issues into existing newspapers (e.g., `drush iscgl --user=admin --quantity=2 --content_model=islandora:newspaperPageCModel --parent=testing:62 --namespace=testing` will generate and load two issues into the existing newspaper with PID "existing:62")
-* You can generate and load newspapers and populate them with issues at the same time (e.g., `drush iscgl --user=admin --quantity=2 --content_model=islandora:newspaperCModel --parent=islandora:newspaper_collection --namespace=islandora --quantity_newspaper_issues=4` will generate and load 2 newspapers into the collection with PID "islandora_newspaper_collection" and also generate and load 4 issues into each)
+* You can generate and load newspapers (e.g., `drush iscgl --user=admin --quantity=2 --content_model=islandora:newspaperCModel --parent=islandora:newspaper_collection --namespace=islandora` will generate and load 2 newspapers in the collection with PID "islandora:newspaper_collection")
+* You can generate and load issues into an existing newspaper (e.g., `drush iscgl --user=admin --quantity=2 --content_model=islandora:newspaperPageCModel --parent=testing:62 --namespace=testing` will generate and load two issues into the existing newspaper with PID "testing:62")
+* You can generate and load newspapers and populate each one with issues at the same time (e.g., `drush iscgl --user=admin --quantity=2 --content_model=islandora:newspaperCModel --parent=islandora:newspaper_collection --namespace=islandora --quantity_newspaper_issues=4` will generate and load 2 newspapers into the collection with PID "islandora_newspaper_collection" and also generate and load 4 issues into each)
 
-Be careful with the last option, since the combination of`--quantity` and `--quantity_newspaper_issues` values can quickly add up to a lot of batch generating and loadin.
+Be careful with the last option, since high values in the `--quantity` and `--quantity_newspaper_issues` parameters can quickly add up to a lot of batch generating and loading.
 
 ## Sample metadata
 
