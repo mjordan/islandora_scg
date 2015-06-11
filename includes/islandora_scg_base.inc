@@ -24,6 +24,7 @@ abstract class IslandoraSampleContentGenerator {
     $this->namespace = $options['namespace'];
     $this->pages = $options['pages'];
     $this->bgcolor = $options['bgcolor'];
+    $this->metadata_file = $options['metadata_file'];
 
     // Path to the directory where the sample content is written.
     $this->data_dir = drupal_realpath('public://') . DIRECTORY_SEPARATOR . 'islandora_scg';
@@ -39,7 +40,10 @@ abstract class IslandoraSampleContentGenerator {
    *  The value to use in the MODS <genre> element.
    */
   public function generateMetadataDs($genre = '') {
-    return theme('islandora_scg_metadata_ds', array('genre' => $genre));
+    return theme('islandora_scg_metadata_ds', array(
+      'genre' => $genre,
+      'metadata_file' => $this->metadata_file)
+    );
   }
 
   /**
