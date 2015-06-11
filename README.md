@@ -44,7 +44,7 @@ Optional parameters include:
 * `--namespace` (the namespace to use for the sample objects; defaults to 'islandora')
 * `--pages` (how many pages to add to newspapers, books, and PDFs; defaults to 4)
 * `--bgcolor` (name of the background color for basic and large image content, from ImageMagick's "[list of color names](http://www.imagemagick.org/script/color.php)")
-* --metadata_file (the absolute path to the TSV file containing metadata, described below; defaults to `includes/sample_metadata.tsv`).
+* `--metadata_file` (the absolute path to the TSV file containing metadata, described below; defaults to `includes/sample_metadata.tsv`).
 
 ## Sample metadata
 
