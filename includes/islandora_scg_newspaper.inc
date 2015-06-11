@@ -56,6 +56,8 @@ class IslandoraSampleNewspaperGenerator extends IslandoraSampleContentGenerator 
 
     // Load issues into each newspaper that was ingested.
     if ($this->quantity_newspaper_issues) {
+      drush_print(dt("Loading !num_issues issues into each newspaper.",
+        array('!num_issues' => $this->quantity_newspaper_issues)));
       foreach ($newspaper_pids as $newspaper_pid) {
         drush_print("Loading issues into $newspaper_pid");
         exec("drush iscgl --user=admin --quantity=$this->quantity_newspaper_issues --content_model=islandora:newspaperPageCModel --parent=$newspaper_pid --namespace=$this->namespace");
