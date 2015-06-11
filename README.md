@@ -30,7 +30,7 @@ ImageMagick must be installed on the server, which is the case on most, if not a
 
 ## Usage
 
-The Islandora Sample Content Generator only has a drush interface. To use it, issue the following command template:
+The Islandora Sample Content Generator only has a drush interface. To use it, issue a command using the following template:
 
 `drush iscgl --user=someuser --content_model=foo:contentModel --parent=bar:collection`
 
