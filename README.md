@@ -35,7 +35,7 @@ The Islandora Sample Content Generator only has a drush interface. To use it, is
 Some sample commands are:
 
 * `sudo drush iscgl --user=admin --quantity=20 --content_model=islandora:sp_basic_image --parent=islandora:sp_basic_image_collection --namespace=testing`
-* `sudo drush iscgl --user=admin  --content_model=islandora:sp_pdf --parent=islandora:sp_pdf_collection --pages=10`--metadata_file=/tmp/metadata.tsv
+* `sudo drush iscgl --user=admin  --content_model=islandora:sp_pdf --parent=islandora:sp_pdf_collection --pages=10 --metadata_file=/tmp/metadata.tsv`
 
 There is no need to run Islandora Batch's drush commands separately - the Content Generator does that for you. Since the Content Generator's drush command creates a directory in your Drupal site's public files folder, you will need to run it as sudo, or make your files directory writable by the user running the command. The directory is deleted after the content is loaded.
 
