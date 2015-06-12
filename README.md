@@ -18,6 +18,8 @@ Textual content (PDFs, books, and newspaper issues) has a white background with 
 
 ![Islandora Sample Content Generator thumbnail for paged content](https://dl.dropboxusercontent.com/u/1015702/linked_to/islandora_scg/islandora_scg_sample_tn_paged.jpg)
 
+The images aren't meant to look good, they're meant to give you some objects to test your site, configure your search/browse, test your new theme, etc.
+
 ## Requirements
 
 * [Islandora Batch](https://github.com/Islandora/islandora_batch)
