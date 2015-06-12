@@ -28,7 +28,7 @@ abstract class IslandoraSampleContentGenerator {
     $this->quantity_newspaper_issues = $options['quantity_newspaper_issues'];
 
     // Path to the directory where the sample content is written.
-    $this->data_dir = drupal_realpath('public://') . DIRECTORY_SEPARATOR . 'islandora_scg';
+    $this->data_dir = file_directory_temp() . DIRECTORY_SEPARATOR . 'islandora_scg';
     // Serialized XML content that will be used for the MODS, DC,
     // etc. datastream.
     $this->metadata_ds = '';
