@@ -25,6 +25,7 @@ The images aren't meant to look good, they're meant to give you some objects to 
 * [Islandora Batch](https://github.com/Islandora/islandora_batch)
 * To ingest books, you will need [Islandora Book Batch](https://github.com/Islandora/islandora_book_batch)
 * To ingest newspaper issues, you will need [Islandora Newspaper Batch](https://github.com/mjordan/islandora_newspaper_batch)
+* To use the 'iscgd' command, you will need [Islandora Solr Search](https://github.com/Islandora/islandora_solr_search)
 
 If you don't have Book Batch or Newspaper Batch installed and try to generate sample book or newspaper content, drush will tell you that you need to enable the relevant module and exit.
 
@@ -32,7 +33,7 @@ ImageMagick must be installed on the server, which is the case on most, if not a
 
 ## Usage
 
-The Islandora Sample Content Generator only has a drush interface. To use it, issue a command using the following template:
+The Islandora Sample Content Generator only has a drush interface. To load objects using it, issue a command using the following template:
 
 `drush iscgl --user=someuser --content_model=foo:contentModel --parent=bar:collection`
 
@@ -50,6 +51,12 @@ Optional parameters include:
 * `--bgcolor` (name of the background color for basic and large image content, from ImageMagick's [list of color names](http://www.imagemagick.org/script/color.php); defaults to "blue")
 * `--metadata_file` (the absolute path to the TSV file containing metadata, described below; defaults to `includes/sample_metadata.tsv`).
 * `--quantity_newspaper_issues` (number of issues to add to each newspaper; defaults to 0)
+
+To purge objects created with this module, issue a command with the following template:
+
+`drush iscgd --user=someuser --content_model=foo:contentModel --parent=bar:collection`
+
+The `--content_model` and `--parent` parameters are both optional. If you want to purge *all* sample objects, include the `--quantity=all` parameter. The 'iscgd' comand does not prompt you to confirm your choices, so choose them wisely.
 
 ## Generating and ingesting newspapers
 

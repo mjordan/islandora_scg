@@ -183,7 +183,7 @@ function drush_islandora_scg_dump() {
     $query = $query;
   }
   else {
-    // @todo: add checks for whether cotent model and parent are provided as options.
+    // @todo: Check that at least one of content model or parent are provided as options.
     if (drush_get_option('content_model')) {
       $query .= '%20AND%20RELS_EXT_hasModel_uri_t:%22' . drush_get_option('content_model') . '%22';
     }
