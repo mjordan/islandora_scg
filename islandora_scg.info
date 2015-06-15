@@ -6,6 +6,7 @@ core = 7.x
 php = 5.3
 dependencies[] = islandora
 dependencies[] = islandora_batch
+files[] = includes/utilities.inc
 files[] = includes/islandora_scg_base.inc
 files[] = includes/islandora_scg_basic_image.inc
 files[] = includes/islandora_scg_large_image.inc
