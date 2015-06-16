@@ -45,8 +45,11 @@ function islandora_scg_query_solr($query) {
  *   The content model of the book or newspaper object.
  */
 function islandora_scg_get_descendents($pid, $cmodel) {
+  if (!module_exists('islandora_paged_content')) {
+    drush_set_error('Content model module not available', dt('Sorry, the Islandora Paged Content module is not enabled.'));
+    exit;
+  }
   module_load_include('inc', 'islandora_paged_content', 'includes/utilities');
-  module_load_include('inc', 'islandora_newspaper', 'includes/utilities');
   $parent_object = islandora_object_load($pid);
 
   if ($cmodel == 'islandora:bookCModel') {
@@ -54,7 +57,14 @@ function islandora_scg_get_descendents($pid, $cmodel) {
     $page_pids = array_keys($pages);
     return $page_pids;
   }
+
   if ($cmodel == 'islandora:newspaperCModel') {
+    if (!module_exists('islandora_newspaper')) {
+      drush_set_error('Content model module not available', dt('Sorry, the Islandora Newspaper Solution Pack is not enabled.'));
+      exit;
+    }
+    module_load_include('inc', 'islandora_newspaper', 'includes/utilities');
+    module_load_include('inc', 'islandora_paged_content', 'includes/utilities');
     $all_descendent_pids = array();
     // Get all the newspaper's issues.
     $issues = islandora_newspaper_get_issues($parent_object);
