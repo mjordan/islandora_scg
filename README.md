@@ -18,7 +18,7 @@ Textual content (PDFs, books, and newspaper issues) has a white background with 
 
 ![Islandora Sample Content Generator thumbnail for paged content](https://dl.dropboxusercontent.com/u/1015702/linked_to/islandora_scg/islandora_scg_sample_tn_paged.jpg)
 
-The images aren't meant to look good, they're meant to give you some objects to test your site, configure your search/browse, try out a new theme with some content, etc.
+The images aren't meant to look good, they're meant to give you some objects to test your site, configure your search/browse, test permissions, etc.
 
 ## Requirements
 
@@ -33,7 +33,11 @@ ImageMagick must be installed on the server, which is the case on most, if not a
 
 ## Usage
 
-The Islandora Sample Content Generator only has a drush interface. To load objects using it, issue a command using the following template:
+The Islandora Sample Content Generator provides two drush commands, one to generate and load objects, and one to purge those objects. There is no graphical user interface.
+
+### Loading sample objects
+
+To load sample objects, issue a command using the following template:
 
 `drush iscgl --user=someuser --content_model=foo:contentModel --parent=bar:collection`
 
@@ -51,6 +55,8 @@ Optional parameters include:
 * `--bgcolor` (name of the background color for basic and large image content, from ImageMagick's [list of color names](http://www.imagemagick.org/script/color.php); defaults to "blue")
 * `--metadata_file` (the absolute path to the TSV file containing metadata, described below; defaults to `includes/sample_metadata.tsv`).
 * `--quantity_newspaper_issues` (number of issues to add to each newspaper; defaults to 0)
+
+### Purging sample objects
 
 To purge objects created with this module, issue a command with the following template:
 
