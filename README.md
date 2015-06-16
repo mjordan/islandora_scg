@@ -64,7 +64,7 @@ To purge objects created with this module, issue a command with the following te
 
 The `--content_model` and `--parent` parameters are both optional. If you want to purge *all* sample objects, include the `--quantity=all` parameter. The 'iscgd' comand does not prompt you to confirm your choices, so choose them wisely.
 
-## Generating and ingesting newspapers
+## Generating and loading newspapers
 
 Islandora Sample Content Generator provides several options for creating newspaper content.
 
