@@ -22,7 +22,7 @@ function islandora_scg_drush_command() {
         'description' => 'The number of objects to load. Defaults to 5.',
       ),
       'content_model' => array(
-        'description' => 'The content models to assign to the objects.',
+        'description' => 'The content model to assign to the objects.',
         'required' => TRUE,
       ),
       'parent' => array(
@@ -57,7 +57,7 @@ function islandora_scg_drush_command() {
   );
   $items['islandora_scg_dump'] = array(
     'aliases' => array('iscgd'),
-    'description' => 'Dump (purge) sample Islandora content',
+    'description' => 'Dump (purge) sample Islandora content, including child pages for books and newspaper issues.',
     'examples' => array(
       'drush iscgd --user=admin --quantity=all',
       'drush iscgd --user=admin --content_model=islandora:sp_basic_image --parent=islandora:sp_basic_image_collection',
@@ -69,7 +69,7 @@ function islandora_scg_drush_command() {
         'must be defined by combinations of --content_model and --parent.'
       ),
       'content_model' => array(
-        'description' => 'The content models of the objects to purge.',
+        'description' => 'The content model of the objects to purge.',
       ),
       'parent' => array(
         'description' => 'The collection from which to purge the objects. ' .
