@@ -18,7 +18,9 @@ Textual content (PDFs, books, and newspaper issues) has a white background with 
 
 ![Islandora Sample Content Generator thumbnail for paged content](https://dl.dropboxusercontent.com/u/1015702/linked_to/islandora_scg/islandora_scg_sample_tn_paged.jpg)
 
-The images aren't meant to look good, they're intended to act as *lorem ipsum* content so you can test your site's configuration and behavior, or quickly populate an Islandora instance for training. Also, since the content is loaded using Islandora's standard batch tools, all the standard derivatives are created.
+The images aren't meant to look good, they're intended to act as *lorem ipsum* content so you can test your site's configuration and behavior, or quickly populate an Islandora instance for training.
+
+As an added bonus, since all sample content is loaded using Islandora's standard batch tools, all the standard derivatives are created.
 
 ## Requirements
 
