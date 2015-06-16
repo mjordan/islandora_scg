@@ -11,7 +11,7 @@
  * The object is the one corresponding to the alias and pointer.
  *
  * @param string $query
- *   The CONTENTdm collection alias
+ *   The query to send to Solr.
  */
 function islandora_scg_query_solr($query) {
   if (is_null($query)) {
@@ -34,4 +34,39 @@ function islandora_scg_query_solr($query) {
     $pid_list[] = $doc->PID;
   }
   return $pid_list;
+}
+
+/**
+ * Gets the PIDs of a book or newspaper issue's descendents.
+ *
+ * @param string $pid
+ *   The PID of the book or newspaper object.
+ * @param string $cmodel
+ *   The content model of the book or newspaper object.
+ */
+function islandora_scg_get_descendents($pid, $cmodel) {
+  module_load_include('inc', 'islandora_paged_content', 'includes/utilities');
+  module_load_include('inc', 'islandora_newspaper', 'includes/utilities');
+  $parent_object = islandora_object_load($pid);
+
+  if ($cmodel == 'islandora:bookCModel') {
+    $pages = islandora_paged_content_get_pages($parent_object);
+    $page_pids = array_keys($pages);
+    return $page_pids;
+  }
+  if ($cmodel == 'islandora:newspaperCModel') {
+    $all_descendent_pids = array();
+    // Get all the newspaper's issues.
+    $issues = islandora_newspaper_get_issues($parent_object);
+    $issue_keys = array_keys($issues);
+    // For each issue in the newspaper, add its pages' PIDs to
+    // $all_descendent_pids.
+    foreach ($issue_keys as $issue_pid) {
+      $issue_object = islandora_object_load($issue_pid);
+      $issue_pages = islandora_paged_content_get_pages($issue_object);
+      $issue_page_keys = array_keys($issue_pages);
+      $all_descendent_pids = array_merge($all_descendent_pids, $issue_page_keys);
+    }
+    return $all_descendent_pids;
+  }
 }
