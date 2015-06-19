@@ -9,6 +9,7 @@ This module uses ImageMagick's `convert` command to generate sample images conta
 * PDF (islandora:sp_pdf)
 * Book, including pages (islandora:bookCModel)
 * Newspaper, and newspaper issues, including pages (islandora:newspaperCModel and islandora:newspaperPageCModel)
+* Collection (islandora:collectionCModel)
 
 The images are very simple (some would say downright boring), just a colored background with the title of the object in white text as illustrated by this thumbnail datastream:
 
