@@ -12,6 +12,9 @@
  *
  * @param string $query
  *   The query to send to Solr.
+ *
+ * @return array
+ *   An array containing all of the PIDs matching $query.
  */
 function islandora_scg_query_solr($query) {
   if (is_null($query)) {
@@ -43,6 +46,9 @@ function islandora_scg_query_solr($query) {
  *   The PID of the book or newspaper object.
  * @param string $cmodel
  *   The content model of the book or newspaper object.
+ *
+ * @return array
+ *   An array contianing all the descendent objects' PIDs.
  */
 function islandora_scg_get_descendents($pid, $cmodel) {
   if (!module_exists('islandora_paged_content')) {
