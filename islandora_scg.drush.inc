@@ -191,6 +191,16 @@ function drush_islandora_scg_dump() {
     exit;
   }
 
+  // If applicable, confirm the parent object exists and is accessible;
+  // if it's not, exit with an error.
+  if (drush_get_option('parent')) {
+    if (empty(islandora_object_load(drush_get_option('parent')))) {
+      drush_set_error('PARENT_NOT_FOUND', dt('The specified parent object (!parent) is not found or is not accessible.',
+        array('!parent' => drush_get_option('parent'))));
+      exit;
+    }
+  }
+
   module_load_include('inc', 'islandora_scg', 'includes/utilities');
   $query = 'mods_recordInfo_recordOrigin_t:%22Islandora%20Sample%20Content%20Generator%22';
   // Build up the Solr query so that content model and parent are appended

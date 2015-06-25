@@ -21,7 +21,7 @@ function islandora_scg_query_solr($query) {
     return FALSE;
   }
   $solr_url = variable_get('islandora_solr_url', 'http://localhost:8080/solr');
-  $pid_query = $solr_url . '/select?version=1.2&wt=json&json.nl=map&q=' . $query;
+  $pid_query = $solr_url . '/select?version=1.2&rows=1000000&wt=json&json.nl=map&q=' . $query;
   $raw_result = drupal_http_request($pid_query);
   if ($raw_result->code != 200) {
     return FALSE;
