@@ -99,6 +99,14 @@ function drush_islandora_scg_load() {
     'quantity_newspaper_issues' => drush_get_option('quantity_newspaper_issues', 0),
   );
 
+  // Confirm the parent object exists and is accessible;
+  // if not, exit with an error.
+  if (empty(islandora_object_load($options['parent']))) {
+    drush_set_error('Parent not found', dt('The specified parent object (!parent) is not found or is not accessible.',
+      array('!parent' => $options['parent'])));
+    exit;
+  }
+
   // Map content models to classes, batch loader modules, etc.
   // If you add new content models, register them here.
   $registry = array(
