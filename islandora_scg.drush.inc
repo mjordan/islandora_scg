@@ -102,7 +102,7 @@ function drush_islandora_scg_load() {
   // Confirm the parent object exists and is accessible;
   // if not, exit with an error.
   if (empty(islandora_object_load($options['parent']))) {
-    drush_set_error('Parent not found', dt('The specified parent object (!parent) is not found or is not accessible.',
+    drush_set_error('PARENT_NOT_FOUND', dt('The specified parent object (!parent) is not found or is not accessible.',
       array('!parent' => $options['parent'])));
     exit;
   }
@@ -150,12 +150,12 @@ function drush_islandora_scg_load() {
   // Perform some validation on the options.
   $cmodel = $options['content_model'];
   if (!module_exists($registry[$cmodel]['batch_loader_module'])) {
-    drush_set_error('Loader not available', dt('Sorry, the batch loader module !loader is not enabled.',
+    drush_set_error('LOADER_MODULE_NOT_AVAILABLE', dt('Sorry, the batch loader module !loader is not enabled.',
       array('!loader' => $registry[$cmodel]['batch_loader_module'])));
     exit;
   }
   if (!module_exists($registry[$cmodel]['cmodel_module'])) {
-    drush_set_error('Content model module not available', dt('Sorry, the module that defines the content model !cmodel is not enabled.',
+    drush_set_error('CONTENT_MODEL_MODULE_NOT_AVAILABLE', dt('Sorry, the module that defines the content model !cmodel is not enabled.',
       array('!cmodel' => $registry[$cmodel]['cmodel_module'])));
     exit;
   }
@@ -163,7 +163,7 @@ function drush_islandora_scg_load() {
      module_load_include('inc', 'islandora_scg', 'includes/image_magic_colors');
      $image_magick_color_names = islandora_scg_get_color_names();
      if (!in_array($options['bgcolor'], $image_magick_color_names)) {
-       drush_set_error('Bad color name',
+       drush_set_error('BAD_COLOR_NAME',
          dt('Sorry, the value for --bgcolor (!color) is not a valid ImageMagick color name. Using default value of "blue".',
            array('!color' => $options['bgcolor']))
        );
@@ -186,7 +186,7 @@ function drush_islandora_scg_load() {
  */
 function drush_islandora_scg_dump() {
   if (!module_exists('islandora_solr')) {
-    drush_set_error('Solr search not available',
+    drush_set_error('SOLR_SEARCH_NOT_AVAILABLE',
       dt('Sorry, Islandora Solr Search not enabled.'));
     exit;
   }
@@ -201,7 +201,7 @@ function drush_islandora_scg_dump() {
   else {
     // Check that at least one of content model or parent are provided as options.
     if (!drush_get_option('content_model') && !drush_get_option('parent')) {
-      drush_set_error('iscd options required',
+      drush_set_error('ISCD_OPTIONS_REQUIRED',
         dt('Sorry, you need to specify at least one of --parent or --content_model.'));
       exit;
       
