@@ -26,6 +26,12 @@ abstract class IslandoraSampleContentGenerator {
     $this->bgcolor = $options['bgcolor'];
     $this->metadata_file = $options['metadata_file'];
     $this->quantity_newspaper_issues = $options['quantity_newspaper_issues'];
+    if ($options['timer']) {
+      $this->timer = TRUE;
+    }
+    else {
+      $this->timer = FALSE;
+    }
 
     // Path to the directory where the sample content is written.
     $this->data_dir = file_directory_temp() . DIRECTORY_SEPARATOR . 'islandora_scg';
@@ -62,6 +68,26 @@ abstract class IslandoraSampleContentGenerator {
   public function removeDataDir() {
     if (file_exists($this->data_dir)) {
       file_unmanaged_delete_recursive($this->data_dir);
+    }
+  }
+
+  /**
+   * Starts the benchmark timer.
+   */
+  public function startTimer() {
+    $time_start = microtime(true);
+    return $time_start;
+  }
+
+  /**
+   * Stops the benchmark timer and reports the results.
+   */
+  public function stopTimer($time_start, $quantity, $label) {
+    if ($this->timer) {
+      $time_end = microtime(true);
+      $time = $time_end - $time_start;
+      $average_time = $time / $quantity;
+      print "Took $time microseconds to ingest $quantity $label (for an average of $average_time microseconds each)\n";
     }
   }
 

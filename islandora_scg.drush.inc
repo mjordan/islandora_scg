@@ -52,6 +52,9 @@ function islandora_scg_drush_command() {
         'description' => 'Number of newspaper issues to load into each newspaper ' .
         "Defaults to 0.",
       ),
+      'timer' => array(
+        'description' => 'Use the timer, which indicates how long it took to ingest the objects.',
+      ),
     ),
     'bootstrap' => DRUSH_BOOTSTRAP_DRUPAL_LOGIN,
   );
@@ -97,6 +100,7 @@ function drush_islandora_scg_load() {
     'bgcolor' => drush_get_option('bgcolor', 'blue'),
     'metadata_file' => drush_get_option('metadata_file', $path_to_metadata_file),
     'quantity_newspaper_issues' => drush_get_option('quantity_newspaper_issues', 0),
+    'timer' => drush_get_option('timer', FALSE),
   );
 
   // Confirm the parent object exists and is accessible;

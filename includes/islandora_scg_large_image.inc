@@ -39,6 +39,7 @@ class IslandoraSampleLargeImageGenerator extends IslandoraSampleContentGenerator
    * Runs the Islandora Batch drush commands to ingest the sample content.
    */
   public function loadContent() {
+    $start_time = $this->startTimer();
     $batch_cmd = 'drush -u 1 --uri=http://localhost islandora_batch_scan_preprocess';
     $batch_cmd .= ' --namespace=' . $this->namespace;
     $batch_cmd .= ' --content_models=islandora:sp_large_image_cmodel --parent=' . $this->parent;
@@ -46,6 +47,7 @@ class IslandoraSampleLargeImageGenerator extends IslandoraSampleContentGenerator
     exec($batch_cmd);
     $ingest_cmd = 'drush -u 1 --uri=http://localhost islandora_batch_ingest';
     exec($ingest_cmd);
+    $this->stopTimer($start_time, $this->quantity, 'large images');
   }
 
 }

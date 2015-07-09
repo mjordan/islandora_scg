@@ -59,12 +59,14 @@ class IslandoraSampleBookGenerator extends IslandoraSampleContentGenerator {
    * Runs the Islandora Book Batch drush commands to ingest the sample content.
    */
   public function loadContent() {
+    $start_time = $this->startTimer();
     $batch_cmd = 'drush -u 1 --uri=http://localhost islandora_book_batch_preprocess';
     $batch_cmd .= ' --namespace=' . $this->namespace . ' --parent=' . $this->parent;
     $batch_cmd .= ' --parent_relationship_pred=isMemberOfCollection --type=directory --target=' . $this->data_dir;
     exec($batch_cmd);
     $ingest_cmd = 'drush -u 1 --uri=http://localhost islandora_batch_ingest';
     exec($ingest_cmd);
+    $this->stopTimer($start_time, $this->quantity, 'books with ' . $this->pages . ' each');
   }
 
 }
