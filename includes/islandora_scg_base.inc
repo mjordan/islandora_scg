@@ -15,11 +15,9 @@ abstract class IslandoraSampleContentGenerator {
 
   /**
    * @var bool $child_uses_timer - Indicates whether the child object
-   *    (pages, for example) should use a timer or let the parent use it.
-   * written to)
+   *   (pages, for example) should use a timer or let the parent use it.
    */
   public $child_uses_timer = TRUE;
-
 
   /**
    * Constructor for the IslandoraSampleContentGenerator abstract class.
