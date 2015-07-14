@@ -77,7 +77,7 @@ class IslandoraSamplePdfGenerator extends IslandoraSampleContentGenerator {
     exec($batch_cmd);
     $ingest_cmd = 'drush -u 1 --uri=http://localhost islandora_batch_ingest';
     exec($ingest_cmd);
-    $this->stopTimer($start_time, $this->quantity, 'PDFs with ' . $this->pages . ' pages each');
+    $this->stopTimer($start_time, $this->quantity, 'PDFs with ' . $this->pages . 'pages per PDF');
   }
 
 }

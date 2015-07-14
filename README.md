@@ -62,6 +62,7 @@ Optional parameters are:
 * `--bgcolor` (name of the background color for basic and large image content, from ImageMagick's [list of color names](http://www.imagemagick.org/script/color.php); defaults to "blue")
 * `--metadata_file` (the absolute path to the TSV file containing metadata, described below; defaults to `includes/sample_metadata.tsv`).
 * `--quantity_newspaper_issues` (number of issues to add to each newspaper; defaults to 0)
+* `-- timer` (true to activate; defaults to false; see details below)
 
 ### Purging sample objects
 
@@ -96,6 +97,14 @@ The metadata used for the sample objects is taken, at random, from `includes/sam
 If you want to use other metadata for your sample objects, you can replace this file with our own, as long as you follow the povided file's structure: five tab-separated columns: title, date, place name(s), subject keyword(s), and description. All columns are required but can be empty. Repeated place names and subject keywords are separated by semicolons. You can pass in the absolute path to your metadata file using the `--metadata_file` parameter. If you are using your own metadata file, lines from it will be picked at random, just like with the default metadata file.
 
 You can gain additional control of the metadata for your sample objects by using Drupal's theming layer to completely override the way that the MODS datastream is populated. To do so, override the islandora_scg_preprocess_islandora_scg_metadata_ds() function and the islandora_scg_metadata_ds.tpl.php template file.
+
+## The timer
+
+Adding the `--timer=true` option will activate a timer that reports at the end of the ingest job. For example, when loading some images, the timer will report something like:
+
+```Took 28.994158029556 seconds to ingest 5 basic images  (for an average of 5.7988316059113 seconds each)```
+
+The results include only the time taken to ingest objects, not to generate them. Also, for paged content such as books, the average time is per book, not page.
 
 ## Maintainer
 

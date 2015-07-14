@@ -14,6 +14,14 @@ abstract class IslandoraSampleContentGenerator {
   abstract protected function loadContent();
 
   /**
+   * @var bool $child_uses_timer - Indicates whether the child object
+   *    (pages, for example) should use a timer or let the parent use it.
+   * written to)
+   */
+  public $child_uses_timer = TRUE;
+
+
+  /**
    * Constructor for the IslandoraSampleContentGenerator abstract class.
    */
   public function __construct($options) {
@@ -81,13 +89,24 @@ abstract class IslandoraSampleContentGenerator {
 
   /**
    * Stops the benchmark timer and reports the results.
+   *
+   * @param float $start_time
+   *   The current time in seconds since the Unix epoch accurate
+   *   to the nearest microsecond.
+   * @param int $quantity
+   *   The value of the --quantity option as passed in from the command line.
+   * @param string $label
+   *   A string indicating what is being ingested.
+   * @param string $extra
+   *   A string indicating any additional information you want printed,
+   *   like how many pages were in each  book.
    */
-  public function stopTimer($time_start, $quantity, $label) {
+  public function stopTimer($time_start, $quantity, $label, $extra = '') {
     if ($this->timer) {
       $time_end = microtime(true);
       $time = $time_end - $time_start;
       $average_time = $time / $quantity;
-      print "Took $time microseconds to ingest $quantity $label (for an average of $average_time microseconds each)\n";
+      print "Took $time seconds to ingest $quantity $label $extra (for an average of $average_time seconds each)\n";
     }
   }
 

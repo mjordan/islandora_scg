@@ -36,7 +36,9 @@ class IslandoraSampleNewspaperGenerator extends IslandoraSampleContentGenerator 
   }
 
   public function loadContent() {
-    $start_time = $this->startTimer();
+    if (!$this->quantity_newspaper_issues) {
+      $start_time = $this->startTimer();
+    }
     $batch_cmd = 'drush -u 1 --uri=http://localhost islandora_batch_scan_preprocess';
     $batch_cmd .= ' --namespace=' . $this->namespace;
     $batch_cmd .= ' --content_models=islandora:newspaperCModel --parent=' . $this->parent;
@@ -55,18 +57,21 @@ class IslandoraSampleNewspaperGenerator extends IslandoraSampleContentGenerator 
       }
     }
     $num_newspapers = count($newspaper_pids);
-    $this->stopTimer($start_time, $num_newspapers, 'newspapers');
+    if (!$this->quantity_newspaper_issues) {
+      $this->stopTimer($start_time, $num_newspapers, 'newspapers');
+    }
 
     // Load issues into each newspaper that was ingested.
     if ($this->quantity_newspaper_issues) {
+      $this->child_uses_timer = FALSE;
       $start_time = $this->startTimer();
       drush_print(dt("Loading !num_issues issues into each newspaper.",
         array('!num_issues' => $this->quantity_newspaper_issues)));
       foreach ($newspaper_pids as $newspaper_pid) {
-        drush_print("Loading issues into $newspaper_pid");
+        drush_print("Loading issues into $newspaper_pid.");
         exec("drush iscgl --user=admin --quantity=$this->quantity_newspaper_issues --content_model=islandora:newspaperPageCModel --parent=$newspaper_pid --namespace=$this->namespace");
-        $this->stopTimer($start_time, $this->quantity_newspaper_issues, 'newspapers with issues');
       }
+      $this->stopTimer($start_time, $this->quantity_newspaper_issues, 'newspaper issues', 'with ' . $this->pages . ' pages per issue');
     }
     else {
       drush_print("Loading newspapers with no issues.");

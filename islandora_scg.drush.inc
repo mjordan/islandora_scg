@@ -53,7 +53,8 @@ function islandora_scg_drush_command() {
         "Defaults to 0.",
       ),
       'timer' => array(
-        'description' => 'Use the timer, which indicates how long it took to ingest the objects.',
+        'description' => 'Use the timer, which records how long it took to ingest  ' .
+        'the objects. Defaults to false',
       ),
     ),
     'bootstrap' => DRUSH_BOOTSTRAP_DRUPAL_LOGIN,
