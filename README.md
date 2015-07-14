@@ -104,7 +104,7 @@ Adding the `--timer=true` option will activate a timer that reports at the end o
 
 ```Took 28.994158029556 seconds to ingest 5 basic images  (for an average of 5.7988316059113 seconds each)```
 
-The results include only the time taken to ingest objects, not to generate them. Also, for paged content such as books, the average time is per book, not page.
+The results include only the time taken to ingest objects, not to generate them. Also, for paged content, the average time reported is not for each page, but for each book or newspaper (or newspaper issue, if you are loading issues into an existing newspaper).
 
 ## Maintainer
 
