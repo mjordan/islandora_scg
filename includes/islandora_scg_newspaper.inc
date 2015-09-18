@@ -50,6 +50,8 @@ class IslandoraSampleNewspaperGenerator extends IslandoraSampleContentGenerator 
 
     $newspaper_pids = array();
     foreach ($newspaper_load_result as $ingested_status) {
+      // Parsing Islandora Batch's output to get the PIDs
+      // of the loaded newspapers objects.
       if (preg_match('/^Ingested\s/', $ingested_status)) {
         $ingested_status = preg_replace('/^Ingested\s/', '', $ingested_status);
         $ingested_status = preg_replace('/\..*$/', '', $ingested_status);

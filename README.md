@@ -113,6 +113,8 @@ The results include only the time taken to ingest objects, not to generate them.
 
 Adding the `--load_content=false` option will generate sample data and not load it. This option is intended to allow you to inspect the sample data or modify it in some way before loading it with the appropriate batch module. If this option is set to false, the data will not be deleted from the filesystem for you, it will remain in the location defined by `--data_dir`.
 
+Note that when generating newspaper content, the `--load_content=false` option only works as expected when generating newspaper objects, or when generating issue content. It doesn't work as expected when generating both newspaper objects and issues in the same command (i.e., the third example supplied in the "Generating and loading newspapers" section above.
+
 ## Maintainer
 
 * [Mark Jordan](https://github.com/mjordan)
