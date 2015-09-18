@@ -56,6 +56,15 @@ function islandora_scg_drush_command() {
         'description' => 'Use the timer, which records how long it took to ingest  ' .
         'the objects. Defaults to false',
       ),
+      'load_content' => array(
+        'description' => 'Load the sample content (in addition to generating it). ' .
+        'If set to FALSE, the sample data will not be deleted. Defaults to true.',
+      ),
+      'data_dir' => array(
+        'description' => 'The full path to the directory where generated content ' .
+        "will be written. Defaults to [your site's temporary directory]/" .
+        "islandora_scg.",
+      ),
     ),
     'bootstrap' => DRUSH_BOOTSTRAP_DRUPAL_LOGIN,
   );
@@ -91,6 +100,7 @@ function islandora_scg_drush_command() {
  */
 function drush_islandora_scg_load() {
   $path_to_metadata_file = drupal_get_path('module', 'islandora_scg') .
+  $path_to_data_dir = file_directory_temp() . DIRECTORY_SEPARATOR . 'islandora_scg';
     DIRECTORY_SEPARATOR . 'includes' . DIRECTORY_SEPARATOR . 'sample_metadata.tsv';
   $options = array(
     'quantity' => drush_get_option('quantity', 5),
@@ -102,6 +112,8 @@ function drush_islandora_scg_load() {
     'metadata_file' => drush_get_option('metadata_file', $path_to_metadata_file),
     'quantity_newspaper_issues' => drush_get_option('quantity_newspaper_issues', 0),
     'timer' => drush_get_option('timer', FALSE),
+    'load_content' => drush_get_option('load_content', TRUE),
+    'data_dir' => drush_get_option('data_dir', $path_to_data_dir),
   );
 
   // Confirm the parent object exists and is accessible;
@@ -181,9 +193,15 @@ function drush_islandora_scg_load() {
   $generator->createDataDir();
   $generator->generateContent();
 
-  drush_print("Starting to load sample content...");
-  $generator->loadContent();
-  $generator->removeDataDir();
+  if ($options['load_content']) {
+    drush_print("Starting to load sample content...");
+    $generator->loadContent();
+    $generator->removeDataDir();
+  }
+  else {
+    drush_print(t('Sample content is in !path, and has not been loaded.',
+      array('!path' => $options['data_dir'])));
+  }
 }
 
 /**

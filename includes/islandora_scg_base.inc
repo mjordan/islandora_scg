@@ -38,9 +38,8 @@ abstract class IslandoraSampleContentGenerator {
     else {
       $this->timer = FALSE;
     }
+    $this->data_dir = $options['data_dir'];
 
-    // Path to the directory where the sample content is written.
-    $this->data_dir = file_directory_temp() . DIRECTORY_SEPARATOR . 'islandora_scg';
     // Serialized XML content that will be used for the MODS, DC,
     // etc. datastream.
     $this->metadata_ds = '';
