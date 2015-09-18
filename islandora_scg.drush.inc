@@ -106,7 +106,7 @@ function drush_islandora_scg_load() {
 
   // Confirm the parent object exists and is accessible;
   // if not, exit with an error.
-  if (empty(islandora_object_load($options['parent']))) {
+  if (!islandora_object_load($options['parent'])) {
     drush_set_error('PARENT_NOT_FOUND', dt('The specified parent object (!parent) is not found or is not accessible.',
       array('!parent' => $options['parent'])));
     exit;
