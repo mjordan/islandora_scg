@@ -199,8 +199,8 @@ function drush_islandora_scg_load() {
     $generator->removeDataDir();
   }
   else {
-    drush_print(t('Sample content is in !path, and has not been loaded.',
-      array('!path' => $options['data_dir'])));
+    drush_print(t('Sample !cmodel content is in !path, and has not been loaded into Islandora.',
+      array('!cmodel' => $options['content_model'], '!path' => $options['data_dir'])));
   }
 }
 
