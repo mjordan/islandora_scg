@@ -48,8 +48,9 @@ Some sample commands are:
 
 * `drush iscgl --user=admin --quantity=20 --content_model=islandora:sp_basic_image --parent=islandora:sp_basic_image_collection --namespace=testing`
 * `drush iscgl --user=admin  --content_model=islandora:sp_pdf --parent=islandora:sp_pdf_collection --pages=10 --metadata_file=/tmp/metadata.tsv`
+* `drush iscgl --user=admin  --content_model=islandora:sp_pdf --parent=islandora:sp_pdf_collection --pages=10 --metadata_file=/tmp/metadata.tsv --load_content=false`
 
-There is no need to run Islandora Batch's drush commands separately - the Sample Content Generator does that for you.
+There is no need to run Islandora Batch's drush commands separately - the Sample Content Generator does that for you. Also, the generated content that is ingested is automatically deleted, unless you set the `--load_content` option to false.
 
 Required parameters are:
 * `--content_model` (the PID of the content model of the objects you want to create, taken from the list at the top of thie README)
@@ -62,7 +63,9 @@ Optional parameters are:
 * `--bgcolor` (name of the background color for basic and large image content, from ImageMagick's [list of color names](http://www.imagemagick.org/script/color.php); defaults to "blue")
 * `--metadata_file` (the absolute path to the TSV file containing metadata, described below; defaults to `includes/sample_metadata.tsv`).
 * `--quantity_newspaper_issues` (number of issues to add to each newspaper; defaults to 0)
-* `-- timer` (true to activate; defaults to false; see details below)
+* `--timer` (true to activate; defaults to false; see details below)
+* `--data_dir` (absolute path to the directory where you want the sample data to be written; defaults to 'islandora_scg' within your Drupal instance's temp directory, e.g., `/tmp/islandora_scg`)
+* `--load_content` (false to generate content only and not load it; defaults to true; see details below)
 
 ### Purging sample objects
 
@@ -105,6 +108,10 @@ Adding the `--timer=true` option will activate a timer that reports at the end o
 ```Took 28.994158029556 seconds to ingest 5 basic images  (for an average of 5.7988316059113 seconds each)```
 
 The results include only the time taken to ingest objects, not to generate them. Also, for paged content, the average time reported is not for each page, but for each book or newspaper (or newspaper issue, if you are loading issues into an existing newspaper).
+
+## Generating but not loading content
+
+Setting the `--load_content` option to false will generate sample data and not load it. This option is intended to allow you to inspect the sample data or modify it in some way before loading it with the appropriate batch module. If this option is set to false, the content will not be deleted for you, it will remain in the location defined by `--data_dir`.
 
 ## Maintainer
 

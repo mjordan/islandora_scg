@@ -58,7 +58,7 @@ function islandora_scg_drush_command() {
       ),
       'load_content' => array(
         'description' => 'Load the sample content (in addition to generating it). ' .
-        'If set to FALSE, the sample data will not be deleted. Defaults to true.',
+        'If set to false, the sample data will not be deleted. Defaults to true.',
       ),
       'data_dir' => array(
         'description' => 'The full path to the directory where generated content ' .
@@ -100,8 +100,8 @@ function islandora_scg_drush_command() {
  */
 function drush_islandora_scg_load() {
   $path_to_metadata_file = drupal_get_path('module', 'islandora_scg') .
-  $path_to_data_dir = file_directory_temp() . DIRECTORY_SEPARATOR . 'islandora_scg';
     DIRECTORY_SEPARATOR . 'includes' . DIRECTORY_SEPARATOR . 'sample_metadata.tsv';
+  $path_to_data_dir = file_directory_temp() . DIRECTORY_SEPARATOR . 'islandora_scg';
   $options = array(
     'quantity' => drush_get_option('quantity', 5),
     'content_model' => drush_get_option('content_model'),
@@ -193,7 +193,7 @@ function drush_islandora_scg_load() {
   $generator->createDataDir();
   $generator->generateContent();
 
-  if ($options['load_content']) {
+  if ($options['load_content'] === TRUE) {
     drush_print("Starting to load sample content...");
     $generator->loadContent();
     $generator->removeDataDir();
