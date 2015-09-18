@@ -48,9 +48,9 @@ Some sample commands are:
 
 * `drush iscgl --user=admin --quantity=20 --content_model=islandora:sp_basic_image --parent=islandora:sp_basic_image_collection --namespace=testing`
 * `drush iscgl --user=admin  --content_model=islandora:sp_pdf --parent=islandora:sp_pdf_collection --pages=10 --metadata_file=/tmp/metadata.tsv`
-* `drush iscgl --user=admin  --content_model=islandora:sp_pdf --parent=islandora:sp_pdf_collection --pages=10 --metadata_file=/tmp/metadata.tsv --load_content=false`
+* `drush iscgl --user=admin  --content_model=islandora:sp_pdf --parent=islandora:sp_pdf_collection  --load_content=false`
 
-There is no need to run Islandora Batch's drush commands separately - the Sample Content Generator does that for you. Also, the generated content that is ingested is automatically deleted, unless you set the `--load_content` option to false.
+There is no need to run Islandora Batch's drush commands separately - the Sample Content Generator does that for you. Also, the generated content that is ingested is automatically deleted from the filesystem, unless you set the `--load_content` option to false.
 
 Required parameters are:
 * `--content_model` (the PID of the content model of the objects you want to create, taken from the list at the top of thie README)
@@ -111,7 +111,7 @@ The results include only the time taken to ingest objects, not to generate them.
 
 ## Generating but not loading content
 
-Setting the `--load_content` option to false will generate sample data and not load it. This option is intended to allow you to inspect the sample data or modify it in some way before loading it with the appropriate batch module. If this option is set to false, the content will not be deleted for you, it will remain in the location defined by `--data_dir`.
+Adding the `--load_content=false` option will generate sample data and not load it. This option is intended to allow you to inspect the sample data or modify it in some way before loading it with the appropriate batch module. If this option is set to false, the content will not be deleted from the filesystem for you, it will remain in the location defined by `--data_dir`.
 
 ## Maintainer
 
