@@ -111,7 +111,7 @@ The results include only the time taken to ingest objects, not to generate them.
 
 ## Generating but not loading content
 
-Adding the `--load_content=false` option will generate sample data and not load it. This option is intended to allow you to inspect the sample data or modify it in some way before loading it with the appropriate batch module. If this option is set to false, the content will not be deleted from the filesystem for you, it will remain in the location defined by `--data_dir`.
+Adding the `--load_content=false` option will generate sample data and not load it. This option is intended to allow you to inspect the sample data or modify it in some way before loading it with the appropriate batch module. If this option is set to false, the data will not be deleted from the filesystem for you, it will remain in the location defined by `--data_dir`.
 
 ## Maintainer
 
