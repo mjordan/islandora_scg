@@ -34,7 +34,9 @@ class IslandoraSampleBookGenerator extends IslandoraSampleContentGenerator {
     $title = htmlspecialchars_decode($title);
 
     // Generate the page-level OBJ datastream files (one per directory).
-    drush_print("Generating sample content for $title");
+    if (function_exists('drush_print')) {
+      drush_print("Generating sample content for $title");
+    }
     // Generate the designated number of pages.
     for ($p = 1; $p <= $this->pages; $p++) {
       $page_dir = $book_dir . DIRECTORY_SEPARATOR . $p;

@@ -28,10 +28,10 @@ abstract class IslandoraSampleContentGenerator {
     $this->parent = $options['parent'];
     $this->content_model = $options['content_model'];
     $this->namespace = $options['namespace'];
-    $this->pages = $options['pages'];
+    $this->pages = isset($options['pages']) ? $options['pages'] : 4;
     $this->bgcolor = $options['bgcolor'];
     $this->metadata_file = $options['metadata_file'];
-    $this->quantity_newspaper_issues = $options['quantity_newspaper_issues'];
+    $this->quantity_newspaper_issues = isset($options['quantity_newspaper_issues']) ? $options['quantity_newspaper_issues'] : 0;
     if ($options['timer']) {
       $this->timer = TRUE;
     }

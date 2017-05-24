@@ -24,7 +24,9 @@ class IslandoraSamplePdfGenerator extends IslandoraSampleContentGenerator {
       $title = htmlspecialchars_decode($title);
 
       // Generate the OBJ datastream file.
-      drush_print("Generating sample content for $title");
+      if (function_exists('drush_print')) {
+        drush_print("Generating sample content for $title");
+      }
       if ($this->pages == 1) {
 	$text = $title . "\n\nPage 1 / 1";
         $cmd = "convert -size 612x792 xc:white ";

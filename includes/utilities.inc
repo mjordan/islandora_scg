@@ -86,3 +86,118 @@ function islandora_scg_get_descendents($pid, $cmodel) {
     return $all_descendent_pids;
   }
 }
+
+/**
+ * Returns a list of content models that this module supports.
+ *
+ * @return array
+ *   A list of supported content model PIDs.
+ */
+function islandora_scg_get_supported_cmodels() {
+  return array(
+    'islandora:sp_basic_image',
+    'islandora:sp_large_image_cmodel',
+    'islandora:sp_pdf',
+    'islandora:bookCModel',
+    'islandora:collectionCModel',
+  );
+}
+
+/**
+ * Populates a list of cmodels for use in the GUI form.
+ *
+ * Filters out content models that are not installedi or not supported
+ * by this module's GUI..
+ *
+ * @return array
+ *   A list of supported content models that are currently installed.
+ */
+function islandora_scg_get_cmodels() {
+  module_load_include('inc', 'islandora', 'includes/utilities');
+  $cmodels = islandora_get_content_models();
+  $supported_cmodels = islandora_scg_get_supported_cmodels();
+  $options = array();
+  foreach ($cmodels as $cmodel) {
+    $pid = $cmodel['pid'];
+    if (in_array($pid, $supported_cmodels)) {
+      $options[$pid] = $cmodel['label'];
+    }
+  }
+  return $options;
+}
+
+/**
+ * Query the resource index to get a list of collections.
+ *
+ * @return array
+ *   Associative array of pid => label pairs.
+ */
+function islandora_scg_get_collections() {
+  // Query the rindex to get all collections.
+  $tuque = islandora_get_tuque_connection();
+  $ri_query = 'PREFIX fedora-model: <info:fedora/fedora-system:def/model#>
+select $object $label from <#ri>
+     where  { $object fedora-model:hasModel <info:fedora/islandora:collectionCModel> ;
+      fedora-model:label $label . }
+order by ($label)';
+  $results = $tuque->repository->ri->sparqlQuery($ri_query, 'unlimited');
+  $collections = array();
+  foreach ($results as $member) {
+    $pid = preg_replace('/info:fedora\//', '', $member['object']['value']);
+    $label = $member['label']['value'];
+    // We don't want the root collection.
+    if ($pid != 'islandora:root') {
+      $collections[$pid] = $label . ' (' . $pid . ')';
+    }
+  }
+  return $collections;
+}
+
+/**
+ * Map content models to classes, batch loader modules, etc.
+ *
+ * If you add new content models, register them here.
+ *
+ * @return array
+ *   Associative array of cmodel class and batch module associations.
+ */
+function islandora_scg_get_cmodel_associations() {
+  $registry = array(
+    'islandora:sp_basic_image' => array(
+      'class' => 'IslandoraSampleBasicImageGenerator',
+      'cmodel_module' => 'islandora_basic_image',
+      'batch_loader_module' => 'islandora_batch',
+    ),
+    'islandora:sp_large_image_cmodel' => array(
+      'class' => 'IslandoraSampleLargeImageGenerator',
+      'cmodel_module' => 'islandora_large_image',
+      'batch_loader_module' => 'islandora_batch',
+    ),
+    'islandora:sp_pdf' => array(
+      'class' => 'IslandoraSamplePdfGenerator',
+      'cmodel_module' => 'islandora_pdf',
+      'batch_loader_module' => 'islandora_batch',
+    ),
+    'islandora:bookCModel' => array(
+      'class' => 'IslandoraSampleBookGenerator',
+      'cmodel_module' => 'islandora_book',
+      'batch_loader_module' => 'islandora_book_batch',
+    ),
+    'islandora:newspaperCModel' => array(
+      'class' => 'IslandoraSampleNewspaperGenerator',
+      'cmodel_module' => 'islandora_newspaper',
+      'batch_loader_module' => 'islandora_batch',
+    ),
+    'islandora:newspaperPageCModel' => array(
+      'class' => 'IslandoraSampleNewspaperIssueGenerator',
+      'cmodel_module' => 'islandora_newspaper',
+      'batch_loader_module' => 'islandora_newspaper_batch',
+    ),
+    'islandora:collectionCModel' => array(
+      'class' => 'IslandoraSampleCollectionGenerator',
+      'cmodel_module' => 'islandora_basic_collection',
+      'batch_loader_module' => 'islandora_batch',
+    ),
+  );
+  return $registry;
+}

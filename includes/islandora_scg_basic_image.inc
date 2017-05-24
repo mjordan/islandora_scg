@@ -30,7 +30,9 @@ class IslandoraSampleBasicImageGenerator extends IslandoraSampleContentGenerator
       $cmd .= "convert -size 1000x1000 xc:" . $this->bgcolor . " -pointsize 100 -fill white ";
       $cmd .= "-gravity center -annotate +0+0 " .  escapeshellarg(wordwrap($title, 15));
       $cmd .=  " " . $this->data_dir . DIRECTORY_SEPARATOR . $i . ".jpg";
-      drush_print("Generating sample content for $title");
+      if (function_exists('drush_print')) {
+        drush_print("Generating sample content for $title");
+      }
       exec($cmd);
     }
   }

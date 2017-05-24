@@ -79,7 +79,7 @@ function islandora_scg_drush_command() {
       'quantity' => array(
         'description' => 'Use this option is you want to purge all of the sample ' .
         'objects from your repository. Only one value is allowed: "all". Subsets ' .
-        'must be defined by combinations of --content_model and --parent.'
+        'must be defined by combinations of --content_model and --parent.',
       ),
       'content_model' => array(
         'description' => 'The content model of the objects to purge.',
@@ -124,45 +124,8 @@ function drush_islandora_scg_load() {
     exit;
   }
 
-  // Map content models to classes, batch loader modules, etc.
-  // If you add new content models, register them here.
-  $registry = array(
-    'islandora:sp_basic_image' => array(
-       'class' => 'IslandoraSampleBasicImageGenerator',
-       'cmodel_module' => 'islandora_basic_image',
-       'batch_loader_module' => 'islandora_batch',
-    ),
-    'islandora:sp_large_image_cmodel' => array(
-      'class' => 'IslandoraSampleLargeImageGenerator',
-      'cmodel_module' => 'islandora_large_image',
-      'batch_loader_module' => 'islandora_batch',
-    ),
-    'islandora:sp_pdf' => array(
-      'class' => 'IslandoraSamplePdfGenerator',
-      'cmodel_module' => 'islandora_pdf',
-      'batch_loader_module' => 'islandora_batch',
-    ),
-    'islandora:bookCModel' => array(
-      'class' => 'IslandoraSampleBookGenerator',
-      'cmodel_module' => 'islandora_book',
-      'batch_loader_module' => 'islandora_book_batch',
-    ),
-    'islandora:newspaperCModel' => array(
-      'class' => 'IslandoraSampleNewspaperGenerator',
-      'cmodel_module' => 'islandora_newspaper',
-      'batch_loader_module' => 'islandora_batch',
-    ),
-    'islandora:newspaperPageCModel' => array(
-      'class' => 'IslandoraSampleNewspaperIssueGenerator',
-      'cmodel_module' => 'islandora_newspaper',
-      'batch_loader_module' => 'islandora_newspaper_batch',
-    ),
-    'islandora:collectionCModel' => array(
-      'class' => 'IslandoraSampleCollectionGenerator',
-      'cmodel_module' => 'islandora_basic_collection',
-      'batch_loader_module' => 'islandora_batch',
-    ),
-  );
+  module_load_include('inc', 'islandora_scg', 'includes/utilities');
+  $registry = islandora_scg_get_cmodel_associations();
 
   // Perform some validation on the options.
   $cmodel = $options['content_model'];
@@ -177,15 +140,15 @@ function drush_islandora_scg_load() {
     exit;
   }
   if ($options['bgcolor'] != 'blue') {
-     module_load_include('inc', 'islandora_scg', 'includes/image_magic_colors');
-     $image_magick_color_names = islandora_scg_get_color_names();
-     if (!in_array($options['bgcolor'], $image_magick_color_names)) {
-       drush_set_error('BAD_COLOR_NAME',
-         dt('Sorry, the value for --bgcolor (!color) is not a valid ImageMagick color name. Using default value of "blue".',
-           array('!color' => $options['bgcolor']))
-       );
-       $options['bgcolor'] = 'blue';
-     }
+    module_load_include('inc', 'islandora_scg', 'includes/image_magic_colors');
+    $image_magick_color_names = islandora_scg_get_color_names();
+    if (!in_array($options['bgcolor'], $image_magick_color_names)) {
+      drush_set_error('BAD_COLOR_NAME',
+        dt('Sorry, the value for --bgcolor (!color) is not a valid ImageMagick color name. Using default value of "blue".',
+          array('!color' => $options['bgcolor']))
+      );
+      $options['bgcolor'] = 'blue';
+    }
   }
 
   drush_print("Starting to generate sample content...");
@@ -232,12 +195,13 @@ function drush_islandora_scg_dump() {
     $query = $query;
   }
   else {
-    // Check that at least one of content model or parent are provided as options.
+    // Check that at least one of content model or parent are provided
+    // as options.
     if (!drush_get_option('content_model') && !drush_get_option('parent')) {
       drush_set_error('ISCD_OPTIONS_REQUIRED',
         dt('Sorry, you need to specify at least one of --parent or --content_model.'));
       exit;
-      
+
     }
     if (drush_get_option('content_model')) {
       $query .= '%20AND%20RELS_EXT_hasModel_uri_t:%22' .
@@ -245,7 +209,7 @@ function drush_islandora_scg_dump() {
     }
     if (drush_get_option('parent')) {
       $query .= '%20AND%20RELS_EXT_isMemberOfCollection_uri_t:%22' .
-        drush_get_option('parent'). '%22';
+        drush_get_option('parent') . '%22';
     }
   }
 
@@ -259,12 +223,12 @@ function drush_islandora_scg_dump() {
   // Cycle through the objects.
   foreach ($pids as $pid) {
     $object = islandora_object_load($pid);
-    $cmodels = $object->models;  
+    $cmodels = $object->models;
     // Get the current object's descendents. Assumes one content model.
     $descendent_pids = islandora_scg_get_descendents($pid, $cmodels[0]);
     // Delete the object's descendents if there are any.
     if (count($descendent_pids)) {
-      foreach($descendent_pids as $d_pid) {
+      foreach ($descendent_pids as $d_pid) {
         $d_object = islandora_object_load($d_pid);
         if (islandora_delete_object($d_object)) {
           drush_print(t('Purged object !pid', array('!pid' => $d_pid)));

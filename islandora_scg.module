@@ -6,6 +6,29 @@
  */
 
 /**
+ * Implements hook_menu().
+ */
+function islandora_scg_menu() {
+  $items = array();
+  $items['admin/islandora/tools/islandora_scg'] = array(
+    'title' => 'Islandora Sample Content Generator',
+    'description' => 'Load sample objects into your repository.',
+    'access arguments' => array('generate sample Islandora content'),
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('islandora_scg_generate_form'),
+    'file' => 'includes/generate.form.inc',
+  );
+  $items['islandora_scg_load_progress'] = array(
+    'title' => 'Progress bar progress',
+    'page callback' => 'islandora_scg_progress_bar',
+    'type' => MENU_CALLBACK,
+    'access arguments' => array('generate sample Islandora content'),
+    'file' => 'includes/generate.form.inc',
+  );
+  return $items;
+}
+
+/**
  * Implements hook_theme().
  */
 function islandora_scg_theme() {
@@ -15,6 +38,18 @@ function islandora_scg_theme() {
         'metadata' => NULL,
       ),
       'template' => 'theme/islandora_scg_metadata_ds',
+    ),
+  );
+}
+
+/**
+ * Implements hook_permission().
+ */
+function islandora_scg_permission() {
+  return array(
+    'generate sample Islandora content' => array(
+      'title' => t('Generate sample Islandora content'),
+      'description' => t('Generate sample objects using the Islandora Sample Content Generator'),
     ),
   );
 }
@@ -55,4 +90,42 @@ function islandora_scg_preprocess_islandora_scg_metadata_ds(array &$variables) {
 
   $variables['abstract'] = htmlspecialchars(trim($metadata[4]));
   unset($variables['metadata_file']);
+}
+
+/**
+ * Form submit handler.
+ */
+function islandora_scg_generate_form_submit($form, &$form_state) {
+  $_SESSION['islandora_scg_num_objects_generated'] = 0;
+  $_SESSION['islandora_scg_num_objects_to_generate'] = $form_state['values']['islandora_scg_quantity'];
+
+  module_load_include('inc', 'islandora_scg', 'includes/utilities');
+  $cmodel = $form_state['values']['islandora_scg_cmodel'];
+  $registry = islandora_scg_get_cmodel_associations();
+
+  $path_to_metadata_file = drupal_get_path('module', 'islandora_scg') .
+    DIRECTORY_SEPARATOR . 'includes' . DIRECTORY_SEPARATOR . 'sample_metadata.tsv';
+  $path_to_data_dir = file_directory_temp() . DIRECTORY_SEPARATOR . 'islandora_scg';
+
+  $options = array(
+    'quantity' => $form_state['values']['islandora_scg_quantity'],
+    'content_model' => $form_state['values']['islandora_scg_cmodel'],
+    'parent' => $form_state['values']['islandora_scg_collection'],
+    'namespace' => $form_state['values']['islandora_scg_namespace'],
+    'bgcolor' => $form_state['values']['islandora_scg_color'],
+    'metadata_file' => $path_to_metadata_file,
+    'timer' => FALSE,
+    'load_content' => TRUE,
+    'data_dir' => $path_to_data_dir,
+  );
+
+  $generator = new $registry[$cmodel]['class']($options);
+  $generator->createDataDir();
+  $generator->generateContent();
+  $generator->loadContent();
+  $generator->removeDataDir();
+
+  // Sadly, this does not appear on the form, it appears when
+  // you visit the selected collection.
+  drupal_set_message(t('!num sample objects loaded.', array('!num' => $form_state['values']['islandora_scg_quantity'])));
 }

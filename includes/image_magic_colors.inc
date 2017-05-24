@@ -2,7 +2,8 @@
 
 /**
  * @file
- * List of legal ImageMagick color names. From http://www.imagemagick.org/script/color.php.
+ * List of legal ImageMagick color names.
+ * From http://www.imagemagick.org/script/color.php.
  */
 
 /**
