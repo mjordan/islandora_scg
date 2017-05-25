@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * This file contains all install related hooks.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function islandora_bagit_uninstall() {
+  $variables = array(
+    'islandora_scg_cmodel',
+    'islandora_scg_collection',
+    'islandora_scg_quantity',
+    'islandora_scg_namespace',
+    'islandora_scg_color',
+  );
+  array_walk($variables, 'variable_del');
+}
