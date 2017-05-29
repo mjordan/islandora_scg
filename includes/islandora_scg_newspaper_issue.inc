@@ -79,7 +79,7 @@ class IslandoraSampleNewspaperIssueGenerator extends IslandoraSampleContentGener
     }
     $batch_cmd = 'drush -u 1 --uri=http://localhost islandora_newspaper_batch_preprocess';
     $batch_cmd .= ' --namespace=' . $this->namespace . ' --parent=' . $this->parent;
-    $batch_cmd .= ' --type=directory --target=' . $this->data_dir;
+    $batch_cmd .= ' --type=directory ' . $this->source_dir_option . $this->data_dir;
     exec($batch_cmd);
     $ingest_cmd = 'drush -u 1 --uri=http://localhost islandora_batch_ingest';
     exec($ingest_cmd);

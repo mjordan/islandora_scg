@@ -54,7 +54,7 @@ class IslandoraSampleCollectionGenerator extends IslandoraSampleContentGenerator
     $batch_cmd = 'drush -u 1 --uri=http://localhost islandora_batch_scan_preprocess';
     $batch_cmd .= ' --namespace=' . $this->namespace;
     $batch_cmd .= ' --content_models=islandora:collectionCModel --parent=' . $this->parent;
-    $batch_cmd .= ' --parent_relationship_pred=isMemberOfCollection --type=directory --target=' . $this->data_dir;
+    $batch_cmd .= ' --parent_relationship_pred=isMemberOfCollection --type=directory ' . $this->source_dir_option . $this->data_dir;
     exec($batch_cmd);
     $ingest_cmd = 'drush -u 1 --uri=http://localhost islandora_batch_ingest';
     exec($ingest_cmd);
