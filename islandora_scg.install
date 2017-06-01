@@ -8,7 +8,7 @@
 /**
  * Implements hook_uninstall().
  */
-function islandora_bagit_uninstall() {
+function islandora_scg_uninstall() {
   $variables = array(
     'islandora_scg_cmodel',
     'islandora_scg_collection',
