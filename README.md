@@ -127,6 +127,21 @@ Adding the `--load_content=false` option will generate sample data and not load 
 
 Note that when generating newspaper content, the `--load_content=false` option only works as expected when generating newspaper objects, or when generating issue content. It doesn't work as expected when generating both newspaper objects and issues in the same command (i.e., the third example supplied in the "Generating and loading newspapers" section above).
 
+## Usging the graphical user interface
+
+Islandora Sample Content Generator is intended to be used via its Drush interface. But, if you only need to generate a few objects quickly, you can use the the graphical user interface. The GUI is available at `admin/islandora/tools/islandora_scg` and is linked under the "Islandora Utility Modules" group in the Islandora admin menu.
+
+This GUI should only be used for generating small numbers of objects, probably 10 or fewer. You will see a warning to that effect:
+
+![Danger! Warning!](images/scg_gui_warning.png]
+
+Also, the GUI only allows you to generate content of a few types, specifically, collection, basic image, large image, PDF, and book. After you have selected your options and click the "Generate sample content" button, you will see a little spinner to the right of the button while the content if being generated:
+
+![SCG spinner](images/scg_gui.png]
+
+When the spinner disappears, your sample content will be available in the specified collection.
+
+
 ## Maintainer
 
 * [Mark Jordan](https://github.com/mjordan)
