@@ -133,11 +133,13 @@ Islandora Sample Content Generator is intended to be used via its Drush interfac
 
 This GUI should only be used for generating small numbers of objects, probably 10 or fewer. You will see a warning to that effect:
 
-![Danger! Warning!](images/scg_gui_warning.png]
+![Danger! Warning!](images/scg_gui_warning.png)
 
-Also, the GUI only allows you to generate content of a few types, specifically, collection, basic image, large image, PDF, and book. After you have selected your options and click the "Generate sample content" button, you will see a little spinner to the right of the button while the content if being generated:
+Also, the GUI only allows you to generate content of a few types, specifically, collection, basic image, large image, PDF, and book.
 
-![SCG spinner](images/scg_gui.png]
+After you have selected your options and click the "Generate sample content" button, you will see a little spinner to the right of the button while the content if being generated:
+
+![SCG spinner](images/scg_gui.png)
 
 When the spinner disappears, your sample content will be available in the specified collection.
 
