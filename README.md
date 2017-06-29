@@ -99,7 +99,7 @@ Be careful with the last option, since high values in the `--quantity` and `--qu
 
 ## Sample metadata
 
-The metadata used for the sample objects is taken, at random, from `includes/sample_metadata.tsv` ([view it here](https://github.com/mjordan/islandora_scg/blob/7.x/includes/sample_metadata.tsv)). This metadata is derived from [a collection of early-20th century postcards](http://content.lib.sfu.ca/cdm/landingpage/collection/bcp)* depicting various landscapes and landmarks in British Columbia. Each tab-delimited record contains a title, a date of publication, one or more place names, one or more subject keywords, and a description.
+The metadata used for the sample objects is taken, at random, from `includes/sample_metadata.tsv` ([view it here](https://github.com/mjordan/islandora_scg/blob/7.x/includes/sample_metadata.tsv)). This metadata is derived from [a collection of early-20th century postcards](http://digital.lib.sfu.ca/bcp-collection) depicting various landscapes and landmarks in British Columbia. Each tab-delimited record contains a title, a date of publication, one or more place names, one or more subject keywords, and a description.
 
 If you want to use other metadata for your sample objects, you can replace this file with our own, as long as you follow the povided file's structure: five tab-separated columns: title, date, place name(s), subject keyword(s), and description. All columns are required but can be empty. Repeated place names and subject keywords are separated by semicolons. You can pass in the absolute path to your metadata file using the `--metadata_file` parameter. If you are using your own metadata file, lines from it will be picked at random, just like with the default metadata file.
 
@@ -127,7 +127,7 @@ Adding the `--load_content=false` option will generate sample data and not load 
 
 Note that when generating newspaper content, the `--load_content=false` option only works as expected when generating newspaper objects, or when generating issue content. It doesn't work as expected when generating both newspaper objects and issues in the same command (i.e., the third example supplied in the "Generating and loading newspapers" section above).
 
-## Usging the graphical user interface
+## Using the graphical user interface
 
 Islandora Sample Content Generator is intended to be used via its Drush interface. But, if you only need to generate a few objects quickly, you can use the the graphical user interface. The GUI is available at `admin/islandora/tools/islandora_scg` and is linked under the "Islandora Utility Modules" group in the Islandora admin menu.
 
@@ -137,7 +137,7 @@ This GUI should only be used for generating small numbers of objects, probably 1
 
 Also, the GUI only allows you to generate content of a few types, specifically, collection, basic image, large image, PDF, and book.
 
-After you have selected your options and click the "Generate sample content" button, you will see a little spinner to the right of the button while the content if being generated:
+After you have selected your options and click the "Generate sample objects" button, you will see a little spinner to the right of the button while the content is being generated:
 
 ![SCG spinner](images/scg_gui.png)
 
@@ -156,5 +156,3 @@ Pull requests are welcome, as are use cases and suggestions.
 
 * [GPLv3](http://www.gnu.org/licenses/gpl-3.0.txt)
 * The sample metadata in includes/sample_metadata.tsv is distriubuted under the [Creative Commons Attribution-NonCommercial 3.0 Unported](http://creativecommons.org/licenses/by-nc/3.0/legalcode) license.
-
-*The collection is currently hosted in CONTENTdm. It will be hosted in Islandora soon.
