@@ -13,11 +13,11 @@ This module uses ImageMagick's `convert` command to generate sample images conta
 
 The images are very simple (some would say downright boring), just a colored background with the title of the object in white text as illustrated by this thumbnail datastream:
 
-![Islandora Sample Content Generator thumbnail for images](https://dl.dropboxusercontent.com/u/1015702/linked_to/islandora_scg/islandora_scg_sample_tn.jpg)
+![Islandora Sample Content Generator thumbnails for images](images/scg_sample_images.png)
 
 Textual content (PDFs, books, and newspaper issues) has a white background with black text:
 
-![Islandora Sample Content Generator thumbnail for paged content](https://dl.dropboxusercontent.com/u/1015702/linked_to/islandora_scg/islandora_scg_sample_tn_paged.jpg)
+![Islandora Sample Content Generator thumbnails for paged content](images/scg_sample_pdfs.png)
 
 The images aren't meant to look good, they're intended to act as *lorem ipsum* content so you can test your site's configuration and behavior, or quickly populate an Islandora instance for training.
 
