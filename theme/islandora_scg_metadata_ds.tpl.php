@@ -21,6 +21,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mods xmlns="http://www.loc.gov/mods/v3" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink">
     <recordInfo>
+      <!-- If you create a custom template, be sure to include this recordOrigin element. -->
       <recordOrigin>Islandora Sample Content Generator.</recordOrigin>
     </recordInfo>
     <titleInfo>
