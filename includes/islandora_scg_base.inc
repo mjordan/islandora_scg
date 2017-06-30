@@ -43,6 +43,13 @@ abstract class IslandoraSampleContentGenerator {
     // Serialized XML content that will be used for the MODS, DC,
     // etc. datastream.
     $this->metadata_ds = '';
+
+    if (DRUSH_VERSION >= 7) {
+      $this->source_dir_option = '--scan_target=';
+    }
+    else {
+      $this->source_dir_option = '--target=';
+    }
   }
 
   /**
